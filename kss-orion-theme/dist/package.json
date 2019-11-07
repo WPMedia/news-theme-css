@@ -1,0 +1,22 @@
+{
+  "name": "kss-orion-theme",
+  "version": "1.0.0",
+  "author": "Luke Harrison",
+  "description": "A flat simplistic theme for kss-node",
+  "homepage": "http://www.lukeharrison.net",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebDevLuke/kss-orion-theme"
+  },
+  "main": "template_config.js",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-if": "^2.0.0",
+    "run-sequence": "^1.1.5"
+  }
+}

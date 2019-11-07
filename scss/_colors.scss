@@ -1,0 +1,39 @@
+// Colors
+//
+// Base Colors for the theme.
+//
+// $primary-color - #1B6FA6; primary color
+// $success-color - #00A321; success color
+// $warning-color - #E07000; warning color
+// $danger-color - #DB0A07; danger color
+// $ui-light-primary-color - #EEEEEE; General UI light primary
+// $ui-light-secondary-color - #DADADA; General UI light secondary
+// $ui-medium-primary-color - #6B6B6B; General UI medium primary
+// $ui-medium-secondary-color - #575757; General UI medium secondary
+// $ui-dark-primary-color - #3C3939; General UI dark primary
+// $ui-dark-secondary-color - #191919; General UI dark secondary
+// $ui-primary-font-color - #191919; Primary font color
+//
+//
+// Styleguide 3.0.0
+$primary-color: #1B6FA6 !default;
+// $primary-color-hover: lighten( $primary-color, 10% );
+$success-color: #00A321 !default;
+$warning-color: #E07000 !default;
+$danger-color: #DB0A07 !default;
+$ui-light-primary-color: #EEEEEE !default;
+$ui-light-secondary-color: #DADADA !default;
+$ui-medium-primary-color: #6B6B6B !default;
+$ui-medium-secondary-color: #575757 !default;
+$ui-dark-primary-color: #3C3939 !default;
+$ui-dark-secondary-color: #191919 !default;
+
+$ui-primary-font-color: #191919 !default;
+
+$ui-btn-white-color: #FFFFFF;
+$button-state-colors: (
+        success: $success-color,
+        warning: $warning-color,
+        danger: $danger-color,
+)
+

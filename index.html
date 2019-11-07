@@ -1,0 +1,130 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fusion Themes Grid</title>
+    <meta name="Brent Miller" content="WashPost">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer{
+            background-color: purple;
+            height:auto;
+            display: flex;
+            align-items:center;
+            justify-items:center;
+            text-align:center;
+            flex-direction: column;
+        }
+
+        article{
+            background-color: green;
+            height: 60vh;
+        }
+
+        aside{
+            background-color: blue;
+            height: 60vh;
+
+            /****
+            @media (min-width: 1440px){
+              width: 380px;
+            }
+
+            @media (min-width: 1024px){
+              width: 265px;
+            }
+            ****/
+        }
+
+        .container{
+            /** Sample Styles **/
+            background-color: hotpink;
+            height: auto;
+        }
+
+        div.spacer{
+            margin:30px;
+        }
+    </style>
+
+</head>
+
+<body>
+<header class="container-fluid">
+    <h1>This is the nav</h1>
+</header>
+
+<main class="container">
+    <section class="row">
+        <article class="col-lg-8 col-md-12 col-sm-12">
+            Main Article Area
+        </article>
+
+        <aside class="col-lg-4 col-md-12 col-sm-12">
+            Right Rail Area
+        </aside>
+    </section>
+</main>
+
+<div class="container">
+    <section class="row">
+        <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 flex-col-ver-centered flex-col-hor-centered">
+            Another Article area
+        </article>
+        <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 flex-col-ver-centered flex-col-hor-centered">
+            Another Article area
+        </article>
+        <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 flex-col-ver-centered flex-col-hor-centered">
+            Another Article area
+        </article>
+    </section>
+</div>
+
+<div class="container">
+    <section class="row">
+        <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-start-xl-5 col-start-lg-5">
+            Another Article area
+        </article>
+        <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-start-xl-9 col-start-lg-9">
+            Another Article area
+        </article>
+    </section>
+</div>
+
+<h1>This is a header 1</h1>
+<h2>This is a header 2</h2>
+<h3>This is a header 3</h3>
+<h4>This is a header 4</h4>
+<h5>This is a header 5</h5>
+<h6>This is a header 6</h6>
+
+<p>Lorem ipsum dolor sit amet, affert evertitur ad duo. Ius porro fugit corpora cu. Mundi verear ut pri, mei no dolor altera mandamus, dicta voluptua in usu. Ut vim modo nibh, sit epicurei reprehendunt an, veniam conceptam ei sed. Nec tale fierent disputando in, an fuisset antiopam deterruisset nam. Pri etiam minim eu, vel te intellegat instructior, diceret alterum patrioque ei qui. Meis placerat dissentiunt mei ei, moderatius referrentur his ad.</p>
+
+<div class="spacer"><button class="btn">Medium Button</button> </div>
+<div class="spacer"><button class="btn" disabled="disabled">Medium Button</button> </div>
+<div class="spacer"><button class="btn btn-sm">Small Button</button> </div>
+<div class="spacer"><button class="btn btn-lg">Large Button</button> </div>
+<div class="spacer"><button class="btn btn-outline">Medium Button</button> </div>
+<div class="spacer"><button class="btn btn-success">Medium Button</button> </div>
+<div class="spacer"><button class="btn btn-warning">Medium Button</button> </div>
+<div class="spacer"><button class="btn btn-danger">Medium Button</button> </div>
+<div class="spacer"><button class="btn btn-outline-success">Medium Button</button> </div>
+<div class="spacer"><button class="btn btn-outline-warning">Medium Button</button> </div>
+<div class="spacer"><button class="btn btn-outline-danger">Medium Button</button> </div>
+<footer class="container-fluid">
+    <h1>This is the footer</h1>
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+// .col-[breakpoint]-[col#]
+//
+// Provides column classes that are immediate children of rows.
+// For each breakpoint defined, and for each column number, there
+// is a corresponding class to indicate how many columns to span for each breakpoint
+//
+// Markup:
+//   <div class="container">
+//       <div class="row" style="height:200px">
+//          <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12">Another Article area</article>
+//          <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12">Another Article area</article>
+//          <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12">Another Article area</article>
+//       </div>
+//   </div>
+//
+// Styleguide 2.4.0
+@each $label, $breakpoint, $width in $grid-breakpoints {
+  @media (min-width: #{$breakpoint}) {
+    @for $i from 1 through $grid-columns {
+      .col-#{$label}-#{$i} {
+        grid-column-start: span #{$i};
+      }
+
+    }
+  }
+}

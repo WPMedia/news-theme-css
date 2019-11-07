@@ -1,0 +1,44 @@
+// Margins
+//
+// For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
+// However, utility margin classes are also created for each spacer entry and for
+// left, right, top, bottom and all margin attributes.
+//
+// For example, for the $spacers `xs` entry, the following classes are produced:
+//
+// .margin-xs-left {
+//  margin-left: 0.5rem; }
+//
+//.margin-xs-right {
+//  margin-right: 0.5rem; }
+//
+//.margin-xs-top {
+//  margin-top: 0.5rem; }
+//
+//.margin-xs-bottom {
+//  margin-bottom: 0.5rem; }
+//
+//.margin-xs-all {
+//  margin: 0.5rem; }
+//
+// Styleguide 7.0.0
+
+
+@each $name, $size in $spacers {
+  .margin-#{$name}-left{
+    margin-left: $size;
+  }
+  .margin-#{$name}-right{
+    margin-right: $size;
+  }
+  .margin-#{$name}-top{
+    margin-top: $size;
+  }
+  .margin-#{$name}-bottom{
+    margin-bottom: $size;
+  }
+  .margin-#{$name}-all{
+    margin: $size;
+  }
+
+}

@@ -1,0 +1,35 @@
+// Utils
+//
+// General utility classes to make life easier
+//
+// Styleguide 4.0.0
+
+
+
+// vertical-centered
+//
+// Leverages Flexbox to make element vertically centered.  Useful with col-*
+//
+// Markup:
+//   <div class="container" >
+//       <div class="row">
+//          <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 vertical-centered">
+//            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+//            <p>Enim facilisis gravida neque convallis a cras. Faucibus et molestie ac feugiat sed lectus. Tortor condimentum lacinia quis vel eros donec ac. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Egestas congue quisque egestas diam in arcu cursus euismod quis. Tristique magna sit amet purus gravida quis. Ac turpis egestas maecenas pharetra convallis posuere morbi. Dictum sit amet justo donec enim diam. Arcu non odio euismod lacinia at quis risus sed. Nulla malesuada pellentesque elit eget. Mi sit amet mauris commodo quis. Magna sit amet purus gravida quis blandit turpis cursus in. Cursus vitae congue mauris rhoncus. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula.</p>
+//          </article>
+//          <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 vertical-centered">
+//            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+//          </article>
+//          <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 vertical-centered">
+//            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+//            <p>Enim facilisis gravida neque convallis a cras. Faucibus et molestie ac feugiat sed lectus. Tortor condimentum lacinia quis vel eros donec ac. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Egestas congue quisque egestas diam in arcu cursus euismod quis. Tristique magna sit amet purus gravida quis. Ac turpis egestas maecenas pharetra convallis posuere morbi. Dictum sit amet justo donec enim diam. Arcu non odio euismod lacinia at quis risus sed. Nulla malesuada pellentesque elit eget. Mi sit amet mauris commodo quis. Magna sit amet purus gravida quis blandit turpis cursus in.</p>
+//          </article>
+//       </div>
+//   </div>
+//
+// Styleguide 4.1.0
+.vertical-centered {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}

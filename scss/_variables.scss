@@ -1,0 +1,86 @@
+// SCSS
+//
+// This section will cover the Scss variables, mixens and functions that are used to build out the framework
+//
+// Styleguide 1.0.0
+
+
+// Scss Variables
+//
+// Scss variables are used so that adjustments can be made in a centralized location and to keep
+// the code base DRY.
+//
+// Styleguide 1.1.0
+
+
+
+// $default-font-size
+//
+// Default font size. This is important as it will be used to convert pixel values to rems
+//
+// Styleguide 1.1.1
+$default-font-size: 16 !default;
+
+
+// $grid-columns
+//
+// Sass variable that sets the default number of columns used in the CSS Grid system.
+//
+// Styleguide 1.1.2
+$grid-columns: 12 !default;
+
+// $primary-font-family
+//
+// Sass variable that sets the primary font family.
+//
+// Styleguide 1.1.3
+$primary-font-family: Georgia,Times,Times New Roman,serif !default;
+
+// $secondary-font-family
+//
+// Sass variable that sets the secondary font family.
+//
+// Styleguide 1.1.4
+$secondary-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+
+// $font-weight-light
+//
+// Sass variable that sets light font weight.
+//
+// Styleguide 1.1.5
+$font-weight-light: 300;
+
+// $font-weight-normal
+//
+// Sass variable that sets the normal font weight.
+//
+// Styleguide 1.1.6
+$font-weight-normal: 400;
+
+// $font-weight-semibold
+//
+// Sass variable that sets the semi-bold font weight.
+//
+// Styleguide 1.1.7
+$font-weight-semibold: 500;
+
+// $font-weight-bold
+//
+// Sass variable that sets the bold font weight.
+//
+// Styleguide 1.1.8
+$font-weight-bold: 700;
+
+// $line-height-base
+//
+// Sass variable that sets the default line height.
+//
+// Styleguide 1.1.9
+$line-height-base: 1.5 !default;
+
+// $$headings-line-height
+//
+// Sass variable that sets the line height for headers.
+//
+// Styleguide 1.1.10
+$headings-line-height: 1.2 !default;

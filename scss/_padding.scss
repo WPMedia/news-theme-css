@@ -1,0 +1,44 @@
+// Padding
+//
+// For most purposes, padding should be retrieved from $spacers (using map-get) in _breakpoints.scss
+// However, utility padding classes are also created for each spacer entry and for
+// left, right, top, bottom and all padding attributes.
+//
+// For example, for the $spacers `xs` entry, the following classes are produced:
+//
+//  .padding-xs-left {
+//    padding-left: 0.5rem; }
+//
+//  .padding-xs-right {
+//    padding-right: 0.5rem; }
+//
+//  .padding-xs-top {
+//    padding-top: 0.5rem; }
+//
+//  .padding-xs-bottom {
+//    padding-bottom: 0.5rem; }
+//
+//  .padding-xs-all {
+//    margin: 0.5rem; }
+//
+// Styleguide 8.0.0
+
+
+@each $name, $size in $spacers {
+  .padding-#{$name}-left{
+    padding-left: $size;
+  }
+  .padding-#{$name}-right{
+    padding-right: $size;
+  }
+  .padding-#{$name}-top{
+    padding-top: $size;
+  }
+  .padding-#{$name}-bottom{
+    padding-bottom: $size;
+  }
+  .padding-#{$name}-all{
+    margin: $size;
+  }
+
+}

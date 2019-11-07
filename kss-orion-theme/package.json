@@ -1,0 +1,53 @@
+{
+  "_from": "kss-orion-theme",
+  "_id": "kss-orion-theme@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-B/nukiO/rLsNswxXEQRKYsI+7g4zijwsnU3Af20YCTmTBObiE32a6WWInJzazbbHjY+MSh6+r0PEHiFaIT2kQw==",
+  "_location": "/kss-orion-theme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "kss-orion-theme",
+    "name": "kss-orion-theme",
+    "escapedName": "kss-orion-theme",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/kss-orion-theme/-/kss-orion-theme-1.0.0.tgz",
+  "_shasum": "f013d09d5d963c85d2ba8df5ba4b81397c11ae8c",
+  "_spec": "kss-orion-theme",
+  "_where": "/Users/millerb/work/focal-banger-css",
+  "author": {
+    "name": "Luke Harrison"
+  },
+  "bugs": {
+    "url": "https://github.com/WebDevLuke/kss-orion-theme/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A flat simplistic theme for kss-node",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sass-glob": "^1.0.6",
+    "run-sequence": "^1.1.5"
+  },
+  "homepage": "http://www.lukeharrison.net",
+  "license": "MIT",
+  "main": "dist/template_config.js",
+  "name": "kss-orion-theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDevLuke/kss-orion-theme.git"
+  },
+  "version": "1.0.0"
+}

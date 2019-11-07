@@ -1,0 +1,51 @@
+// .container-fluid
+//
+// Provides a full-width container.
+// Useful for Header and Footer
+//
+// Markup:
+//   <header class="container-fluid">
+//       This is a container fluid
+//   </header>
+//
+// Styleguide 2.1.0
+.container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .container
+//
+// Provides a centered container with margins based on breakpoints.
+// Useful for wrapping a row class (Css Grid)
+//
+// Margins stay at 5% for sm and md grid breakpoints,
+// for lg they are 8% and auto for xl
+//
+// Markup:
+//   <div class="container">
+//       This is a container
+//   </div>
+//
+// Styleguide 2.2.0
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: map-get($grid-breakpoints, "xl");
+
+
+
+  //Margins stay at 5% for sm and md grid breakpoints
+  @each $name, $size in $grid-breakpoints {
+    @media (min-width: $size) {
+      @if $name == "lg" {
+        margin-left: 8%;
+        margin-right: 8%;
+      } @else if $name == "xl" {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

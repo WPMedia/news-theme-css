@@ -1,0 +1,123 @@
+// Typography
+//
+// Styleguide 5.0.0
+
+
+
+// Basic text
+//
+// body, p, etc
+//
+// Markup:
+// <p>Lorem ipsum dolor sit amet, affert evertitur ad duo. Ius porro fugit corpora cu. Mundi verear ut pri, mei no dolor altera mandamus, dicta voluptua in usu. Ut vim modo nibh, sit epicurei reprehendunt an, veniam conceptam ei sed. Nec tale fierent disputando in, an fuisset antiopam deterruisset nam. Pri etiam minim eu, vel te intellegat instructior, diceret alterum patrioque ei qui. Meis placerat dissentiunt mei ei, moderatius referrentur his ad.</p>
+//
+// Styleguide 5.1.0
+
+body{
+  font-family: $primary-font-family;
+  color: $ui-primary-font-color;
+  line-height: $line-height-base;
+  font-weight: $font-weight-normal;
+  font-size: calculateRem(18px);
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    font-size: calculateRem(20px);
+  }
+}
+
+
+
+// Headers
+//
+// Also includes class-based versions: .h#-primary and .h#-secondary
+//
+// Markup:
+// <h1>This is a header 1 with .defcon class</h1>
+// <h1>This is a header 1</h1>
+// <h2>This is a header 2</h2>
+// <h3>This is a header 3</h3>
+// <h4>This is a header 4</h4>
+// <h5>This is a header 5</h5>
+// <h6>This is a header 6</h6>
+// <h1 class="h1-primary">This is a header 1 primary</h1>
+// <h2 class="h2-primary">This is a header 2 primary</h2>
+// <h3 class="h3-primary">This is a header 3 primary</h3>
+// <h4 class="h4-primary">This is a header 4 primary</h4>
+// <h5 class="h5-primary">This is a header 5 primary</h5>
+// <h6 class="h6-primary">This is a header 6 primary</h6>
+// <h1 class="h1-secondary">This is a header 1 secondary</h1>
+// <h2 class="h2-secondary">This is a header 2 secondary</h2>
+// <h3 class="h3-secondary">This is a header 3 secondary</h3>
+// <h4 class="h4-secondary">This is a header 4 secondary</h4>
+// <h5 class="h5-secondary">This is a header 5 secondary</h5>
+// <h6 class="h6-secondary">This is a header 6 secondary</h6>
+//
+// Styleguide 5.2.0
+
+
+@for $index from 1 through 6 {
+  h#{$index}, .h#{$index}-primary, .h#{$index}-secondary{
+    font-weight: $font-weight-bold;
+
+    @if $index == 1{
+      font-size: calculateRem(28px);
+      line-height: $headings-line-height;
+
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        font-size: calculateRem(41px);
+      }
+    }
+    @else if $index == 2{
+      font-size: calculateRem(24px);
+      line-height: $headings-line-height;
+
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        font-size: calculateRem(36px);
+      }
+    }
+    @else if $index == 3{
+      font-size: calculateRem(22px);
+      line-height: $headings-line-height;
+
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        font-size: calculateRem(30px);
+      }
+    }
+    @else if $index == 4{
+      font-size: calculateRem(19px);
+      line-height: $headings-line-height;
+
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        font-size: calculateRem(24px);
+      }
+    }
+    @else if $index == 5{
+      font-size: calculateRem(16px);
+      line-height: $headings-line-height;
+
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        font-size: calculateRem(20px);
+      }
+    }
+    @else if $index == 6{
+      font-size: calculateRem(13px);
+      line-height: $headings-line-height;
+
+      @media (min-width: map-get($grid-breakpoints, "md")) {
+        font-size: calculateRem(17px);
+      }
+    }
+  }
+}
+
+@for $index from 1 through 6 {
+  h#{$index}, .h#{$index}-primary{
+    font-family: $primary-font-family;
+  }
+}
+
+@for $index from 1 through 6 {
+  .h#{$index}-secondary{
+    font-family: $secondary-font-family;
+  }
+}

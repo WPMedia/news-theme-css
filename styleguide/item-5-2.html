@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Theme CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../styleguide.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">News Theme CSS</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">News Theme CSS</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-1.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">SCSS</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-2.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Grid</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-3.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-4.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Utils</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-5.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-6.html">
+              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__name">Buttons</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-7.html">
+              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__name">Margins</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-8.html">
+              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__name">Padding</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-2" id="kssref-5-2">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>typography/_index.scss</span>, line <span>30</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-5-2">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">5.2</span>
+                  <span class="kss-section__name">Headers</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Also includes class-based versions: .h#-primary and .h#-secondary</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><h1>This is a header 1 with .defcon class</h1>
+<h1>This is a header 1</h1>
+<h2>This is a header 2</h2>
+<h3>This is a header 3</h3>
+<h4>This is a header 4</h4>
+<h5>This is a header 5</h5>
+<h6>This is a header 6</h6>
+<h1 class="h1-primary">This is a header 1 primary</h1>
+<h2 class="h2-primary">This is a header 2 primary</h2>
+<h3 class="h3-primary">This is a header 3 primary</h3>
+<h4 class="h4-primary">This is a header 4 primary</h4>
+<h5 class="h5-primary">This is a header 5 primary</h5>
+<h6 class="h6-primary">This is a header 6 primary</h6>
+<h1 class="h1-secondary">This is a header 1 secondary</h1>
+<h2 class="h2-secondary">This is a header 2 secondary</h2>
+<h3 class="h3-secondary">This is a header 3 secondary</h3>
+<h4 class="h4-secondary">This is a header 4 secondary</h4>
+<h5 class="h5-secondary">This is a header 5 secondary</h5>
+<h6 class="h6-secondary">This is a header 6 secondary</h6></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;h1&gt;This is a header 1 with .defcon class&lt;/h1&gt;
+&lt;h1&gt;This is a header 1&lt;/h1&gt;
+&lt;h2&gt;This is a header 2&lt;/h2&gt;
+&lt;h3&gt;This is a header 3&lt;/h3&gt;
+&lt;h4&gt;This is a header 4&lt;/h4&gt;
+&lt;h5&gt;This is a header 5&lt;/h5&gt;
+&lt;h6&gt;This is a header 6&lt;/h6&gt;
+&lt;h1 class&#x3D;&quot;h1-primary&quot;&gt;This is a header 1 primary&lt;/h1&gt;
+&lt;h2 class&#x3D;&quot;h2-primary&quot;&gt;This is a header 2 primary&lt;/h2&gt;
+&lt;h3 class&#x3D;&quot;h3-primary&quot;&gt;This is a header 3 primary&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;h4-primary&quot;&gt;This is a header 4 primary&lt;/h4&gt;
+&lt;h5 class&#x3D;&quot;h5-primary&quot;&gt;This is a header 5 primary&lt;/h5&gt;
+&lt;h6 class&#x3D;&quot;h6-primary&quot;&gt;This is a header 6 primary&lt;/h6&gt;
+&lt;h1 class&#x3D;&quot;h1-secondary&quot;&gt;This is a header 1 secondary&lt;/h1&gt;
+&lt;h2 class&#x3D;&quot;h2-secondary&quot;&gt;This is a header 2 secondary&lt;/h2&gt;
+&lt;h3 class&#x3D;&quot;h3-secondary&quot;&gt;This is a header 3 secondary&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;h4-secondary&quot;&gt;This is a header 4 secondary&lt;/h4&gt;
+&lt;h5 class&#x3D;&quot;h5-secondary&quot;&gt;This is a header 5 secondary&lt;/h5&gt;
+&lt;h6 class&#x3D;&quot;h6-secondary&quot;&gt;This is a header 6 secondary&lt;/h6&gt;</code></pre>
+                </article>
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  
+  <!-- /scripts. -->
+
+  </body>
+</html>

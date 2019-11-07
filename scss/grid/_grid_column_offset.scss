@@ -1,0 +1,36 @@
+// col-start-[breakpoint]-[col#]
+//
+// Used in conjunction with column classes that are immediate children of rows to add an offset.
+// For each breakpoint defined and for each column number, there
+// is a corresponding class to indicated how many columns to offset for each breakpoint
+//
+// Note: This logic adds significant classes to the CSS build, If this functionality is not needed,
+// comment out `@import "grid_column_offset";` from /grid/_index.scss
+//
+// Markup:
+//	<div class="container">
+//	    <section class="row" style="height:200px">
+//	        <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-start-xl-5 col-start-lg-5">
+//	            Another Article area
+//	        </article>
+//	        <article class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-start-xl-9 col-start-lg-9">
+//	            Another Article area
+//	        </article>
+//	    </section>
+//	</div>
+//
+// Styleguide 2.5.0
+@each $label, $breakpoint, $width in $grid-breakpoints {
+  @media (min-width: #{$breakpoint}) {
+    @for $i from 1 through $grid-columns {
+      @for $y from 1 through $grid-columns {
+        // Differs from bootstrap from the point that it specifies the index of a column to start (vs offset)
+        // example: col-start-6 col-4 (start at col 6 columns and occupy 4 columns
+        .col-start-#{$label}-#{$y}.col-#{$label}-#{$i} {
+          grid-column: #{$y} / span #{$i};
+        }
+      }
+
+    }
+  }
+}

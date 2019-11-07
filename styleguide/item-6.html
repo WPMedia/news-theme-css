@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Theme CSS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../styleguide.css">
+
+  </head>
+
+  <body class="kss-body">
+
+    <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
+        </a>
+        <h1 class="kss-header__title kss-title">News Theme CSS</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">News Theme CSS</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-1.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">SCSS</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-2.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Grid</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-3.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Colors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-4.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Utils</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-5.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-6.html">
+              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__name">Buttons</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-7.html">
+              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__name">Margins</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-8.html">
+              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__name">Padding</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-6">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>_buttons.scss</span>, line <span>1</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-6">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">6</span>
+                  <span class="kss-section__name">Buttons</span>
+                </h1>
+              </a>
+
+                <div class="kss-section__description"><p>All buttons must include the class .btn; which by itself acts as the primary medium button.
+By default, all buttons are inline-block unless the class .btn-block is added.  The markup
+below lists all main button permutations</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="spacer"><button class="btn">Medium Button</button> </div>
+<div class="spacer"><button class="btn" disabled="disabled">Medium Button Disabled (via attribute)</button> </div>
+<div class="spacer"><button class="btn disabled" >Medium Button Disabled (via class)</button> </div>
+<div class="spacer"><button class="btn btn-sm">Small Button</button> </div>
+<div class="spacer"><button class="btn btn-lg">Large Button</button> </div>
+<div class="spacer"><button class="btn btn-outline">Medium Button Outline</button> </div>
+<div class="spacer"><button class="btn btn-success">Medium Button Success</button> </div>
+<div class="spacer"><button class="btn btn-warning">Medium Button Warning</button> </div>
+<div class="spacer"><button class="btn btn-danger">Medium Button Danger</button> </div>
+<div class="spacer"><button class="btn btn-outline-success">Medium Button Success Outline</button> </div>
+<div class="spacer"><button class="btn btn-outline-warning">Medium Button Warning Outline</button> </div>
+<div class="spacer"><button class="btn btn-outline-danger">Medium Button Danger Outline</button> </div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn&quot;&gt;Medium Button&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn&quot; disabled&#x3D;&quot;disabled&quot;&gt;Medium Button Disabled (via attribute)&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn disabled&quot; &gt;Medium Button Disabled (via class)&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-sm&quot;&gt;Small Button&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-lg&quot;&gt;Large Button&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-outline&quot;&gt;Medium Button Outline&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-success&quot;&gt;Medium Button Success&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-warning&quot;&gt;Medium Button Warning&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-danger&quot;&gt;Medium Button Danger&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-outline-success&quot;&gt;Medium Button Success Outline&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-outline-warning&quot;&gt;Medium Button Warning Outline&lt;/button&gt; &lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;button class&#x3D;&quot;btn btn-outline-danger&quot;&gt;Medium Button Danger Outline&lt;/button&gt; &lt;/div&gt;</code></pre>
+                </article>
+
+            </header>
+    </section>
+    <!-- /documentation. -->
+
+
+
+  <!-- scripts. -->
+  <script src="kss-assets/vendor/jquery.js"></script>
+  <script src="kss-assets/vendor/prism.js"></script>
+  <script src="kss-assets/js/kss.js"></script>
+  
+  <!-- /scripts. -->
+
+  </body>
+</html>
