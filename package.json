@@ -4,7 +4,7 @@
   "description": "CSS Grid Framework with Bootstrap-like conventions",
   "author": "Brent Miller",
   "license": "ISC",
-  "main": "index.js",
+  "main": "scss/index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-watch": "node-sass --watch scss -o css",
@@ -15,5 +15,15 @@
     "kss": "^3.0.0-beta.25",
     "michelangelo": "^0.8.0",
     "node-sass": "^4.13.0"
-  }
+  },
+  "files": [
+    "css",
+    "scss",
+    "kss-orion-theme",
+    "styleguide",
+    "styleguide.css",
+    "kss-config.json",
+    "index.html",
+    "readme.md"
+  ]
 }
