@@ -1,5 +1,5 @@
 {
-  "name": "news-theme-css",
+  "name": "@arc-test-org/news-theme-css",
   "version": "1.0.1",
   "private": true,
   "description": "CSS Grid Framework with Bootstrap-like conventions",
