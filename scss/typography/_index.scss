@@ -57,7 +57,7 @@ body{
 
 @for $index from 1 through 6 {
   h#{$index}, .h#{$index}-primary, .h#{$index}-secondary{
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-normal;
 
     @if $index == 1{
       font-size: calculateRem(28px);
