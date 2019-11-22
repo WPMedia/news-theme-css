@@ -32,7 +32,7 @@ body{
 // Also includes class-based versions: .h#-primary and .h#-secondary
 //
 // Markup:
-// <h1>This is a header 1 with .defcon class</h1>
+// <h1 class="defcon">Defcon Class</h1>
 // <h1>This is a header 1</h1>
 // <h2>This is a header 2</h2>
 // <h3>This is a header 3</h3>
@@ -54,10 +54,18 @@ body{
 //
 // Styleguide 5.2.0
 
+.defcon{
+  font-size: calculateRem(36px);
+  line-height: $headings-line-height;
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    font-size: calculateRem(52px);
+  }
+}
 
 @for $index from 1 through 6 {
   h#{$index}, .h#{$index}-primary, .h#{$index}-secondary{
-    font-weight: $font-weight-normal;
+    font-weight: $font-weight-bold;
 
     @if $index == 1{
       font-size: calculateRem(28px);
