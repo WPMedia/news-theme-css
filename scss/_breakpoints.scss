@@ -24,7 +24,7 @@ $spacers: (
 //
 // Styleguide 1.2.2
 $grid-breakpoints: (
-        sm: calculateRem(0px),
+        sm: calculateRem(767px),
         md: calculateRem(768px),
         lg: calculateRem(1024px),
         xl: calculateRem(1440px)

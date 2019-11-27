@@ -393,7 +393,7 @@ h6, .h6-primary {
       body ~ .row:first-of-type {
         margin-top: 3rem; } }
 
-@media (min-width: 0rem) {
+@media (min-width: 47.9375rem) {
   .col-sm-1 {
     grid-column-start: span 1; }
   .col-sm-2 {
@@ -497,7 +497,7 @@ h6, .h6-primary {
   .col-xl-12 {
     grid-column-start: span 12; } }
 
-@media (min-width: 0rem) {
+@media (min-width: 47.9375rem) {
   .col-start-sm-1.col-sm-1 {
     grid-column: 1 / span 1; }
   .col-start-sm-2.col-sm-1 {
