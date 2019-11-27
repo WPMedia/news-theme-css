@@ -14,13 +14,31 @@
 //   </div>
 //
 // Styleguide 2.4.0
-@each $label, $breakpoint, $width in $grid-breakpoints {
-  @media (min-width: #{$breakpoint}) {
-    @for $i from 1 through $grid-columns {
-      .col-#{$label}-#{$i} {
-        grid-column-start: span #{$i};
-      }
-
+@for $i from 1 through $grid-columns {
+  @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')) {
+    .col-sm-#{$i} {
+      grid-column-start: span #{$i};
+    }
+  }
+}
+@for $i from 1 through $grid-columns {
+  @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
+    .col-md-#{$i} {
+      grid-column-start: span #{$i};
+    }
+  }
+}
+@for $i from 1 through $grid-columns {
+  @media (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
+    .col-lg-#{$i} {
+      grid-column-start: span #{$i};
+    }
+  }
+}
+@for $i from 1 through $grid-columns {
+  @media (min-width: map-get($grid-breakpoints, 'xl')) {
+    .col-xl-#{$i} {
+      grid-column-start: span #{$i};
     }
   }
 }
