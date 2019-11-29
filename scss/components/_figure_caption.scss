@@ -1,0 +1,22 @@
+figcaption, figcaption p {
+  color:  darken( $ui-light-secondary-color, 20% );
+  font-size:  calculateRem(14px);
+  line-height:  calculateRem(20px);
+  font-style:  normal;
+  font-weight:  normal;
+
+  p{
+    display: inline;
+    margin:0;
+  }
+  @media screen and (max-width: map-get($grid-breakpoints, 'sm')){
+    font-size:  calculateRem(14px);
+    line-height:  calculateRem(20px);
+
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, 'md')) {
+    font-size:  calculateRem(14px);
+    line-height:  calculateRem(20px);
+  }
+}
