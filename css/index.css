@@ -1141,6 +1141,14 @@ figcaption, figcaption p {
       line-height: 2rem;
       font-weight: normal;
       font-style: italic; }
+    .article-body blockquote .citation-text {
+      font-weight: normal;
+      display: block;
+      text-align: center;
+      color: #191919;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-style: normal; }
   .article-body .interstitial_link {
     font-style: italic; }
     .article-body .interstitial_link a {
