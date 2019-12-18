@@ -83,6 +83,7 @@
       }
 
       th, td {
+        border: 1px solid #C8C8C8;
         padding:  map-get($spacers, 'xxs') map-get($spacers, 'xs');
         text-align:  center;
       }
