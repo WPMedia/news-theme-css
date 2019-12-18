@@ -50,7 +50,7 @@
     box-shadow: inset 0 -1px 0 0 $ui-light-secondary-color;
 
     div, p{
-      color:  darken( $ui-light-secondary-color, 20% );
+      color:  $ui-medium-primary-color;
       font-size: calculateRem(18px);
       line-height: calculateRem(24px);
       font-style:  italic;
@@ -65,73 +65,39 @@
     }
   }
 
-
-  table {
-    width:  100%;
-    margin:  20px 0;;
-    color: #778F9B;
-
-    @media screen and (max-width: map-get($grid-breakpoints, 'sm')){
+  .table-wrapper{
+    overflow-x: auto;
+    table{
       width:  100%;
-      margin:  20px 0;;
-    }
-
-    @media screen and (max-width: map-get($grid-breakpoints, 'md')) {
-      width:  100%;
-      margin:  20px 0;;
-    }
-
-    &, th, td {
-      border-left:  1px solid #DDE2E8;
-      border-right:  1px solid #DDE2E8;
-      border-top:  1px solid #DDE2E8;
-      border-bottom:  1px solid #DDE2E8;
+      margin:  map-get($spacers, 'md') 0;
+      color: $ui-primary-font-color;
+      border: 1px solid #C8C8C8;
       border-collapse: collapse;
-    }
 
-    th, td {
-      padding:  5px 10px;
-      text-align:  center;
-
-      @media screen and (max-width: map-get($grid-breakpoints, 'sm')){
-        padding: 5px 10px;
+      thead{
+        border: 2px solid #C8C8C8;
+        background-color: #EEEEEE;
+      }
+      th{
+        white-space: nowrap;
       }
 
-      @media screen and (max-width: map-get($grid-breakpoints, 'md')) {
-        padding: 5px 10px;
-      }
-    }
-
-    td{
-      font-size: 17px;
-      font-style: normal;
-      font-weight: normal;
-
-      @media screen and (max-width: map-get($grid-breakpoints, 'sm')){
-        font-size: 17px;
-        white-space: normal;
+      th, td {
+        padding:  map-get($spacers, 'xxs') map-get($spacers, 'xs');
+        text-align:  center;
       }
 
-      @media screen and (max-width: map-get($grid-breakpoints, 'md')) {
-        font-size: 17px;
-        white-space: normal;
-      }
-    }
-
-    th{
-      font-size: 17px;
-      font-style: normal;
-      font-weight: normal;
-      white-space: nowrap;
-
-      @media screen and (max-width: map-get($grid-breakpoints, 'sm')){
-        font-size: 17px;
-        white-space: normal;
+      td{
+        font-size: calculateRem(17px);
+        font-style: normal;
+        font-weight: normal;
       }
 
-      @media screen and (max-width: map-get($grid-breakpoints, 'md')) {
-        font-size: 17px;
-        white-space: normal;
+      th{
+        font-size: calculateRem(17px);
+        font-style: normal;
+        font-weight: bold;
+        white-space: nowrap;
       }
     }
   }
