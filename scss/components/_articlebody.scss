@@ -23,6 +23,13 @@
 
   figure{
     margin: 0;
+
+    p{
+      font-size: calculateRem(14px);
+      color: #7F8C8D;
+      margin: 8px 0;
+      line-height: 1rem;
+    }
   }
 
   ul {
