@@ -878,6 +878,15 @@ h6, .h6-primary {
   flex-direction: column;
   justify-content: center; }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
 .btn {
   display: inline-block;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1147,7 +1156,10 @@ figcaption, figcaption p {
     background: none;
     border: none;
     padding: 0;
-    height: auto; }
+    height: auto;
+    cursor: pointer; }
+    .news-theme-gallery button :hover {
+      cursor: pointer; }
   .news-theme-gallery .controls-container {
     display: flex;
     justify-content: space-between;
