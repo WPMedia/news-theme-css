@@ -16,7 +16,7 @@
 
   p {
     margin: 0;
-    padding-bottom: map-get($spacers, 'md');
+    margin-bottom: map-get($spacers, 'md');
 
     @media screen and (min-width: map-get($grid-breakpoints, 'md')){
       margin-bottom: map-get($spacers, 'lg');
@@ -64,7 +64,13 @@
   }
 
   .correction {
-    margin-bottom: map-get($spacers, 'sm');
+    margin: 0 0 map-get($spacers, 'md');
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
+    }
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
+    }
     padding: map-get($spacers, 'sm') 0;
     box-shadow: inset 0 -1px 0 0 $ui-light-secondary-color;
 
