@@ -1,19 +1,11 @@
-.article-body{
+.article-body {
   color: $ui-dark-secondary-color;
   margin-top: map-get($spacers, 'lg');
 
 
-  /***
-    @media screen and (max-width: map-get($grid-breakpoints, 'sm')){
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-    @media screen and (max-width: map-get($grid-breakpoints, 'md')) {
-      font-size: 18px;
-      line-height: 24px;
-    }
-  ***/
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
+    margin-bottom: 24px;
+  }
 
   p, ul, ol {
     font-size: calculateRem(20px);
@@ -22,15 +14,19 @@
     margin: map-get($spacers, 'sm') 0;
   }
 
-  p{
-    margin:0;
-    padding-bottom: map-get($spacers, 'lg');
+  p {
+    margin: 0;
+    padding-bottom: map-get($spacers, 'md');
+
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
+    }
   }
 
-  figure{
+  figure {
     margin: 0;
 
-    p{
+    p {
       font-size: calculateRem(14px);
       color: #7F8C8D;
       margin: 8px 0;
@@ -42,19 +38,29 @@
     list-style-type: disc;
     list-style-position: inside;
   }
+
   ol {
     list-style-type: decimal;
     list-style-position: inside;
   }
+
   ul ul, ol ul {
     list-style-type: circle;
     list-style-position: inside;
     margin-left: map-get($spacers, 'sm');
   }
+
   ol ol, ul ol {
     list-style-type: lower-latin;
     list-style-position: inside;
     margin-left: map-get($spacers, 'sm');
+  }
+
+  li{
+    margin: 0 0 map-get($spacers, 'md');
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
+    }
   }
 
   .correction {
@@ -62,52 +68,57 @@
     padding: map-get($spacers, 'sm') 0;
     box-shadow: inset 0 -1px 0 0 $ui-light-secondary-color;
 
-    div, p{
-      color:  $ui-medium-primary-color;
+    div, p {
+      color: $ui-medium-primary-color;
       font-size: calculateRem(18px);
       line-height: calculateRem(24px);
-      font-style:  italic;
-      font-weight:  normal;
+      font-style: italic;
+      font-weight: normal;
       margin: 0;
       display: inline;
     }
 
-    h6{
+    h6 {
       text-transform: uppercase;
       font-style: italic;
     }
   }
 
-  .table-wrapper{
+  .table-wrapper {
     overflow-x: auto;
-    table{
-      width:  100%;
-      margin:  map-get($spacers, 'md') 0;
+    margin: 0 0 map-get($spacers, 'md');
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
+    }
+
+    table {
+      width: 100%;
       color: $ui-primary-font-color;
       border: 1px solid #C8C8C8;
       border-collapse: collapse;
 
-      thead{
+      thead {
         border: 2px solid #C8C8C8;
         background-color: #EEEEEE;
       }
-      th{
+
+      th {
         white-space: nowrap;
       }
 
       th, td {
         border: 1px solid #C8C8C8;
-        padding:  map-get($spacers, 'xxs') map-get($spacers, 'xs');
-        text-align:  center;
+        padding: map-get($spacers, 'xxs') map-get($spacers, 'xs');
+        text-align: center;
       }
 
-      td{
+      td {
         font-size: calculateRem(17px);
         font-style: normal;
         font-weight: normal;
       }
 
-      th{
+      th {
         font-size: calculateRem(17px);
         font-style: normal;
         font-weight: bold;
@@ -116,44 +127,57 @@
     }
   }
 
-  blockquote.pullquote{
+  blockquote.pullquote {
     text-align: center;
-    font-size:  calculateRem(26px);
-    line-height:  calculateRem(32px);
-    font-weight:  bold;
-    font-style:  italic;
-    p{
-      text-align: center;
-      font-size:  calculateRem(26px);
-      line-height:  calculateRem(32px);
-      font-weight:  bold;
-      font-style:  italic;
+    font-size: calculateRem(26px);
+    line-height: calculateRem(32px);
+    font-weight: bold;
+    font-style: italic;
+    padding: map-get($spacers, 'lg') 0 map-get($spacers, 'md');
+    margin: 0 0 map-get($spacers, 'md');
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
     }
-    padding: map-get($spacers, 'md') 0;
-    box-shadow: inset 0 -5px 0 0 $ui-light-secondary-color, inset 0 5px 0 0 $ui-light-secondary-color;
-  }
 
-  blockquote{
-    box-shadow: inset 5px 0 0 0 #1F2D3D;
-    padding: 0 0 0 map-get($spacers, 'md');
-    text-align: left;
-    margin: 0;
-    font-size:  calculateRem(18px);
-    line-height:  calculateRem(32px);
-    font-weight:  normal;
-    font-style:  italic;
-
-    p{
-      font-size:  calculateRem(18px);
-      line-height:  calculateRem(32px);
-      font-weight:  normal;
-      font-style:  italic;
+    p {
+      text-align: center;
+      font-size: calculateRem(26px);
+      line-height: calculateRem(32px);
+      font-weight: bold;
+      font-style: italic;
     }
 
     .citation-text {
-      font-weight:  normal;
-      display: block;
       text-align: center;
+    }
+
+    box-shadow: inset 0 -5px 0 0 $ui-light-secondary-color, inset 0 5px 0 0 $ui-light-secondary-color;
+  }
+
+  blockquote {
+    box-shadow: inset 5px 0 0 0 #1F2D3D;
+    padding: map-get($spacers, 'sm') 0 map-get($spacers, 'sm') map-get($spacers, 'md');
+    text-align: left;
+    margin: 0 0 map-get($spacers, 'md');
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
+    }
+    font-size: calculateRem(18px);
+    line-height: calculateRem(32px);
+    font-weight: normal;
+    font-style: italic;
+
+    p {
+      font-size: calculateRem(18px);
+      line-height: calculateRem(24px);
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    .citation-text {
+      font-weight: normal;
+      display: block;
+      text-align: left;
       color: #191919;
       font-size: calculateRem(16px);
       line-height: calculateRem(24px);
@@ -161,9 +185,14 @@
     }
   }
 
-  .interstitial_link{
+  .interstitial_link {
     font-style: italic;
-    a{
+    display: block;
+    margin: 0 0 map-get($spacers, 'md');
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      margin-bottom: map-get($spacers, 'lg');
+    }
+    a {
       color: $primary-color;
       text-decoration: underline;
     }
