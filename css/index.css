@@ -1023,6 +1023,7 @@ figcaption, figcaption p {
 
 .article-body {
   color: #191919;
+  margin-top: 2rem;
   /***
     @media screen and (max-width: map-get($grid-breakpoints, 'sm')){
       font-size: 18px;
@@ -1039,6 +1040,9 @@ figcaption, figcaption p {
     line-height: 2.5rem;
     letter-spacing: 0.1px;
     margin: 1rem 0; }
+  .article-body p {
+    margin: 0;
+    padding-bottom: 2rem; }
   .article-body figure {
     margin: 0; }
     .article-body figure p {

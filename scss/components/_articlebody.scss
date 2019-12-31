@@ -1,5 +1,6 @@
 .article-body{
   color: $ui-dark-secondary-color;
+  margin-top: map-get($spacers, 'lg');
 
 
   /***
@@ -19,6 +20,11 @@
     line-height: calculateRem(40px);
     letter-spacing: 0.1px;
     margin: map-get($spacers, 'sm') 0;
+  }
+
+  p{
+    margin:0;
+    padding-bottom: map-get($spacers, 'lg');
   }
 
   figure{
