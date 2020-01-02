@@ -18,10 +18,10 @@ body{
   color: $ui-primary-font-color;
   line-height: $line-height-base;
   font-weight: $font-weight-normal;
-  font-size: calculateRem(18px);
+  font-size: calculateRem(16px);
 
   @media (min-width: map-get($grid-breakpoints, "md")) {
-    font-size: calculateRem(20px);
+    font-size: calculateRem(18px);
   }
 }
 
