@@ -1,3 +1,7 @@
+.image-metadata .title {
+  font-weight: bold;
+}
+
 .article-body {
   color: $ui-dark-secondary-color;
   margin-top: map-get($spacers, 'lg');
@@ -61,9 +65,9 @@
   }
 
   li{
-    margin: 0 0 map-get($spacers, 'md');
+    margin: 0 0 map-get($spacers, 'sm');
     @media screen and (min-width: map-get($grid-breakpoints, 'md')){
-      margin-bottom: map-get($spacers, 'lg');
+      margin-bottom: map-get($spacers, 'sm');
     }
   }
 

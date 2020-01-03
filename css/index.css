@@ -1021,6 +1021,9 @@ figcaption, figcaption p {
       font-size: 0.875rem;
       line-height: 1.25rem; } }
 
+.image-metadata .title {
+  font-weight: bold; }
+
 .article-body {
   color: #191919;
   margin-top: 2rem; }
@@ -1063,10 +1066,10 @@ figcaption, figcaption p {
     list-style-position: inside;
     margin-left: 1rem; }
   .article-body li {
-    margin: 0 0 1.5rem; }
+    margin: 0 0 1rem; }
     @media screen and (min-width: 48rem) {
       .article-body li {
-        margin-bottom: 2rem; } }
+        margin-bottom: 1rem; } }
   .article-body .correction {
     margin: 0 0 1.5rem;
     padding: 1rem 0;
