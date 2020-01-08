@@ -232,7 +232,7 @@ img {
   margin: 4rem; }
 
 body {
-  font-family: Georgia, Times, Times New Roman, serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #191919;
   line-height: 1.5;
   font-weight: 400;
@@ -251,26 +251,29 @@ body {
 h1, .h1-primary, .h1-secondary {
   font-weight: 700;
   font-size: 1.75rem;
-  line-height: 1.2; }
+  line-height: 2rem; }
   @media (min-width: 48rem) {
     h1, .h1-primary, .h1-secondary {
-      font-size: 2.5625rem; } }
+      font-size: 2.5625rem;
+      line-height: 3rem; } }
 
 h2, .h2-primary, .h2-secondary {
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 1.2; }
+  line-height: 2rem; }
   @media (min-width: 48rem) {
     h2, .h2-primary, .h2-secondary {
-      font-size: 2.25rem; } }
+      font-size: 2.25rem;
+      line-height: 2.5rem; } }
 
 h3, .h3-primary, .h3-secondary {
   font-weight: 700;
   font-size: 1.375rem;
-  line-height: 1.2; }
+  line-height: 1.5rem; }
   @media (min-width: 48rem) {
     h3, .h3-primary, .h3-secondary {
-      font-size: 1.875rem; } }
+      font-size: 1.875rem;
+      line-height: 1.875rem; } }
 
 h4, .h4-primary, .h4-secondary {
   font-weight: 700;
@@ -278,7 +281,8 @@ h4, .h4-primary, .h4-secondary {
   line-height: 1.2; }
   @media (min-width: 48rem) {
     h4, .h4-primary, .h4-secondary {
-      font-size: 1.5rem; } }
+      font-size: 1.625rem;
+      line-height: 2rem; } }
 
 h5, .h5-primary, .h5-secondary {
   font-weight: 700;
@@ -294,43 +298,44 @@ h6, .h6-primary, .h6-secondary {
   line-height: 1.2; }
   @media (min-width: 48rem) {
     h6, .h6-primary, .h6-secondary {
-      font-size: 1.0625rem; } }
+      font-size: 1.0625rem;
+      line-height: 1.5rem; } }
 
 h1, .h1-primary {
-  font-family: Georgia, Times, Times New Roman, serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 h2, .h2-primary {
-  font-family: Georgia, Times, Times New Roman, serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 h3, .h3-primary {
-  font-family: Georgia, Times, Times New Roman, serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 h4, .h4-primary {
-  font-family: Georgia, Times, Times New Roman, serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 h5, .h5-primary {
-  font-family: Georgia, Times, Times New Roman, serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 h6, .h6-primary {
-  font-family: Georgia, Times, Times New Roman, serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .h1-secondary {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: Georgia, Times, Times New Roman, serif; }
 
 .h2-secondary {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: Georgia, Times, Times New Roman, serif; }
 
 .h3-secondary {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: Georgia, Times, Times New Roman, serif; }
 
 .h4-secondary {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: Georgia, Times, Times New Roman, serif; }
 
 .h5-secondary {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: Georgia, Times, Times New Roman, serif; }
 
 .h6-secondary {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: Georgia, Times, Times New Roman, serif; }
 
 .container-fluid {
   width: 100%;
@@ -887,9 +892,45 @@ h6, .h6-primary {
   white-space: nowrap;
   width: 1px; }
 
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden; }
+
+.embed-responsive::before {
+  display: block;
+  content: ""; }
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
+.embed-responsive-21by9::before {
+  padding-top: 42.857143%; }
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%; }
+
+.embed-responsive-4by3::before {
+  padding-top: 75%; }
+
+.embed-responsive-1by1::before {
+  padding-top: 100%; }
+
 .btn {
   display: inline-block;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Georgia, Times, Times New Roman, serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.2;
@@ -1028,7 +1069,7 @@ figcaption, figcaption p {
   color: #191919;
   margin-top: 2rem; }
   .article-body > h1, .article-body > h2, .article-body > h3, .article-body > h4, .article-body > h5, .article-body > h6 {
-    margin-bottom: 24px; }
+    margin-bottom: 32px; }
   .article-body ul, .article-body ol {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1066,10 +1107,14 @@ figcaption, figcaption p {
     list-style-position: inside;
     margin-left: 1rem; }
   .article-body li {
-    margin: 0 0 1rem; }
+    margin: 0 0 1rem;
+    font-size: 1.125rem;
+    line-height: 2rem; }
     @media screen and (min-width: 48rem) {
       .article-body li {
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        line-height: 2.5rem; } }
   .article-body .correction {
     margin: 0 0 1.5rem;
     padding: 1rem 0;
@@ -1135,6 +1180,7 @@ figcaption, figcaption p {
       text-align: center;
       font-size: 1.1875rem;
       line-height: 1.5rem;
+      margin-bottom: 1.5rem;
       font-weight: bold;
       font-style: italic; }
       @media screen and (min-width: 48rem) {
@@ -1143,6 +1189,7 @@ figcaption, figcaption p {
           line-height: 2rem; } }
     .article-body blockquote.pullquote .citation-text {
       text-align: center;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-size: 1.125rem;
       line-height: 2rem; }
       @media screen and (min-width: 48rem) {
@@ -1163,10 +1210,17 @@ figcaption, figcaption p {
         margin-bottom: 2rem; } }
     .article-body blockquote p {
       font-size: 1.125rem;
-      line-height: 1.5rem;
       font-weight: normal;
-      font-style: italic; }
+      font-style: italic;
+      margin-bottom: 1.5rem; }
+      @media screen and (min-width: 0rem) {
+        .article-body blockquote p {
+          line-height: 2rem; } }
+      @media screen and (min-width: 48rem) {
+        .article-body blockquote p {
+          line-height: 2rem; } }
     .article-body blockquote .citation-text {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-weight: normal;
       display: block;
       text-align: left;
@@ -1193,7 +1247,10 @@ figcaption, figcaption p {
     font-size: 0.875rem;
     color: #7F8C8D;
     margin: 8px 0;
-    line-height: 1rem; }
+    line-height: 1.5rem; }
+    @media screen and (min-width: 48rem) {
+      .news-theme-gallery p.image-metadata {
+        line-height: 1.25rem; } }
   .news-theme-gallery button {
     background: none;
     border: none;
@@ -1212,7 +1269,7 @@ figcaption, figcaption p {
       margin-left: 12px; }
     .news-theme-gallery .controls-container .playback-controls, .news-theme-gallery .controls-container .image-change-controls {
       flex: 0 0 auto;
-      line-height: 1;
+      line-height: 1rem;
       margin: 6px 0;
       width: auto; }
       .news-theme-gallery .controls-container .playback-controls > button, .news-theme-gallery .controls-container .image-change-controls > button {

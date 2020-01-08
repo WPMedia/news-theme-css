@@ -4,10 +4,14 @@
   overflow: hidden;
 
   p.image-metadata{
-    font-size: 0.875rem;
+    font-size: calculateRem(14px);
     color: #7F8C8D;
     margin: 8px 0;
-    line-height: 1rem;
+    line-height: calculateRem(24px);
+
+    @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+      line-height: calculateRem(20px);
+    }
   }
 
   button {
@@ -41,7 +45,7 @@
 
     .playback-controls, .image-change-controls {
       flex: 0 0 auto;
-      line-height: 1;
+      line-height: calculateRem(16px);
       margin: 6px 0;
       width: auto;
 

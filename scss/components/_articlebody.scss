@@ -8,7 +8,7 @@
 
 
   & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 
   ul, ol{
@@ -66,8 +66,12 @@
 
   li{
     margin: 0 0 map-get($spacers, 'sm');
+    font-size: calculateRem(18px);
+    line-height: calculateRem(32px);
     @media screen and (min-width: map-get($grid-breakpoints, 'md')){
       margin-bottom: map-get($spacers, 'sm');
+      font-size: calculateRem(20px);
+      line-height: calculateRem(40px);
     }
   }
 
@@ -157,6 +161,7 @@
       text-align: center;
       font-size: calculateRem(19px);
       line-height: calculateRem(24px);
+      margin-bottom: calculateRem(24px);
       @media screen and (min-width: map-get($grid-breakpoints, 'md')){
         font-size: calculateRem(26px);
         line-height: calculateRem(32px);
@@ -167,7 +172,7 @@
 
     .citation-text {
       text-align: center;
-
+      font-family: $primary-font-family;
       font-size: calculateRem(18px);
       line-height: calculateRem(32px);
       @media screen and (min-width: map-get($grid-breakpoints, 'md')){
@@ -193,13 +198,20 @@
     font-style: italic;
 
     p {
+      @media screen and (min-width: map-get($grid-breakpoints, 'sm')){
+        line-height: calculateRem(32px);
+      }
+      @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+        line-height: calculateRem(32px);
+      }
       font-size: calculateRem(18px);
-      line-height: calculateRem(24px);
       font-weight: normal;
       font-style: italic;
+      margin-bottom: calculateRem(24px);
     }
 
     .citation-text {
+      font-family: $primary-font-family;
       font-weight: normal;
       display: block;
       text-align: left;
