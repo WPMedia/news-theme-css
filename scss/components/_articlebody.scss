@@ -64,6 +64,11 @@
     margin-left: map-get($spacers, 'sm');
   }
 
+  ol ol, ul ol, ol ul, ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   li{
     margin: 0 0 map-get($spacers, 'sm');
     font-size: calculateRem(18px);

@@ -295,7 +295,7 @@ h5, .h5-primary, .h5-secondary {
 h6, .h6-primary, .h6-secondary {
   font-weight: 700;
   font-size: 0.8125rem;
-  line-height: 1.2; }
+  line-height: 1.5rem; }
   @media (min-width: 48rem) {
     h6, .h6-primary, .h6-secondary {
       font-size: 1.0625rem;
@@ -1106,6 +1106,9 @@ figcaption, figcaption p {
     list-style-type: lower-latin;
     list-style-position: inside;
     margin-left: 1rem; }
+  .article-body ol ol, .article-body ul ol, .article-body ol ul, .article-body ul ul {
+    margin-top: 0;
+    margin-bottom: 0; }
   .article-body li {
     margin: 0 0 1rem;
     font-size: 1.125rem;
@@ -1382,7 +1385,8 @@ figcaption, figcaption p {
 .ril__captionContent {
   padding: 10px 20px;
   color: #fff;
-  font-size: .80em; }
+  font-size: 0.875rem;
+  line-height: 1.5rem; }
   .ril__captionContent .image-metadata, .ril__captionContent .image-metadata .title {
     color: white; }
 

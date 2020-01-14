@@ -178,7 +178,8 @@ $background_color_3: #fff;
 .ril__captionContent {
   padding: 10px 20px;
   color: $color_1;
-  font-size: .80em;
+  font-size: calculateRem(14px);
+  line-height: calculateRem(24px);
 
   .image-metadata, .image-metadata .title {
     color: white;

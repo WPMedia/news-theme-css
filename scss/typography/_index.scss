@@ -113,7 +113,7 @@ body{
     }
     @else if $index == 6{
       font-size: calculateRem(13px);
-      line-height: $headings-line-height;
+      line-height: calculateRem(24px);
 
       @media (min-width: map-get($grid-breakpoints, "md")) {
         font-size: calculateRem(17px);
