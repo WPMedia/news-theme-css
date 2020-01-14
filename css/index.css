@@ -1110,12 +1110,12 @@ figcaption, figcaption p {
     margin-top: 0;
     margin-bottom: 0; }
   .article-body li {
-    margin: 0 0 1rem;
+    margin: 0;
     font-size: 1.125rem;
     line-height: 2rem; }
     @media screen and (min-width: 48rem) {
       .article-body li {
-        margin-bottom: 1rem;
+        margin: 0;
         font-size: 1.25rem;
         line-height: 2.5rem; } }
   .article-body .correction {

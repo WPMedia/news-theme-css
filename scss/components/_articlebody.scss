@@ -70,11 +70,11 @@
   }
 
   li{
-    margin: 0 0 map-get($spacers, 'sm');
+    margin: 0;
     font-size: calculateRem(18px);
     line-height: calculateRem(32px);
     @media screen and (min-width: map-get($grid-breakpoints, 'md')){
-      margin-bottom: map-get($spacers, 'sm');
+      margin: 0;
       font-size: calculateRem(20px);
       line-height: calculateRem(40px);
     }
