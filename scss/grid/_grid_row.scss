@@ -1,3 +1,26 @@
+$grid-opts-sm: (
+        cols: repeat(12, 1fr),
+        row-gap: map-get($spacers, "sm"),
+        col-gap: 0
+);
+$grid-opts-md: (
+        cols: repeat(12, 1fr),
+        row-gap: map-get($spacers, "md"),
+        col-gap: 0
+);
+$grid-opts-lg: (
+        cols: repeat(12, 1fr),
+        row-gap: map-get($spacers, "lg"),
+        col-gap: calculateRem(32px)
+);
+$grid-opts-xl: (
+        cols: repeat(12, 1fr),
+        row-gap: map-get($spacers, "xl"),
+        col-gap: calculateRem(32px)
+);
+
+
+
 // .row
 //
 // Establishes a CSS Grid parent.
@@ -10,10 +33,8 @@
 //
 // Styleguide 2.3.0
 .row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-row-gap: map-get($spacers, "sm");
-  grid-column-gap: 0;
+  @include grid($grid-opts-sm);
+
   grid-auto-flow: dense;
   margin-bottom: get-half-in-rems(map-get($spacers, "sm"));
   margin-top: get-half-in-rems(map-get($spacers, "sm"));
@@ -30,7 +51,7 @@
       @if $name == "md" {
         margin-bottom: get-half-in-rems(map-get($spacers, "md"));
         margin-top: get-half-in-rems(map-get($spacers, "md"));
-        grid-row-gap: map-get($spacers, "md");
+        @include grid($grid-opts-md);
         body ~ &:last-of-type {
           margin-bottom: map-get($spacers, "md");
         }
@@ -40,8 +61,7 @@
       } @else if $name == "lg" {
         margin-bottom: #{get-half-in-rems(map-get($spacers, "lg"))};
         margin-top: #{get-half-in-rems(map-get($spacers, "lg"))};
-        grid-row-gap: map-get($spacers, "lg");
-        grid-column-gap: calculateRem(32px);
+        @include grid($grid-opts-lg);
         body ~ &:last-of-type {
           margin-bottom: map-get($spacers, "lg");
         }
@@ -51,8 +71,7 @@
       } @else if $name == "xl" {
         margin-bottom: get-half-in-rems(map-get($spacers, "xl"));
         margin-top: get-half-in-rems(map-get($spacers, "xl"));
-        grid-row-gap: map-get($spacers, "xl");
-        grid-column-gap: calculateRem(32px);
+        @include grid($grid-opts-xl);
         body ~ &:last-of-type {
           margin-bottom: map-get($spacers, "xl");
         }

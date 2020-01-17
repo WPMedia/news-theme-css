@@ -30,58 +30,58 @@
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')) {
     .col-sm-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-sm-md-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-sm-lg-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) {
     .col-sm-xl-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
 }
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-md-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-md-lg-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) {
     .col-md-xl-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
 }
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-lg-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'lg')) {
     .col-lg-xl-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
 }
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'xl')) {
     .col-xl-#{$i} {
-      grid-column-start: span #{$i};
+      @include grid-column-start(#{$i});
     }
   }
 }
