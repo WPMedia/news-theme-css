@@ -35,6 +35,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -45,6 +47,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -55,6 +59,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -65,6 +71,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -77,6 +85,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -87,6 +97,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -97,6 +109,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -109,6 +123,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -119,6 +135,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
@@ -131,6 +149,8 @@
       max-width: ($base-col-percent * $i);
       @supports (display: grid){
         grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
       }
     }
   }
