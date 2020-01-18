@@ -29,6 +29,8 @@ $default-font-size: 16 !default;
 // Styleguide 1.1.2
 $grid-columns: 12 !default;
 
+$base-col-percent: 100% / $grid-columns;
+
 // $primary-font-family
 //
 // Sass variable that sets the primary font family.
