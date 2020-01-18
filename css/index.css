@@ -417,9 +417,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-1 {
         grid-column-start: span 1;
@@ -428,9 +427,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-1 {
         grid-column-start: span 1;
@@ -439,9 +437,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-1 {
         grid-column-start: span 1;
@@ -450,9 +447,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-1 {
         grid-column-start: span 1;
@@ -461,9 +457,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-2 {
         grid-column-start: span 2;
@@ -472,9 +467,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-2 {
         grid-column-start: span 2;
@@ -483,9 +477,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-2 {
         grid-column-start: span 2;
@@ -494,9 +487,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-2 {
         grid-column-start: span 2;
@@ -505,9 +497,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-3 {
         grid-column-start: span 3;
@@ -516,9 +507,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-3 {
         grid-column-start: span 3;
@@ -527,9 +517,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-3 {
         grid-column-start: span 3;
@@ -538,9 +527,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-3 {
         grid-column-start: span 3;
@@ -549,9 +537,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-4 {
         grid-column-start: span 4;
@@ -560,9 +547,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-4 {
         grid-column-start: span 4;
@@ -571,9 +557,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-4 {
         grid-column-start: span 4;
@@ -582,9 +567,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-4 {
         grid-column-start: span 4;
@@ -593,9 +577,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-5 {
         grid-column-start: span 5;
@@ -604,9 +587,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-5 {
         grid-column-start: span 5;
@@ -615,9 +597,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-5 {
         grid-column-start: span 5;
@@ -626,9 +607,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-5 {
         grid-column-start: span 5;
@@ -637,9 +617,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-6 {
         grid-column-start: span 6;
@@ -648,9 +627,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-6 {
         grid-column-start: span 6;
@@ -659,9 +637,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-6 {
         grid-column-start: span 6;
@@ -670,9 +647,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-6 {
         grid-column-start: span 6;
@@ -681,9 +657,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-7 {
         grid-column-start: span 7;
@@ -692,9 +667,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-7 {
         grid-column-start: span 7;
@@ -703,9 +677,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-7 {
         grid-column-start: span 7;
@@ -714,9 +687,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-7 {
         grid-column-start: span 7;
@@ -725,9 +697,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-8 {
         grid-column-start: span 8;
@@ -736,9 +707,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-8 {
         grid-column-start: span 8;
@@ -747,9 +717,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-8 {
         grid-column-start: span 8;
@@ -758,9 +727,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-8 {
         grid-column-start: span 8;
@@ -769,9 +737,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-9 {
         grid-column-start: span 9;
@@ -780,9 +747,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-9 {
         grid-column-start: span 9;
@@ -791,9 +757,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-9 {
         grid-column-start: span 9;
@@ -802,9 +767,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-9 {
         grid-column-start: span 9;
@@ -813,9 +777,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-10 {
         grid-column-start: span 10;
@@ -824,9 +787,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-10 {
         grid-column-start: span 10;
@@ -835,9 +797,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-10 {
         grid-column-start: span 10;
@@ -846,9 +807,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-10 {
         grid-column-start: span 10;
@@ -857,9 +817,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-11 {
         grid-column-start: span 11;
@@ -868,9 +827,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-11 {
         grid-column-start: span 11;
@@ -879,9 +837,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-11 {
         grid-column-start: span 11;
@@ -890,9 +847,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-11 {
         grid-column-start: span 11;
@@ -901,9 +857,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-12 {
         grid-column-start: span 12;
@@ -912,9 +867,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-md-12 {
         grid-column-start: span 12;
@@ -923,9 +877,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-lg-12 {
         grid-column-start: span 12;
@@ -934,9 +887,8 @@ h6, .h6-primary {
 
 @media (min-width: 0rem) {
   .col-sm-xl-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-sm-xl-12 {
         grid-column-start: span 12;
@@ -945,9 +897,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-1 {
         grid-column-start: span 1;
@@ -956,9 +907,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-1 {
         grid-column-start: span 1;
@@ -967,9 +917,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-1 {
         grid-column-start: span 1;
@@ -978,9 +927,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-2 {
         grid-column-start: span 2;
@@ -989,9 +937,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-2 {
         grid-column-start: span 2;
@@ -1000,9 +947,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-2 {
         grid-column-start: span 2;
@@ -1011,9 +957,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-3 {
         grid-column-start: span 3;
@@ -1022,9 +967,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-3 {
         grid-column-start: span 3;
@@ -1033,9 +977,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-3 {
         grid-column-start: span 3;
@@ -1044,9 +987,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-4 {
         grid-column-start: span 4;
@@ -1055,9 +997,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-4 {
         grid-column-start: span 4;
@@ -1066,9 +1007,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-4 {
         grid-column-start: span 4;
@@ -1077,9 +1017,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-5 {
         grid-column-start: span 5;
@@ -1088,9 +1027,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-5 {
         grid-column-start: span 5;
@@ -1099,9 +1037,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-5 {
         grid-column-start: span 5;
@@ -1110,9 +1047,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-6 {
         grid-column-start: span 6;
@@ -1121,9 +1057,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-6 {
         grid-column-start: span 6;
@@ -1132,9 +1067,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-6 {
         grid-column-start: span 6;
@@ -1143,9 +1077,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-7 {
         grid-column-start: span 7;
@@ -1154,9 +1087,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-7 {
         grid-column-start: span 7;
@@ -1165,9 +1097,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-7 {
         grid-column-start: span 7;
@@ -1176,9 +1107,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-8 {
         grid-column-start: span 8;
@@ -1187,9 +1117,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-8 {
         grid-column-start: span 8;
@@ -1198,9 +1127,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-8 {
         grid-column-start: span 8;
@@ -1209,9 +1137,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-9 {
         grid-column-start: span 9;
@@ -1220,9 +1147,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-9 {
         grid-column-start: span 9;
@@ -1231,9 +1157,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-9 {
         grid-column-start: span 9;
@@ -1242,9 +1167,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-10 {
         grid-column-start: span 10;
@@ -1253,9 +1177,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-10 {
         grid-column-start: span 10;
@@ -1264,9 +1187,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-10 {
         grid-column-start: span 10;
@@ -1275,9 +1197,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-11 {
         grid-column-start: span 11;
@@ -1286,9 +1207,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-11 {
         grid-column-start: span 11;
@@ -1297,9 +1217,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-11 {
         grid-column-start: span 11;
@@ -1308,9 +1227,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-12 {
         grid-column-start: span 12;
@@ -1319,9 +1237,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-lg-12 {
         grid-column-start: span 12;
@@ -1330,9 +1247,8 @@ h6, .h6-primary {
 
 @media (min-width: 48rem) {
   .col-md-xl-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-md-xl-12 {
         grid-column-start: span 12;
@@ -1341,9 +1257,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-1 {
         grid-column-start: span 1;
@@ -1352,9 +1267,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-1 {
         grid-column-start: span 1;
@@ -1363,9 +1277,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-2 {
         grid-column-start: span 2;
@@ -1374,9 +1287,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-2 {
         grid-column-start: span 2;
@@ -1385,9 +1297,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-3 {
         grid-column-start: span 3;
@@ -1396,9 +1307,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-3 {
         grid-column-start: span 3;
@@ -1407,9 +1317,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-4 {
         grid-column-start: span 4;
@@ -1418,9 +1327,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-4 {
         grid-column-start: span 4;
@@ -1429,9 +1337,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-5 {
         grid-column-start: span 5;
@@ -1440,9 +1347,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-5 {
         grid-column-start: span 5;
@@ -1451,9 +1357,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-6 {
         grid-column-start: span 6;
@@ -1462,9 +1367,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-6 {
         grid-column-start: span 6;
@@ -1473,9 +1377,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-7 {
         grid-column-start: span 7;
@@ -1484,9 +1387,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-7 {
         grid-column-start: span 7;
@@ -1495,9 +1397,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-8 {
         grid-column-start: span 8;
@@ -1506,9 +1407,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-8 {
         grid-column-start: span 8;
@@ -1517,9 +1417,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-9 {
         grid-column-start: span 9;
@@ -1528,9 +1427,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-9 {
         grid-column-start: span 9;
@@ -1539,9 +1437,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-10 {
         grid-column-start: span 10;
@@ -1550,9 +1447,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-10 {
         grid-column-start: span 10;
@@ -1561,9 +1457,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-11 {
         grid-column-start: span 11;
@@ -1572,9 +1467,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-11 {
         grid-column-start: span 11;
@@ -1583,9 +1477,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-12 {
         grid-column-start: span 12;
@@ -1594,9 +1487,8 @@ h6, .h6-primary {
 
 @media (min-width: 64rem) {
   .col-lg-xl-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-lg-xl-12 {
         grid-column-start: span 12;
@@ -1605,9 +1497,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-1 {
-    -ms-flex-preferred-size: 8.33333%;
-    flex-basis: 8.33333%;
-    max-width: 8.33333%; }
+    max-width: 8.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-1 {
         grid-column-start: span 1;
@@ -1616,9 +1507,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-2 {
-    -ms-flex-preferred-size: 16.66667%;
-    flex-basis: 16.66667%;
-    max-width: 16.66667%; }
+    max-width: 16.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-2 {
         grid-column-start: span 2;
@@ -1627,9 +1517,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%; }
+    max-width: 25%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-3 {
         grid-column-start: span 3;
@@ -1638,9 +1527,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-4 {
-    -ms-flex-preferred-size: 33.33333%;
-    flex-basis: 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-4 {
         grid-column-start: span 4;
@@ -1649,9 +1537,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-5 {
-    -ms-flex-preferred-size: 41.66667%;
-    flex-basis: 41.66667%;
-    max-width: 41.66667%; }
+    max-width: 41.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-5 {
         grid-column-start: span 5;
@@ -1660,9 +1547,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-6 {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-6 {
         grid-column-start: span 6;
@@ -1671,9 +1557,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-7 {
-    -ms-flex-preferred-size: 58.33333%;
-    flex-basis: 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 58.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-7 {
         grid-column-start: span 7;
@@ -1682,9 +1567,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-8 {
-    -ms-flex-preferred-size: 66.66667%;
-    flex-basis: 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 66.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-8 {
         grid-column-start: span 8;
@@ -1693,9 +1577,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-9 {
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%; }
+    max-width: 75%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-9 {
         grid-column-start: span 9;
@@ -1704,9 +1587,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-10 {
-    -ms-flex-preferred-size: 83.33333%;
-    flex-basis: 83.33333%;
-    max-width: 83.33333%; }
+    max-width: 83.33333%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-10 {
         grid-column-start: span 10;
@@ -1715,9 +1597,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-11 {
-    -ms-flex-preferred-size: 91.66667%;
-    flex-basis: 91.66667%;
-    max-width: 91.66667%; }
+    max-width: 91.66667%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-11 {
         grid-column-start: span 11;
@@ -1726,9 +1607,8 @@ h6, .h6-primary {
 
 @media (min-width: 90rem) {
   .col-xl-12 {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    flex: 1 1 auto; }
     @supports (display: grid) {
       .col-xl-12 {
         grid-column-start: span 12;

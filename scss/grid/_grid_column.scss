@@ -30,9 +30,8 @@
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')) {
     .col-sm-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -42,9 +41,8 @@
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-sm-md-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -54,9 +52,8 @@
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-sm-lg-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -66,9 +63,8 @@
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) {
     .col-sm-xl-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -80,9 +76,8 @@
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-md-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -92,9 +87,8 @@
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-md-lg-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -104,9 +98,8 @@
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) {
     .col-md-xl-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -118,9 +111,8 @@
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-lg-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -130,9 +122,8 @@
   }
   @media (min-width: map-get($grid-breakpoints, 'lg')) {
     .col-lg-xl-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
@@ -144,9 +135,8 @@
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'xl')) {
     .col-xl-#{$i} {
-      -ms-flex-preferred-size: ($base-col-percent * $i);
-      flex-basis: ($base-col-percent * $i);
       max-width: ($base-col-percent * $i);
+      flex: 1 1 auto;
       @supports (display: grid){
         grid-column-start: span #{$i};
         flex-basis: initial;
