@@ -1615,6 +1615,9 @@ h6, .h6-primary {
         flex-basis: initial;
         max-width: initial; } } }
 
+.ie-flex-100-percent-sm {
+  flex: 1 0 100% !important; }
+
 .vertical-centered {
   display: flex;
   flex-direction: column;

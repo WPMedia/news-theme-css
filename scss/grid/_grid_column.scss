@@ -185,3 +185,8 @@
     }
   }
 }
+
+//IE flex fix
+.ie-flex-100-percent-sm{
+  flex: 1 0 100% !important;
+}
