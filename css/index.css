@@ -858,7 +858,7 @@ h6, .h6-primary {
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-sm-12 {
         grid-column-start: span 12;
@@ -868,7 +868,7 @@ h6, .h6-primary {
 @media (min-width: 0rem) and (max-width: 63.9375rem) {
   .col-sm-md-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-sm-md-12 {
         grid-column-start: span 12;
@@ -878,7 +878,7 @@ h6, .h6-primary {
 @media (min-width: 0rem) and (max-width: 89.9375rem) {
   .col-sm-lg-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-sm-lg-12 {
         grid-column-start: span 12;
@@ -888,7 +888,7 @@ h6, .h6-primary {
 @media (min-width: 0rem) {
   .col-sm-xl-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-sm-xl-12 {
         grid-column-start: span 12;
@@ -1228,7 +1228,7 @@ h6, .h6-primary {
 @media (min-width: 48rem) and (max-width: 63.9375rem) {
   .col-md-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-md-12 {
         grid-column-start: span 12;
@@ -1238,7 +1238,7 @@ h6, .h6-primary {
 @media (min-width: 48rem) and (max-width: 89.9375rem) {
   .col-md-lg-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-md-lg-12 {
         grid-column-start: span 12;
@@ -1248,7 +1248,7 @@ h6, .h6-primary {
 @media (min-width: 48rem) {
   .col-md-xl-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-md-xl-12 {
         grid-column-start: span 12;
@@ -1478,7 +1478,7 @@ h6, .h6-primary {
 @media (min-width: 64rem) and (max-width: 89.9375rem) {
   .col-lg-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-lg-12 {
         grid-column-start: span 12;
@@ -1488,7 +1488,7 @@ h6, .h6-primary {
 @media (min-width: 64rem) {
   .col-lg-xl-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-lg-xl-12 {
         grid-column-start: span 12;
@@ -1608,7 +1608,7 @@ h6, .h6-primary {
 @media (min-width: 90rem) {
   .col-xl-12 {
     max-width: 100%;
-    flex: 0 0 auto; }
+    flex: 1 0 auto; }
     @supports (display: grid) {
       .col-xl-12 {
         grid-column-start: span 12;
