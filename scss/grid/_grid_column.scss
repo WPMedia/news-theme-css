@@ -189,6 +189,8 @@
 //IE flex fix
 .ie-flex-100-percent-sm{
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    flex: 1 0 100% !important;
+    @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')){
+      flex: 1 0 100% !important;
+    }
   }
 }

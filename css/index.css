@@ -1615,7 +1615,7 @@ h6, .h6-primary {
         flex-basis: initial;
         max-width: initial; } } }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none) and (min-width: 0rem) and (max-width: 47.9375rem), (-ms-high-contrast: active) and (min-width: 0rem) and (max-width: 47.9375rem) {
   .ie-flex-100-percent-sm {
     flex: 1 0 100% !important; } }
 
