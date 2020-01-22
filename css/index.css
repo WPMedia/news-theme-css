@@ -2082,8 +2082,7 @@ figcaption, figcaption p {
   padding: 40px 30px;
   margin: auto;
   cursor: pointer;
-  opacity: 0.7;
-  background-color: transparent; }
+  opacity: 0.7; }
   .ril__navButtons:hover {
     opacity: 1; }
   .ril__navButtons:active {
@@ -2167,7 +2166,6 @@ figcaption, figcaption p {
   height: 35px;
   cursor: pointer;
   border: none;
-  background-color: transparent;
   opacity: 0.7; }
   .ril__builtinButton:hover {
     opacity: 1; }
