@@ -26,7 +26,7 @@ $ms-row-count: null;
   }
   -ms-grid-column: if($ms-col-count, $start + $start - 1, $start);
   -ms-grid-column-span: if($ms-col-count, $span + $span - 1, $span);
-  grid-column: #{$start}/#{$start + $span};
+  grid-column: span #{$span};
   @content;
 }
 

@@ -30,58 +30,167 @@
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')) {
     .col-sm-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-sm-md-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-sm-lg-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) {
     .col-sm-xl-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
 }
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-md-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-md-lg-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) {
     .col-md-xl-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
 }
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-lg-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'lg')) {
     .col-lg-xl-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
     }
   }
 }
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'xl')) {
     .col-xl-#{$i} {
-      @include grid-column(1, $i);
+      max-width: ($base-col-percent * $i);
+      @if $i == $grid-columns {
+        flex: 1 0 auto;
+      }@else {
+        flex: 0 0 auto;
+      }
+      @supports (display: grid){
+        grid-column-start: span #{$i};
+        flex-basis: initial;
+        max-width: initial;
+      }
+    }
+  }
+}
+
+//IE flex fix
+.ie-flex-100-percent-sm{
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')){
+      flex: 1 0 100% !important;
     }
   }
 }

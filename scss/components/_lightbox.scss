@@ -123,6 +123,7 @@ $background_color_3: #fff;
   margin: auto;
   cursor: pointer;
   opacity: 0.7;
+  background: none;
 
   &:hover {
     opacity: 1;
@@ -219,6 +220,10 @@ $background_color_3: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  button {
+    background: none;
+  }
 }
 
 .ril__toolbarItemChild {

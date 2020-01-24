@@ -1,26 +1,3 @@
-$grid-opts-sm: (
-        cols: repeat(12, 1fr),
-        row-gap: map-get($spacers, "sm"),
-        col-gap: 0
-);
-$grid-opts-md: (
-        cols: repeat(12, 1fr),
-        row-gap: map-get($spacers, "md"),
-        col-gap: 0
-);
-$grid-opts-lg: (
-        cols: repeat(12, 1fr),
-        row-gap: map-get($spacers, "lg"),
-        col-gap: calculateRem(32px)
-);
-$grid-opts-xl: (
-        cols: repeat(12, 1fr),
-        row-gap: map-get($spacers, "xl"),
-        col-gap: calculateRem(32px)
-);
-
-
-
 // .row
 //
 // Establishes a CSS Grid parent.
@@ -33,9 +10,24 @@ $grid-opts-xl: (
 //
 // Styleguide 2.3.0
 .row {
-  @include grid($grid-opts-sm);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 
-  grid-auto-flow: dense;
+  @supports (display: grid){
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: map-get($spacers, "sm");
+    grid-column-gap: 0;
+    grid-auto-flow: dense;
+  }
+
   margin-bottom: get-half-in-rems(map-get($spacers, "sm"));
   margin-top: get-half-in-rems(map-get($spacers, "sm"));
   width: 100%;
@@ -51,7 +43,9 @@ $grid-opts-xl: (
       @if $name == "md" {
         margin-bottom: get-half-in-rems(map-get($spacers, "md"));
         margin-top: get-half-in-rems(map-get($spacers, "md"));
-        @include grid($grid-opts-md);
+        @supports (display: grid){
+          grid-row-gap: map-get($spacers, "md");
+        }
         body ~ &:last-of-type {
           margin-bottom: map-get($spacers, "md");
         }
@@ -61,7 +55,12 @@ $grid-opts-xl: (
       } @else if $name == "lg" {
         margin-bottom: #{get-half-in-rems(map-get($spacers, "lg"))};
         margin-top: #{get-half-in-rems(map-get($spacers, "lg"))};
-        @include grid($grid-opts-lg);
+
+        @supports (display: grid){
+          grid-row-gap: map-get($spacers, "lg");
+          grid-column-gap: calculateRem(32px);
+        }
+
         body ~ &:last-of-type {
           margin-bottom: map-get($spacers, "lg");
         }
@@ -71,7 +70,12 @@ $grid-opts-xl: (
       } @else if $name == "xl" {
         margin-bottom: get-half-in-rems(map-get($spacers, "xl"));
         margin-top: get-half-in-rems(map-get($spacers, "xl"));
-        @include grid($grid-opts-xl);
+
+        @supports (display: grid){
+          grid-row-gap: map-get($spacers, "xl");
+          grid-column-gap: calculateRem(32px);
+        }
+
         body ~ &:last-of-type {
           margin-bottom: map-get($spacers, "xl");
         }
