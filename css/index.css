@@ -2079,10 +2079,12 @@ figcaption, figcaption p {
   bottom: 0;
   width: 20px;
   height: 34px;
-  padding: 40px 30px;
   margin: auto;
   cursor: pointer;
-  opacity: 0.7; }
+  opacity: 0.7;
+  background: none; }
+  .ril__navButtons svg {
+    background-color: rgba(0, 0, 0, 0.1); }
   .ril__navButtons:hover {
     opacity: 1; }
   .ril__navButtons:active {
@@ -2157,6 +2159,8 @@ figcaption, figcaption p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+  .ril__toolbarItem button {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .ril__toolbarItemChild {
   vertical-align: middle; }

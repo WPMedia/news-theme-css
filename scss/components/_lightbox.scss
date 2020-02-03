@@ -125,6 +125,10 @@ $background_color_3: #fff;
   opacity: 0.7;
   background: none;
 
+  svg {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
   &:hover {
     opacity: 1;
   }
@@ -217,7 +221,7 @@ $background_color_3: #fff;
   white-space: nowrap;
 
   button {
-    background: none;
+    background-color: rgba(0, 0, 0, 0.1)
   }
 }
 
