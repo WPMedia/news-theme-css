@@ -118,8 +118,8 @@ $background_color_3: #fff;
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 20px;
-  height: 34px;
+  height: auto;
+  width: auto;
   margin: auto;
   cursor: pointer;
   opacity: 0.7;
@@ -135,6 +135,11 @@ $background_color_3: #fff;
 
   &:active {
     opacity: 0.7;
+  }
+
+  svg {
+    height: 48px;
+    width: 48px;
   }
 }
 
