@@ -10,7 +10,7 @@ This is the CSS framework for the Fusion News Theme.
 ### Usage as a dependency:
 1. Import as an NPM dependency in your blocks repo.
 2. Set the following in the feature pack's blocks.json:
-    `"cssImport": "~@arc-test-org/news-theme-css/scss/index",` 
+    `"cssImport": "~@wpmedia/news-theme-css/scss/index",` 
     Fusion will then inject this import into all your block's scss
     files...so you do not need to import it.
 
@@ -25,5 +25,5 @@ open styleguide/index.html
 4. Push to origin master
 5. Run `npm publish`
 6. In the root package.json file of the blocks repo, update 
-@arc-test-org/news-theme-css to the new version then run in the block repo
+@wpmedia/news-theme-css to the new version then run in the block repo
 the following commands: `npx lerna clean` and then `npx lerna bootstrap`

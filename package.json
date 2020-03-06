@@ -1,5 +1,5 @@
 {
-  "name": "@arc-test-org/news-theme-css",
+  "name": "@wpmedia/news-theme-css",
   "version": "1.4.4",
   "description": "CSS Grid Framework with Bootstrap-like conventions",
   "author": "Brent Miller",
@@ -10,6 +10,14 @@
     "scss-watch": "node-sass --watch scss -o css",
     "build": "node-sass scss -o css",
     "build-guide": "kss --config ./kss-config.json"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/WPMedia/news-theme-css.git"
   },
   "devDependencies": {
     "kss": "^3.0.0-beta.25",
