@@ -139,7 +139,7 @@ img {
   padding-bottom: 0.25rem; }
 
 .padding-xxs-all {
-  margin: 0.25rem; }
+  padding: 0.25rem; }
 
 .padding-xs-left {
   padding-left: 0.5rem; }
@@ -154,7 +154,7 @@ img {
   padding-bottom: 0.5rem; }
 
 .padding-xs-all {
-  margin: 0.5rem; }
+  padding: 0.5rem; }
 
 .padding-sm-left {
   padding-left: 1rem; }
@@ -169,7 +169,7 @@ img {
   padding-bottom: 1rem; }
 
 .padding-sm-all {
-  margin: 1rem; }
+  padding: 1rem; }
 
 .padding-md-left {
   padding-left: 1.5rem; }
@@ -184,7 +184,7 @@ img {
   padding-bottom: 1.5rem; }
 
 .padding-md-all {
-  margin: 1.5rem; }
+  padding: 1.5rem; }
 
 .padding-lg-left {
   padding-left: 2rem; }
@@ -199,7 +199,7 @@ img {
   padding-bottom: 2rem; }
 
 .padding-lg-all {
-  margin: 2rem; }
+  padding: 2rem; }
 
 .padding-xl-left {
   padding-left: 3rem; }
@@ -214,7 +214,7 @@ img {
   padding-bottom: 3rem; }
 
 .padding-xl-all {
-  margin: 3rem; }
+  padding: 3rem; }
 
 .padding-xxl-left {
   padding-left: 4rem; }
@@ -229,7 +229,7 @@ img {
   padding-bottom: 4rem; }
 
 .padding-xxl-all {
-  margin: 4rem; }
+  padding: 4rem; }
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -2077,8 +2077,8 @@ figcaption, figcaption p {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 20px;
-  height: 34px;
+  height: auto;
+  width: auto;
   margin: auto;
   cursor: pointer;
   opacity: 0.7;
@@ -2089,6 +2089,9 @@ figcaption, figcaption p {
     opacity: 1; }
   .ril__navButtons:active {
     opacity: 0.7; }
+  .ril__navButtons svg {
+    height: 48px;
+    width: 48px; }
 
 .ril__navButtonPrev {
   left: 0; }
