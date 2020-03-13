@@ -45,6 +45,7 @@
         margin-top: get-half-in-rems(map-get($spacers, "md"));
         @supports (display: grid){
           grid-row-gap: map-get($spacers, "md");
+          grid-column-gap: map-get($spacers, "sm");
         }
         body ~ &:last-of-type {
           margin-bottom: map-get($spacers, "md");
@@ -58,7 +59,7 @@
 
         @supports (display: grid){
           grid-row-gap: map-get($spacers, "lg");
-          grid-column-gap: calculateRem(32px);
+          grid-column-gap: map-get($spacers, "lg");
         }
 
         body ~ &:last-of-type {
@@ -73,7 +74,7 @@
 
         @supports (display: grid){
           grid-row-gap: map-get($spacers, "xl");
-          grid-column-gap: calculateRem(32px);
+          grid-column-gap: map-get($spacers, "lg");
         }
 
         body ~ &:last-of-type {

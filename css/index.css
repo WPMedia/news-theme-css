@@ -385,7 +385,8 @@ h6, .h6-primary {
       margin-top: 0.75rem; }
       @supports (display: grid) {
         .row {
-          grid-row-gap: 1.5rem; } }
+          grid-row-gap: 1.5rem;
+          grid-column-gap: 1rem; } }
       body ~ .row:last-of-type {
         margin-bottom: 1.5rem; }
       body ~ .row:first-of-type {
