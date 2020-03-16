@@ -1,5 +1,10 @@
 // Margins
 //
+// Styleguide 7.0.0
+
+
+// Util Classes
+//
 // For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
 // However, utility margin classes are also created for each spacer entry and for
 // left, right, top, bottom and all margin attributes.
@@ -21,8 +26,7 @@
 //.margin-xs-all {
 //  margin: 0.5rem; }
 //
-// Styleguide 7.0.0
-
+// Styleguide 7.0.1
 
 @each $name, $size in $spacers {
   .margin-#{$name}-left{
@@ -40,5 +44,20 @@
   .margin-#{$name}-all{
     margin: $size;
   }
+}
 
+// @mixin block-margin-bottom
+//
+// For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
+// However, .block-margin-bottom is a convenience mix-in to add to parent element for block components that
+// require a unified margin bottom,
+//
+// Styleguide 7.0.2
+
+@mixin block-margin-bottom {
+  margin-bottom: map-get($spacers, 'sm');
+
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+    margin-bottom: map-get($spacers, 'md');
+  }
 }
