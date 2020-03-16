@@ -126,6 +126,12 @@ img {
 .margin-xxl-all {
   margin: 4rem; }
 
+.block-margin-bottom {
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 48rem) {
+    .block-margin-bottom {
+      margin-bottom: 1.5rem; } }
+
 .padding-xxs-left {
   padding-left: 0.25rem; }
 
