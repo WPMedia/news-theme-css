@@ -1,26 +1,43 @@
 // Colors
 //
-// Base Colors for the theme.
-//
-// $primary-color - #1B6FA6; primary color
-// $success-color - #00A321; success color
-// $warning-color - #E07000; warning color
-// $danger-color - #DB0A07; danger color
-// $ui-light-primary-color - #EEEEEE; General UI light primary
-// $ui-light-secondary-color - #DADADA; General UI light secondary
-// $ui-medium-primary-color - #6B6B6B; General UI medium primary
-// $ui-medium-secondary-color - #575757; General UI medium secondary
-// $ui-dark-primary-color - #3C3939; General UI dark primary
-// $ui-dark-secondary-color - #191919; General UI dark secondary
-// $ui-primary-font-color - #191919; Primary font color
-//
+// Base Colors, Button colors, etc.
 //
 // Styleguide 3.0.0
+
+
+// Base Colors for the theme.
+//
+// Please note the deprecated color variables!  These will be removed in a future release.
+//
+// $primary-color - #1B6FA6; Primary color
+// $secondary-color - #1B6FA6; Placeholder for the future
+// $success-color - #00A321; Success color
+// $warning-color - #E07000; Warning color
+// $danger-color - #DB0A07; Danger color
+// $ui-primary-font-color - #191919; Primary font color
+// $ui-light-gray - #DADADA; Light Gray
+// $ui-light-medium-gray - #DADADA; Defined for Image Captions
+// $ui-medium-gray - #575757; Medium gray
+// $ui-dark-gray - #191919; Dark gray
+// $ui-light-primary-color - #EEEEEE; General UI light primary (Deprecated)
+// $ui-light-secondary-color - #DADADA; General UI light secondary (Deprecated)
+// $ui-medium-primary-color - #6B6B6B; General UI medium primary (Deprecated)
+// $ui-medium-secondary-color - #575757; General UI medium secondary (Deprecated)
+// $ui-dark-primary-color - #3C3939; General UI dark primary (Deprecated)
+// $ui-dark-secondary-color - #191919; General UI dark secondary (Deprecated)
+//
+//
+// Styleguide 3.1.0
 $primary-color: #1B6FA6 !default;
-// $primary-color-hover: lighten( $primary-color, 10% );
+$secondary-color: $primary-color !default;
 $success-color: #00A321 !default;
 $warning-color: #E07000 !default;
 $danger-color: #DB0A07 !default;
+$ui-primary-font-color: #191919 !default;
+$ui-light-gray: #DADADA !default;
+$ui-light-medium-gray: #9A9A9A !default;
+$ui-medium-gray: #575757 !default;
+$ui-dark-gray: #191919 !default;
 $ui-light-primary-color: #EEEEEE !default;
 $ui-light-secondary-color: #DADADA !default;
 $ui-medium-light-secondary-color: #B8C1CB !default;
@@ -29,7 +46,6 @@ $ui-medium-secondary-color: #575757 !default;
 $ui-dark-primary-color: #3C3939 !default;
 $ui-dark-secondary-color: #191919 !default;
 
-$ui-primary-font-color: #191919 !default;
 
 $ui-btn-white-color: #FFFFFF;
 $button-state-colors: (
@@ -37,4 +53,7 @@ $button-state-colors: (
         warning: $warning-color,
         danger: $danger-color,
 )
+
+
+
 
