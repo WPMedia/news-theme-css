@@ -1,0 +1,15 @@
+// @mixin block-margin-bottom
+//
+// For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
+// However, @mixin block-margin-bottom is a convenience mix-in to add to parent element styles for block components that
+// require a unified margin bottom,
+//
+// Styleguide 7.3.0
+
+@mixin block-margin-bottom {
+  margin-bottom: map-get($spacers, 'sm');
+
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+    margin-bottom: map-get($spacers, 'md');
+  }
+}

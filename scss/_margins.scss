@@ -26,7 +26,7 @@
 //.margin-xs-all {
 //  margin: 0.5rem; }
 //
-// Styleguide 7.0.1
+// Styleguide 7.1.0
 
 @each $name, $size in $spacers {
   .margin-#{$name}-left{
@@ -46,29 +46,13 @@
   }
 }
 
-// @mixin block-margin-bottom
-//
-// For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
-// However, @mixin block-margin-bottom is a convenience mix-in to add to parent element styles for block components that
-// require a unified margin bottom,
-//
-// Styleguide 7.0.2
-
-@mixin block-margin-bottom {
-  margin-bottom: map-get($spacers, 'sm');
-
-  @media screen and (min-width: map-get($grid-breakpoints, 'md')){
-    margin-bottom: map-get($spacers, 'md');
-  }
-}
-
 // .block-margin-bottom
 //
 // For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
 // However, .block-margin-bottom is a convenience class to add to parent element for block components that
 // require a unified margin bottom,
 //
-// Styleguide 7.0.3
+// Styleguide 7.2.0
 
 .block-margin-bottom {
   margin-bottom: map-get($spacers, 'sm');
