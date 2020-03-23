@@ -8,6 +8,9 @@ a, a *{
   &:active, &:hover{
     color: lighten($ui-primary-font-color, 20%);
   }
+  :hover, :active{
+    color: lighten($ui-primary-font-color, 20%);
+  }
 }
 
 a img, a video, a figure, a picture{
@@ -16,7 +19,7 @@ a img, a video, a figure, a picture{
   }
 }
 
-a, a svg{
+a svg{
   &:active, &:hover{
     fill: lighten($ui-primary-font-color, 20%);
   }
