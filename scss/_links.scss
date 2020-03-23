@@ -1,17 +1,8 @@
 // Links
 //
-// Provides :active and :hover global styling of links and elements inside links
+// Provides :active and :hover  styling of links and elements inside links
 //
 // Styleguide 9.0.0
-
-a, a *{
-  &:active, &:hover{
-    color: lighten($ui-primary-font-color, 20%);
-  }
-  :hover, :active{
-    color: lighten($ui-primary-font-color, 20%);
-  }
-}
 
 a img, a video, a figure, a picture{
   &:active, &:hover{
@@ -19,8 +10,29 @@ a img, a video, a figure, a picture{
   }
 }
 
-a svg{
+
+// @mixin block-link-color-active-hover-bottom
+//
+// Mixin to add hover and active styles to text color
+// Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
+//
+// Styleguide 9.1.0
+
+@mixin link-color-active-hover($color-prop:$ui-primary-font-color) {
   &:active, &:hover{
-    fill: lighten($ui-primary-font-color, 20%);
+    color: lighten($color-prop, 20%);
+  }
+}
+
+// @mixin link-color-active-hover
+//
+// Mixin to add hover and active styles to svg fill
+// Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
+//
+// Styleguide 9.1.0
+
+@mixin link-color-active-hover($color-prop:$ui-primary-font-color) {
+  &:active svg, &:hover svg{
+    fill: lighten($color-prop, 20%);
   }
 }
