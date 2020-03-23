@@ -1701,10 +1701,10 @@ h6, .h6-primary {
     color: #FFFFFF;
     background-color: #B8C1CB; }
   .btn:not(:disabled):not(.disabled):active:hover, .btn:not(:disabled):not(.disabled):hover:hover {
-    background-color: #228cd2;
+    background-color: #46a4e1;
     text-decoration: none; }
   .btn:not(:disabled):not(.disabled):active:active, .btn:not(:disabled):not(.disabled):hover:active {
-    background-color: #228cd2;
+    background-color: #46a4e1;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 .btn-outline {
@@ -1713,41 +1713,41 @@ h6, .h6-primary {
   border: 1px solid #1B6FA6; }
   .btn-outline:not(:disabled):not(.disabled):active:hover, .btn-outline:not(:disabled):not(.disabled):hover:hover {
     color: #FFFFFF;
-    background-color: #228cd2;
+    background-color: #46a4e1;
     text-decoration: none; }
   .btn-outline:not(:disabled):not(.disabled):active:active, .btn-outline:not(:disabled):not(.disabled):hover:active {
     color: #FFFFFF;
-    background-color: #228cd2;
+    background-color: #46a4e1;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 .btn-success {
   color: #FFFFFF;
   background-color: #00A321; }
   .btn-success:not(:disabled):not(.disabled):active:hover, .btn-success:not(:disabled):not(.disabled):hover:hover {
-    background-color: #00d62b;
+    background-color: #0aff3c;
     text-decoration: none; }
   .btn-success:not(:disabled):not(.disabled):active:active, .btn-success:not(:disabled):not(.disabled):hover:active {
-    background-color: #00d62b;
+    background-color: #0aff3c;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 .btn-warning {
   color: #FFFFFF;
   background-color: #E07000; }
   .btn-warning:not(:disabled):not(.disabled):active:hover, .btn-warning:not(:disabled):not(.disabled):hover:hover {
-    background-color: #ff8a14;
+    background-color: #ffa347;
     text-decoration: none; }
   .btn-warning:not(:disabled):not(.disabled):active:active, .btn-warning:not(:disabled):not(.disabled):hover:active {
-    background-color: #ff8a14;
+    background-color: #ffa347;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 .btn-danger {
   color: #FFFFFF;
   background-color: #DB0A07; }
   .btn-danger:not(:disabled):not(.disabled):active:hover, .btn-danger:not(:disabled):not(.disabled):hover:hover {
-    background-color: #f8201d;
+    background-color: #f9514f;
     text-decoration: none; }
   .btn-danger:not(:disabled):not(.disabled):active:active, .btn-danger:not(:disabled):not(.disabled):hover:active {
-    background-color: #f8201d;
+    background-color: #f9514f;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 .btn-outline-success {
@@ -1757,11 +1757,11 @@ h6, .h6-primary {
   .btn-outline-success:not(:disabled):not(.disabled):active:hover, .btn-outline-success:not(:disabled):not(.disabled):hover:hover {
     color: #FFFFFF;
     border: 1px solid transparent;
-    background-color: #00d62b;
+    background-color: #0aff3c;
     text-decoration: none; }
   .btn-outline-success:not(:disabled):not(.disabled):active:active, .btn-outline-success:not(:disabled):not(.disabled):hover:active {
     color: #FFFFFF;
-    background-color: #00d62b;
+    background-color: #0aff3c;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 .btn-outline-warning {
@@ -1771,11 +1771,11 @@ h6, .h6-primary {
   .btn-outline-warning:not(:disabled):not(.disabled):active:hover, .btn-outline-warning:not(:disabled):not(.disabled):hover:hover {
     color: #FFFFFF;
     border: 1px solid transparent;
-    background-color: #ff8a14;
+    background-color: #ffa347;
     text-decoration: none; }
   .btn-outline-warning:not(:disabled):not(.disabled):active:active, .btn-outline-warning:not(:disabled):not(.disabled):hover:active {
     color: #FFFFFF;
-    background-color: #ff8a14;
+    background-color: #ffa347;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 .btn-outline-danger {
@@ -1785,11 +1785,11 @@ h6, .h6-primary {
   .btn-outline-danger:not(:disabled):not(.disabled):active:hover, .btn-outline-danger:not(:disabled):not(.disabled):hover:hover {
     color: #FFFFFF;
     border: 1px solid transparent;
-    background-color: #f8201d;
+    background-color: #f9514f;
     text-decoration: none; }
   .btn-outline-danger:not(:disabled):not(.disabled):active:active, .btn-outline-danger:not(:disabled):not(.disabled):hover:active {
     color: #FFFFFF;
-    background-color: #f8201d;
+    background-color: #f9514f;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
 figcaption, figcaption p {

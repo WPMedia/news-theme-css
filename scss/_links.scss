@@ -1,0 +1,23 @@
+// Links
+//
+// Provides :active and :hover global styling of links and elements inside links
+//
+// Styleguide 9.0.0
+
+a, a *{
+  &:active, &:hover{
+    color: lighten($ui-primary-font-color, 20%);
+  }
+}
+
+a img, a video, a figure, a picture{
+  &:active, &:hover{
+    opacity: 0.7;
+  }
+}
+
+a, a svg{
+  &:active, &:hover{
+    fill: lighten($ui-primary-font-color, 20%);
+  }
+}

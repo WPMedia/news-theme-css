@@ -57,13 +57,13 @@
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled):hover {
     &:hover {
-      background-color: lighten( $primary-color, 10% );
+      background-color: lighten( $primary-color, 20% );
       text-decoration: none;
     }
 
 
     &:active {
-      background-color: lighten( $primary-color, 10% );
+      background-color: lighten( $primary-color, 20% );
       border: 2px solid rgba(0,0,0,0.25);
     }
   }
@@ -80,14 +80,14 @@
   &:not(:disabled):not(.disabled):hover{
     &:hover {
       color: $ui-btn-white-color;
-      background-color: lighten( $primary-color, 10% );
+      background-color: lighten( $primary-color, 20% );
       text-decoration: none;
     }
 
 
     &:active {
       color: $ui-btn-white-color;
-      background-color: lighten( $primary-color, 10% );
+      background-color: lighten( $primary-color, 20% );
       border: 2px solid rgba(0,0,0,0.25);
     }
   }
@@ -103,13 +103,13 @@
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled):hover{
       &:hover {
-        background-color: lighten( $value, 10% );
+        background-color: lighten( $value, 20% );
         text-decoration: none;
       }
 
 
       &:active {
-        background-color: lighten( $value, 10% );
+        background-color: lighten( $value, 20% );
         border: 2px solid rgba(0,0,0,0.25);
       }
     }
@@ -128,14 +128,14 @@
       &:hover {
         color: $ui-btn-white-color;
         border: 1px solid transparent;
-        background-color: lighten( $value, 10% );
+        background-color: lighten( $value, 20% );
         text-decoration: none;
       }
 
 
       &:active {
         color: $ui-btn-white-color;
-        background-color: lighten( $value, 10% );
+        background-color: lighten( $value, 20% );
         border: 2px solid rgba(0,0,0,0.25);
       }
     }
