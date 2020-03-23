@@ -4,6 +4,12 @@
 //
 // Styleguide 9.0.0
 
+a, a *{
+  &:active, &:hover{
+    color: lighten($ui-primary-font-color, 20%);
+  }
+}
+
 a img, a video, a figure, a picture{
   &:active, &:hover{
     opacity: 0.7;
