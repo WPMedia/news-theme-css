@@ -358,8 +358,8 @@ h6, .h6-primary {
       margin-right: 8%; } }
   @media (min-width: 90rem) {
     .container {
-      margin-left: 8%;
-      margin-right: 8%; } }
+      margin-left: auto;
+      margin-right: auto; } }
 
 .row {
   display: -webkit-box;
