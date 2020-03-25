@@ -15,7 +15,7 @@
 }
 
 
-// @mixin block-link-color-active-hover-bottom
+// @mixin link-color-active-hover
 //
 // Mixin to add hover and active styles to text color
 // Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
@@ -28,14 +28,14 @@
   }
 }
 
-// @mixin link-color-active-hover
+// @mixin svg-color-active-hover
 //
 // Mixin to add hover and active styles to svg fill
 // Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
 //
 // Styleguide 9.1.0
 
-@mixin link-color-active-hover($color-prop:$ui-primary-font-color) {
+@mixin svg-color-active-hover($color-prop:$ui-primary-font-color) {
   &:active svg, &:hover svg{
     fill: lighten($color-prop, 20%);
   }
