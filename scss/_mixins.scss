@@ -13,3 +13,30 @@
     margin-bottom: map-get($spacers, 'md');
   }
 }
+
+
+// @mixin block-link-color-active-hover-bottom
+//
+// Mixin to add hover and active styles to text color
+// Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
+//
+// Styleguide 9.1.0
+
+@mixin link-color-active-hover($color-prop:$ui-primary-font-color) {
+  &:active, &:hover{
+    color: lighten($color-prop, 20%);
+  }
+}
+
+// @mixin link-color-active-hover
+//
+// Mixin to add hover and active styles to svg fill
+// Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
+//
+// Styleguide 9.1.0
+
+@mixin link-color-active-hover($color-prop:$ui-primary-font-color) {
+  &:active svg, &:hover svg{
+    fill: lighten($color-prop, 20%);
+  }
+}
