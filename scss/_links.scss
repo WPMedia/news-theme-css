@@ -1,10 +1,10 @@
 // Links
 //
-// Provides :active and :hover  styling of links and elements inside links
+// Provides :active and :hover  styling of links
 //
 // Styleguide 9.0.0
 
-a, a *{
+a {
   &:active, &:hover{
     color: lighten($ui-primary-font-color, 20%);
   }
