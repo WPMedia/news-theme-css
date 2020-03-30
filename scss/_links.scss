@@ -5,6 +5,7 @@
 // Styleguide 9.0.0
 
 a {
+  transition: color 0.3s ease;
   &:active, &:hover{
     color: lighten($ui-primary-font-color, 20%);
   }
