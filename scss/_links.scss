@@ -7,11 +7,12 @@
 a {
   transition: color 0.3s ease;
   &:active, &:hover{
-    color: lighten($ui-primary-font-color, 20%);
+    color: lighten($ui-primary-font-color, 40%);
   }
 }
 
 a img, a video, a figure, a picture{
+  transition: opacity 0.3s ease;
   &:active, &:hover{
     opacity: 0.7;
   }
