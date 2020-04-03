@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-import cssFramework from './js/framework'; //This is possible with the ESM lib
+import {framework} from './js/framework'; //This is possible with the ESM lib
 
 function readInTemplate(fileName) {
     try {
@@ -12,7 +12,7 @@ function readInTemplate(fileName) {
 }
 
 //Process Variables
-const variables = cssFramework.variables;
+const variables = framework.variables;
 let variableTmpl = readInTemplate("./templates/_variables.scss.tmpl");
 for (let [key, value] of Object.entries(variables)) {
     variableTmpl = variableTmpl.replace(`#(${key})`, value);
@@ -20,16 +20,16 @@ for (let [key, value] of Object.entries(variables)) {
 fs.writeFileSync('./scss/_variables.scss', variableTmpl);
 
 //Process Breakpoints and Spacers
-const spacers = cssFramework.spacers;
+const spacers = framework.spacers;
 let breakPointTmpl = readInTemplate("./templates/_breakpoints.scss.tmpl");
 for (let [key, value] of Object.entries(spacers)) {
     breakPointTmpl = breakPointTmpl.replace(`#(${key})`, value);
 }
-const gridBreakpoints = cssFramework.gridBreakpoints;
+const gridBreakpoints = framework.gridBreakpoints;
 for (let [key, value] of Object.entries(gridBreakpoints)) {
     breakPointTmpl = breakPointTmpl.replace(`#(${key})`, value);
 }
-const gridBreakpointsMax = cssFramework.gridBreakpointsMax;
+const gridBreakpointsMax = framework.gridBreakpointsMax;
 for (let [key, value] of Object.entries(gridBreakpointsMax)) {
     breakPointTmpl = breakPointTmpl.replace(`#(${key})`, value);
 }
