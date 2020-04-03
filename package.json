@@ -28,6 +28,7 @@
     "esm": "^3.2.25"
   },
   "files": [
+    "js",
     "css",
     "scss",
     "kss-orion-theme",
