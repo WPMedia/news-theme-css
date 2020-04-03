@@ -8,8 +8,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-watch": "node-sass --watch scss -o css",
+    "process-templates": "node -r esm processTemplates.js",
     "build": "node-sass scss -o css",
-    "build-guide": "kss --config ./kss-config.json"
+    "build-guide": "kss --config ./kss-config.json",
+    "build-all": "npm run process-templates && npm run build && npm run build-guide"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
@@ -22,7 +24,8 @@
   "devDependencies": {
     "kss": "^3.0.0-beta.25",
     "michelangelo": "^0.8.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "esm": "^3.2.25"
   },
   "files": [
     "css",
