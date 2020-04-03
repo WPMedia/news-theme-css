@@ -1792,11 +1792,15 @@ h6, .h6-primary {
     background-color: #f9514f;
     border: 2px solid rgba(0, 0, 0, 0.25); }
 
-a:active, a:hover, a *:active, a *:hover {
-  color: #4c4c4c; }
+a {
+  transition: color 0.3s ease; }
+  a:active, a:hover {
+    color: #7f7f7f; }
 
-a img:active, a img:hover, a video:active, a video:hover, a figure:active, a figure:hover, a picture:active, a picture:hover {
-  opacity: 0.7; }
+a img, a video, a figure, a picture {
+  transition: opacity 0.3s ease; }
+  a img:active, a img:hover, a video:active, a video:hover, a figure:active, a figure:hover, a picture:active, a picture:hover {
+    opacity: 0.7; }
 
 figcaption, figcaption p {
   color: #9A9A9A;

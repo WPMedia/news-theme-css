@@ -23,8 +23,9 @@
 // Styleguide 9.1.0
 
 @mixin link-color-active-hover($color-prop:$ui-primary-font-color) {
+  transition: color 0.3s ease;
   &:active, &:hover{
-    color: lighten($color-prop, 20%);
+    color: lighten($color-prop, 40%);
   }
 }
 
@@ -36,6 +37,7 @@
 // Styleguide 9.1.0
 
 @mixin svg-color-active-hover($color-prop:$ui-primary-font-color) {
+  transition: fill 0.3s ease;
   &:active svg, &:hover svg{
     fill: lighten($color-prop, 20%);
   }

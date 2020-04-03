@@ -1,16 +1,18 @@
 // Links
 //
-// Provides :active and :hover  styling of links and elements inside links
+// Provides :active and :hover  styling of links
 //
 // Styleguide 9.0.0
 
-a, a *{
+a {
+  transition: color 0.3s ease;
   &:active, &:hover{
-    color: lighten($ui-primary-font-color, 20%);
+    color: lighten($ui-primary-font-color, 40%);
   }
 }
 
 a img, a video, a figure, a picture{
+  transition: opacity 0.3s ease;
   &:active, &:hover{
     opacity: 0.7;
   }
