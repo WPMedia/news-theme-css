@@ -25,7 +25,8 @@
     "kss": "^3.0.0-beta.25",
     "michelangelo": "^0.8.0",
     "node-sass": "^4.13.0",
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "styled-components": "^5.0.1"
   },
   "files": [
     "js",

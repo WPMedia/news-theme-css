@@ -4,7 +4,12 @@ const calculateRem = function(valueInPixals){
   valueInPixals = parseFloat(valueInPixals.replace('px', ''));
   return `${valueInPixals / defaultFontSize}rem`;
 };
-
+/**
+ *
+ * @param col
+ * @param amt:Integer A percentage amount.  Positive will lighten and Negative will darken
+ * @returns {newColor:string}
+ */
 const lightenDarkenColor = function (col, amt) {
   let usePound = false;
   if (col[0] === "#") {
