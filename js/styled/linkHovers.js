@@ -64,7 +64,7 @@ const LinkForegroundHoverCSSProp = `
  */
 const LinkSVGHover = styled.a`
   transition: fill 0.3s ease;
-  &:active svg, &:hover svg{
+  &:active svg path, &:hover svg path{
     fill: ${(props) => lightenDarkenColor(props.primaryColor, 40)};
   }
 `;
@@ -77,7 +77,7 @@ const LinkSVGHover = styled.a`
  */
 const LinkSVGHoverCSSProp = `
   transition: fill 0.3s ease;
-  &:active svg, &:hover svg{
+  &:active svg path, &:hover svg path{
     fill: ${(props) => lightenDarkenColor(props.primaryColor, 40)};
   }
 `;
