@@ -25,12 +25,19 @@
 //          <article class="col-sm-md-12 col-lg-xl-8">Shortcut to Third Example</article>
 //       </div>
 //   </div>
+//   <div class="container">
+//       <div class="row" style="height:200px">
+//          <article class="col-sm-md-12 col-lg-xl-8">Fourth Example - 60/40 split</article>
+//          <article class="col-sm-md-12 col-lg-xl-4">Shortcut to Fourth Example</article>
+//       </div>
+//   </div>
 //
 // Styleguide 2.4.0
 @for $i from 1 through $grid-columns {
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')) {
     .col-sm-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -46,6 +53,7 @@
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-sm-md-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -61,6 +69,7 @@
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-sm-lg-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -76,6 +85,7 @@
   @media (min-width: map-get($grid-breakpoints, 'sm')) {
     .col-sm-xl-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -93,6 +103,7 @@
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-md-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -108,6 +119,7 @@
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-md-lg-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -123,6 +135,7 @@
   @media (min-width: map-get($grid-breakpoints, 'md')) {
     .col-md-xl-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -140,6 +153,7 @@
   @media (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-lg-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -155,6 +169,7 @@
   @media (min-width: map-get($grid-breakpoints, 'lg')) {
     .col-lg-xl-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -172,6 +187,7 @@
   @media (min-width: map-get($grid-breakpoints, 'xl')) {
     .col-xl-#{$i} {
       max-width: ($base-col-percent * $i);
+      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
