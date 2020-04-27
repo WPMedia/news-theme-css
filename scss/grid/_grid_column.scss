@@ -37,7 +37,6 @@
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')) {
     .col-sm-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -45,15 +44,12 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-sm-md-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -61,15 +57,12 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-sm-lg-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -77,15 +70,12 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'sm')) {
     .col-sm-xl-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -93,8 +83,6 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
@@ -103,7 +91,6 @@
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'md')) {
     .col-md-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -111,15 +98,12 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-md-lg-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -127,15 +111,12 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'md')) {
     .col-md-xl-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -143,8 +124,6 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
@@ -153,7 +132,6 @@
   @media (min-width: map-get($grid-breakpoints, 'lg')) and (max-width: map-get($grid-breakpoints-max, 'lg')) {
     .col-lg-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -161,15 +139,12 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
   @media (min-width: map-get($grid-breakpoints, 'lg')) {
     .col-lg-xl-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -177,8 +152,6 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
   }
@@ -187,7 +160,6 @@
   @media (min-width: map-get($grid-breakpoints, 'xl')) {
     .col-xl-#{$i} {
       max-width: ($base-col-percent * $i);
-      width: 100%;
       @if $i == $grid-columns {
         flex: 1 0 auto;
       }@else {
@@ -195,10 +167,19 @@
       }
       @supports (display: grid){
         grid-column-start: span #{$i};
-        flex-basis: initial;
-        max-width: initial;
       }
     }
+  }
+}
+
+[class^='col-'] {
+  width: 100%;
+}
+
+@supports (display: grid) {
+  [class^='col-'] {
+    flex-basis: initial;
+    max-width: initial;
   }
 }
 
