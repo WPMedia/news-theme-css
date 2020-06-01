@@ -422,6 +422,12 @@ h6, .h6-primary {
       body ~ .row:first-of-type {
         margin-top: 3rem; } }
 
+.reduce-internal-row-col-gap .row {
+  grid-column-gap: 3%; }
+  @media all and (min-width: 48rem) {
+    .reduce-internal-row-col-gap .row {
+      grid-column-gap: 3%; } }
+
 @media (min-width: 0rem) and (max-width: 47.9375rem) {
   .col-sm-1 {
     max-width: 8.33333%;

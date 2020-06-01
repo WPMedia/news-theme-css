@@ -87,3 +87,10 @@
     }
   }
 }
+
+.reduce-internal-row-col-gap .row {
+  grid-column-gap: 3%;
+  @media all and (min-width: map-get($grid-breakpoints, md)) {
+    grid-column-gap: 3%;
+  }
+}
