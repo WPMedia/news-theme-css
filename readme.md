@@ -18,6 +18,12 @@ This is the CSS framework for the Fusion News Theme.
 After running `npm run build` and then `npm run build-guide`, 
 open styleguide/index.html
 
+### Update the style of the styleguide (meta)
+- Go to michelangelo/kss_styleguide/custom-template/index.hbs
+- Change relevant issues 
+- Make sure to run `npm run build-all` to see effect
+- View locally in styleguide/index.html
+
 ### To publish a new version
 1. Run build and then build-guide
 2. Commit changes and push to origin master
