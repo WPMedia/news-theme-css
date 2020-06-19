@@ -1,19 +1,15 @@
 {
   "title": "News Theme CSS",
-
   "//": "The source and destination paths are relative to this file.",
   "source": [
     "scss/"
   ],
-  "destination":  "styleguide/",
-
+  "destination": "styleguide/",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
-
   "//": "The css and js paths are URLs relative to the generated style guide.",
   "css": [
     "../css/index.css",
     "../styleguide.css"
   ],
-  "js": [
-  ]
+  "js": []
 }
