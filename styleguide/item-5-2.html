@@ -1,21 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>News Theme CSS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="generator" content="kss-node">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
-    <link rel="stylesheet" href="kss-assets/vendor/prism.css">
-    <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/index.css">
+<head>
+  <title>News Theme CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="generator" content="kss-node">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
+  <link rel="stylesheet" href="kss-assets/vendor/prism.css">
+  <link rel="stylesheet" href="kss-assets/css/kss.css">
+  <link rel="stylesheet" href="https://nav-prod.home.static.arcpublishing.com/css/arcnav.css">
+  <script src="https://nav-prod.home.static.arcpublishing.com/js/arcnav-standalone.js" async></script>
+  <link rel="stylesheet" href="../css/index.css">
 <link rel="stylesheet" href="../styleguide.css">
 
-  </head>
 
-  <body class="kss-body">
+  <style>
+    .kss-documentation {
+      /* height from alc nav to doc container plus 20px */
+      padding-top: 80px !important;
+    }
+
+    .kss-navigation {
+      /* height of alc nav */
+      top: 60px !important;
+    }
+
+    @media only screen and (max-width: 800px) {
+
+      .kss-header {
+        /* needed for mobile */
+        top: 60px !important;
+      }
+
+      .kss-documentation {
+        /* height from alc nav to doc container plus kss header */
+        padding-top: 110px !important;
+      }
+    }
+
+
+
+
+    #alc-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000000;
+    }
+  </style>
+</head>
+
+<body class="kss-body">
+  <div id="alc-nav">
+    <script id="navbar" type="application/json">
+  {
+    "appname": "Arc Learning Center",
+    "homeLink": {
+      "href": "/alc"
+    },
+    "links": [
+      {
+        "name": "Arc Answers",
+        "href": "/alc/answers/",
+        "text": {
+          "en": "Arc Answers"
+        }
+      },
+      {
+        "name": "Release Notes",
+        "href": "/alc/release-notes",
+        "text": {
+          "en": "Release Notes"
+        }
+      },
+      {
+        "name": "Support",
+        "href": "https://arcpublishing.atlassian.net/servicedesk",
+        "text": {
+          "en": "Support"
+        }
+      },
+      {
+        "name": "Ideas",
+        "href": "https://ideas.arcpublishing.com/",
+        "text": {
+          "en": "Ideas"
+        }
+      }
+    ]
+  }
+</script>
+  </div>
+  <div id="kss-body__app-container">
 
     <!-- header. -->
     <header class="kss-header">
@@ -39,60 +119,60 @@
             <span class="kss-nav__name">Introduction</span>
           </a>
         </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-1.html">
-              <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">SCSS</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-2.html">
-              <span class="kss-nav__ref">2</span>
-              <span class="kss-nav__name">Grid</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-3.html">
-              <span class="kss-nav__ref">3</span>
-              <span class="kss-nav__name">Colors</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-4.html">
-              <span class="kss-nav__ref">4</span>
-              <span class="kss-nav__name">Utils</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-5.html">
-              <span class="kss-nav__ref">5</span>
-              <span class="kss-nav__name">Typography</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-6.html">
-              <span class="kss-nav__ref">6</span>
-              <span class="kss-nav__name">Buttons</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-7.html">
-              <span class="kss-nav__ref">7</span>
-              <span class="kss-nav__name">Margins</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-8.html">
-              <span class="kss-nav__ref">8</span>
-              <span class="kss-nav__name">Padding</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
-            <a class="" href="section-9.html">
-              <span class="kss-nav__ref">9</span>
-              <span class="kss-nav__name">Links</span>
-            </a>
-          </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-1.html">
+            <span class="kss-nav__ref">1</span>
+            <span class="kss-nav__name">SCSS</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-2.html">
+            <span class="kss-nav__ref">2</span>
+            <span class="kss-nav__name">Grid</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-3.html">
+            <span class="kss-nav__ref">3</span>
+            <span class="kss-nav__name">Colors</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-4.html">
+            <span class="kss-nav__ref">4</span>
+            <span class="kss-nav__name">Utils</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-5.html">
+            <span class="kss-nav__ref">5</span>
+            <span class="kss-nav__name">Typography</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-6.html">
+            <span class="kss-nav__ref">6</span>
+            <span class="kss-nav__name">Buttons</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-7.html">
+            <span class="kss-nav__ref">7</span>
+            <span class="kss-nav__name">Margins</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-8.html">
+            <span class="kss-nav__ref">8</span>
+            <span class="kss-nav__name">Padding</span>
+          </a>
+        </li>
+        <li class="kss-nav__item">
+          <a class="" href="section-9.html">
+            <span class="kss-nav__ref">9</span>
+            <span class="kss-nav__name">Links</span>
+          </a>
+        </li>
       </ul>
     </section>
     <!-- /navigation. -->
@@ -101,33 +181,36 @@
     <!-- documentation. -->
     <section class="kss-documentation">
 
-        <!--
+      <!--
           display each section, in order.
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-5-2">
+      <header class="kss-section kss-section--depth-2" id="kssref-5-2">
 
-            <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>typography/_index.scss</span>, line <span>30</span></p>
+          <article class="kss-section__content">
+            <p class="kss-section__source">Source: <span>typography/_index.scss</span>, line <span>30</span>
+            </p>
 
-              <a class="kss-section__permalink" href="#kssref-5-2">
-                <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">5.2</span>
-                  <span class="kss-section__name">Headers</span>
-                </h2>
-              </a>
+            <a class="kss-section__permalink" href="#kssref-5-2">
+              <h2 class="kss-section__item kss-section__item--depth-2">
+                <span class="kss-section__ref">5.2</span>
+                <span class="kss-section__name">Headers</span>
+              </h2>
+            </a>
 
-                <div class="kss-section__description"><p>Also includes class-based versions: .h#-primary and .h#-secondary</p>
+            <div
+              class="kss-section__description">
+              <p>Also includes class-based versions: .h#-primary and .h#-secondary</p>
 </div>
 
-            </article>
+          </article>
 
-              <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Example</h1>
+          <article class="kss-section__modifiers">
+            <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><h1 class="defcon">Defcon Class</h1>
+            <div class="kss-modifiers__example"><h1 class="defcon">Defcon Class</h1>
 <h1>This is a header 1</h1>
 <h2>This is a header 2</h2>
 <h3>This is a header 3</h3>
@@ -147,10 +230,10 @@
 <h5 class="h5-secondary">This is a header 5 secondary</h5>
 <h6 class="h6-secondary">This is a header 6 secondary</h6></div>
 
-              </article>
+          </article>
 
-                <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;h1 class&#x3D;&quot;defcon&quot;&gt;Defcon Class&lt;/h1&gt;
+          <article class="kss-section__markup">
+            <pre><code class="language-markup">&lt;h1 class&#x3D;&quot;defcon&quot;&gt;Defcon Class&lt;/h1&gt;
 &lt;h1&gt;This is a header 1&lt;/h1&gt;
 &lt;h2&gt;This is a header 2&lt;/h2&gt;
 &lt;h3&gt;This is a header 3&lt;/h3&gt;
@@ -169,20 +252,21 @@
 &lt;h4 class&#x3D;&quot;h4-secondary&quot;&gt;This is a header 4 secondary&lt;/h4&gt;
 &lt;h5 class&#x3D;&quot;h5-secondary&quot;&gt;This is a header 5 secondary&lt;/h5&gt;
 &lt;h6 class&#x3D;&quot;h6-secondary&quot;&gt;This is a header 6 secondary&lt;/h6&gt;</code></pre>
-                </article>
+          </article>
 
-            </header>
+      </header>
     </section>
     <!-- /documentation. -->
 
 
 
-  <!-- scripts. -->
-  <script src="kss-assets/vendor/jquery.js"></script>
-  <script src="kss-assets/vendor/prism.js"></script>
-  <script src="kss-assets/js/kss.js"></script>
-  
-  <!-- /scripts. -->
+    <!-- scripts. -->
+    <script src="kss-assets/vendor/jquery.js"></script>
+    <script src="kss-assets/vendor/prism.js"></script>
+    <script src="kss-assets/js/kss.js"></script>
+    
+    <!-- /scripts. -->
+  </div>
+</body>
 
-  </body>
 </html>
