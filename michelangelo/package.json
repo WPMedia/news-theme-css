@@ -1,0 +1,27 @@
+{
+  "name": "michelangelo",
+  "version": "0.8.0",
+  "description": "This is a custom template for the kss-node living style guide.",
+  "repository": "https://github.com/stamkracht/michelangelo.git",
+  "license": "MIT",
+  "homepage": "https://github.com/stamkracht/michelangelo",
+  "scripts": {
+    "kss": "kss --config kss-config.json",
+    "kss:show": "opn kss_styleguide/styleguide/index.html"
+  },
+  "devDependencies": {
+    "kss": "^3.0.0-beta.18",
+    "opn-cli": "^3.1.0"
+  },
+  "keywords": [
+    "kss",
+    "kss-node",
+    "styleguide",
+    "css",
+    "scss",
+    "template",
+    "theme",
+    "living styleguide",
+    "LSG"
+  ]
+}
