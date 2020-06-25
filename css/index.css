@@ -1388,11 +1388,11 @@ h6, .h6-primary {
       .col-xl-12 {
         grid-column-start: span 12; } } }
 
-[class^='col-'] {
+[class*='col-'] {
   width: 100%; }
 
 @supports (display: grid) {
-  [class^='col-'] {
+  [class*='col-'] {
     flex-basis: initial;
     max-width: initial; } }
 
