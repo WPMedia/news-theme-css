@@ -1,16 +1,10 @@
-# News Theme CSS
+# Theme CSS
 ## Overview
-This is the CSS framework for the Fusion News Theme. It is what it is.
+This is the CSS framework for the Fusion News Theme.
 
-### Commands:
-    "scss-watch": "node-sass --watch scss -o css",
-    "build": "node-sass scss -o css",
-    "build-guide": "kss --config ./kss-config.json"
-    
 ### Usage as a dependency:
-1. Import as an NPM dependency.
-2. @import scss/index.scss and over-ride any variables or convert them to theme placeholders
-
-### View the styleguide
-Open styleguide/index.html 
-
+1. Import as an NPM dependency in your blocks repo.
+2. Set the following in the feature pack's blocks.json:
+    `"cssImport": "~@wpmedia/news-theme-css/scss/index",` 
+    Fusion will then inject this import into all your block's scss
+    files...so you do not need to import it.
