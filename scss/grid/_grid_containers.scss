@@ -18,10 +18,10 @@
 // .container
 //
 // Provides a centered container with margins based on breakpoints.
-// Useful for wrapping a row class (Css Grid)
+// Useful for wrapping a row class (CSS Grid)
 //
-// Margins stay at 5% for sm and md grid breakpoints,
-// for lg they are 8% and auto for xl
+// Margins stay at 5% for `sm` and `md` grid breakpoints,
+// for lg they are 8% and auto for `xl`
 //
 // Markup:
 //   <div class="container">
@@ -36,7 +36,7 @@
 
 
 
-  //Margins stay at 5% for sm and md grid breakpoints
+  //Margins stay at 5% for `sm` and `md` grid breakpoints
   @each $name, $size in $grid-breakpoints {
     @media (min-width: $size) {
       @if $name == "lg" {

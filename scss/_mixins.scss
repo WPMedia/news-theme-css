@@ -18,7 +18,9 @@
 // @mixin link-color-active-hover
 //
 // Mixin to add hover and active styles to text color
-// Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
+// 
+// - Params:
+//   - `$color-prop`: Color to lighten (defaults to $ui-primary-font-color)
 //
 // Styleguide 9.1.0
 
@@ -32,7 +34,9 @@
 // @mixin svg-color-active-hover
 //
 // Mixin to add hover and active styles to svg fill
-// Prams: $color-prop - Color to lighten (defaults to $ui-primary-font-color)
+//
+// - Params:
+//  - `$color-prop`: Color to lighten (defaults to $ui-primary-font-color)
 //
 // Styleguide 9.1.0
 
