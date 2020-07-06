@@ -15,8 +15,18 @@ This is the CSS framework for the Fusion News Theme.
     files...so you do not need to import it.
 
 ### View the styleguide
-After running `npm run build` and then `npm run build-guide`, 
-open styleguide/index.html
+
+After running `npm run build` and then `npm run build-guide`, open styleguide/index.html.
+
+### Publish The Styleguide
+
+- `npm run build-all`
+- Rename output for uploading ... news-theme-css \$ `mv styleguide news-theme-css`
+- Authenticate with okta for dev admin privileges within wp arc account
+- Go to s3 bucket for hosting docs `arc-learning-center-static`
+- Go to directory `docs/styleguides`
+- Replace `news-theme-css` with your output
+- See the live output https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css/ after signing into admin in okta
 
 ### Update the style of the styleguide (meta)
 - Go to michelangelo/kss_styleguide/custom-template/index.hbs
