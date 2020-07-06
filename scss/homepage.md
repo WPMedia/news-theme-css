@@ -8,7 +8,7 @@ This is the CSS framework for the Fusion News Theme that provides the foundation
 - Utility Sass functions (i.e. convert px to rems, etc.)
 
 ### Getting Started:
-To use Theme CSS within a feature pack repository, it must be configurerd through a file in the root of the repo called `blocks.json`. This is a file that Fusion (Hydrate versions) knows to
+To use Theme CSS within a feature pack repository, it must be configured through a file in the root of the repo called `blocks.json`. This is a file that Fusion (Hydrate versions) knows to
 look for and run specific internal build commands to bring everything
 together.
 
@@ -19,8 +19,8 @@ purpose:
 |---|---|
 | **cssFramework** |  The CSS framework package being used. For News theme, it is the news-theme-css package. |
 | **cssImport**   |  Specifies the main Sass file entry point into the framework. This is leveraged by fusion to automatically import the framework into each of the block's source file in fusion-news-theme-blocks during build time. So, in other words, you do not have to explicitly import the css framework in your blocks source code. |
-| **sassImport**   |  Specifies the entry point for the Sass variables from the cssframework so that these variables can be leveraged in custom CSS for a consistent look and feel. |
-| **sassVariableOverrides**   | In addition to using styled components to set theme properties, we also want the css framework to pick up on the custom settings and over-ride the appropriate Sass default properties. Fusion handles the override process internally.  |
+| **sassImport**   |  Specifies the entry point for the Sass variables from the CSS framework so that these variables can be leveraged in custom CSS for a consistent look and feel. |
+| **sassVariableOverrides**   | In addition to using styled components to set theme properties, we also want the CSS framework to pick up on the custom settings and override the appropriate Sass default properties. Fusion handles the override process internally.  |
 | **values** | This is where the custom theme values for both `siteProperties` and `styleProperties` are set for the site. There are two main areas: default and per site. In order to override a default value for a specific Sass variable, add the relevant key-value pair to the `styleProperties` object.  |
 
 #### Example
