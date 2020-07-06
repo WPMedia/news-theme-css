@@ -26,6 +26,7 @@ After running `npm run build` and then `npm run build-guide`, open styleguide/in
 - Go to s3 bucket for hosting docs `arc-learning-center-static`
 - Go to directory `docs/styleguides`
 - Replace `news-theme-css` with your output
+- Since the styleguide is dependent on the css files `/css/index.css/` and `styleguide.css`, these files should also be moved to the same bucket if there have been any updates
 - See the live output https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css/ after signing into admin in okta
 
 ### Update the style of the styleguide (meta)
