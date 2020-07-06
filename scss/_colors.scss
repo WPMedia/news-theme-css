@@ -1,13 +1,11 @@
 // Colors
 //
-// Base Colors, Button colors, etc.
+// Colors have the option to be overriden in the `blocks.json` file
 //
 // Styleguide 3.0.0
 
 
 // Base Colors for the theme.
-//
-// Please note the deprecated color variables!  These will be removed in a future release.
 //
 // $primary-color - #1B6FA6; Primary color
 // $secondary-color - #1B6FA6; Placeholder for the future
@@ -22,12 +20,6 @@
 // $ui-primary-font-color - #191919; Primary font color (maps to $ui-dark-gray)
 // $ui-primary-header-color - #191919; Primary header color (maps to $ui-dark-gray)
 // $link-color - #1B6FA6; Link color (maps to $primary-color)
-// $ui-light-primary-color - #EEEEEE; General UI light primary (Deprecated)
-// $ui-light-secondary-color - #DADADA; General UI light secondary (Deprecated)
-// $ui-medium-primary-color - #6B6B6B; General UI medium primary (Deprecated)
-// $ui-medium-secondary-color - #575757; General UI medium secondary (Deprecated)
-// $ui-dark-primary-color - #3C3939; General UI dark primary (Deprecated)
-// $ui-dark-secondary-color - #191919; General UI dark secondary (Deprecated)
 //
 //
 // Styleguide 3.1.0
@@ -44,13 +36,6 @@ $image-caption-rule-color: #9A9A9A !default;
 $ui-primary-font-color: #191919 !default;
 $ui-primary-header-color: $ui-dark-gray !default;
 $link-color: $primary-color !default;
-$ui-light-primary-color: #EEEEEE !default;
-$ui-light-secondary-color: #DADADA !default;
-$ui-medium-light-secondary-color: #B8C1CB !default;
-$ui-medium-primary-color: #6B6B6B !default;
-$ui-medium-secondary-color: #575757 !default;
-$ui-dark-primary-color: #3C3939 !default;
-$ui-dark-secondary-color: #191919 !default;
 
 
 $ui-btn-white-color: #FFFFFF;

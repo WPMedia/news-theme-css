@@ -181,21 +181,106 @@
     <!-- documentation. -->
     <section class="kss-documentation">
       <article class="kss-markdown">
-        <h1>News Theme CSS</h1>
+        <h1>Theme CSS</h1>
 <h2>Overview</h2>
-<p>This is the CSS framework for the Fusion News Theme. It is what it is.</p>
-<h3>Commands:</h3>
-<pre><code>&quot;scss-watch&quot;: &quot;node-sass --watch scss -o css&quot;,
-&quot;build&quot;: &quot;node-sass scss -o css&quot;,
-&quot;build-guide&quot;: &quot;kss --config ./kss-config.json&quot;
+<p>This is the CSS framework for the Fusion News Theme that provides the foundation CSS for the news theme. The main responsibilities of this CSS framework are as follow:</p>
+<ul>
+<li>A CSS grid layout framework (with flexbox fallback for older browsers)</li>
+<li>CSS reset</li>
+<li>Typography</li>
+<li>Breakpoints and spacing</li>
+<li>Utility Sass functions (i.e. convert px to rems, etc.)</li>
+</ul>
+<h3>Getting Started:</h3>
+<p>To use Theme CSS within a feature pack repository, it must be configured through a file in the root of the repo called <code>blocks.json</code>. This is a file that Fusion (Hydrate versions) knows to
+look for and run specific internal build commands to bring everything
+together.</p>
+<p>Below describes the various properties related to the Theme CSS that are in blocks.json and their
+purpose:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>cssFramework</strong></td>
+<td>The CSS framework package being used. For News theme, it is the news-theme-css package.</td>
+</tr>
+<tr>
+<td><strong>cssImport</strong></td>
+<td>Specifies the main Sass file entry point into the framework. This is leveraged by fusion to automatically import the framework into each of the block's source file in fusion-news-theme-blocks during build time. So, in other words, you do not have to explicitly import the css framework in your blocks source code.</td>
+</tr>
+<tr>
+<td><strong>sassImport</strong></td>
+<td>Specifies the entry point for the Sass variables from the CSS framework so that these variables can be leveraged in custom CSS for a consistent look and feel.</td>
+</tr>
+<tr>
+<td><strong>sassVariableOverrides</strong></td>
+<td>In addition to using styled components to set theme properties, we also want the CSS framework to pick up on the custom settings and override the appropriate Sass default properties. Fusion handles the override process internally.</td>
+</tr>
+<tr>
+<td><strong>values</strong></td>
+<td>This is where the custom theme values for both <code>siteProperties</code> and <code>styleProperties</code> are set for the site. There are two main areas: default and per site. In order to override a default value for a specific Sass variable, add the relevant key-value pair to the <code>styleProperties</code> object.</td>
+</tr>
+</tbody>
+</table>
+<h4>Example</h4>
+<p>Here is an example of what a the CSS setup in the <code>block.json</code> might look like.</p>
+<pre class="hljs"><code class="language-">{
+  &quot;cssFramework&quot;: &quot;@wpmedia/news-theme-css&quot;,
+  &quot;cssImport&quot;: &quot;~@wpmedia/news-theme-css/scss/index&quot;,
+  &quot;sassImport&quot;: [
+    &quot;~@wpmedia/news-theme-css/scss/_variables.scss&quot;,
+    &quot;~@wpmedia/news-theme-css/scss/_functions.scss&quot;,
+    &quot;~@wpmedia/news-theme-css/scss/_colors.scss&quot;,
+    &quot;~@wpmedia/news-theme-css/scss/_breakpoints.scss&quot;,
+    &quot;~@wpmedia/news-theme-css/scss/_mixins.scss&quot;
+  ],
+  &quot;sassVariableOverrides&quot;: [
+    &quot;$primary-font-family: $theme-primary-font-family;&quot;,
+    &quot;$secondary-font-family: $theme-primary-font-family;&quot;,
+    &quot;$primary-color: $theme-primary-color;&quot;
+  ],
+  &quot;values&quot;: {
+    &quot;default&quot;: {
+      &quot;siteProperties&quot;: {
+        &quot;websiteName&quot;: &quot;The Gazette&quot;,
+        &quot;locale&quot;: &quot;en&quot;,
+      },
+      &quot;styleProperties&quot;: {
+        &quot;primary-font-family&quot;: &quot;Arial, 'Helvetica Neue', Helvetica, sans-serif&quot;,
+        &quot;secondary-font-family&quot;: &quot;Georgia,Times,Times New Roman,serif&quot;,
+        &quot;primary-color&quot;: &quot;#1B6FA6&quot;
+      }
+    },
+    &quot;sites&quot;: {
+      &quot;arc-demo-1&quot;: {
+        &quot;siteProperties&quot;: {
+          &quot;websiteName&quot;: &quot;Arc Demo 1&quot;,
+        },
+        &quot;styleProperties&quot;: {
+          &quot;primary-font-family&quot;: &quot;Work Sans&quot;,
+          &quot;secondary-font-family&quot;: &quot;Work Sans&quot;,
+          &quot;primary-color&quot;: &quot;#37a1e0&quot;
+        }
+      },
+      &quot;arc-demo-2&quot;: {
+        &quot;siteProperties&quot;: {
+          &quot;websiteName&quot;: &quot;Arc Demo 2&quot;,
+        },
+        &quot;styleProperties&quot;: {
+          &quot;primary-font-family&quot;: &quot;Eczar&quot;,
+          &quot;secondary-font-family&quot;: &quot;Eczar&quot;,
+          &quot;primary-color&quot;: &quot;#37a1e0&quot;
+        }
+      }
+    }
+  }
+}
 </code></pre>
-<h3>Usage as a dependency:</h3>
-<ol>
-<li>Import as an NPM dependency.</li>
-<li>@import scss/index.scss and over-ride any variables or convert them to theme placeholders</li>
-</ol>
-<h3>View the styleguide</h3>
-<p>Open styleguide/index.html</p>
 
       </article>
     </section>
