@@ -9,7 +9,7 @@ context:
 
     git:
       owner: WPMedia
-      branch: staging
+      branch: master
       repo: news-theme-css
 
     stages:
