@@ -1,0 +1,28 @@
+template: v1/cfn/shared/pipelines/simple-pipeline/simple-pipeline.template.yml
+stack_name: news-theme-css-inf-pipeline
+region: us-east-1
+
+context:
+  pipeline:
+    name: news-theme-css-inf
+    restart_on_update: true
+
+    git:
+      owner: WPMedia
+      branch: master
+      repo: news-theme-css
+
+    stages:
+      - name: Pipeline
+        actions:
+          - name: RebuildThisPipeline
+            config: cfn/configs/deployment.yml
+
+      - name: Package-and-Deploy
+        actions:
+          - name: Package-and-Deploy
+            image: aws/codebuild/standard:2.0
+            buildspec: codebuild/buildspec.yml
+            outputArtifact: ServerlessPackage
+            env_vars:
+              phase: Package

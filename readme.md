@@ -44,3 +44,6 @@ After running `npm run build` and then `npm run build-guide`, open styleguide/in
 6. In the root package.json file of the blocks repo, update 
 @wpmedia/news-theme-css to the new version then run in the block repo
 the following commands: `npx lerna clean` and then `npx lerna bootstrap`
+
+### Deploy to Arc Learning Center
+News theme CSS automatically deploys to ALC. You can find the live version [here](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css)

@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo Running npm install...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build-all
+  post_build:
+    commands:
+      - echo Build finished on `date`
+      - echo Deployment started on `date`
+      - echo Syncing files...
+      - aws s3 sync styleguide s3://arc-learning-center-static/docs/styleguides/news-theme-css --acl public-read --cache-control max-age=31536000
+
+artifacts:
+  files:
+    - styleguide/**/*
+    - css/**
+    - styleguide.css
