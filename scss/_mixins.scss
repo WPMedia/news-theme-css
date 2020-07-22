@@ -46,3 +46,24 @@
     fill: lighten($color-prop, 20%);
   }
 }
+
+@mixin container-vertial-spacing {
+  > * {
+    margin-bottom: map-get($spacers, 'lg');
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')) {
+    > * {
+      margin-bottom: map-get($spacers, 'md');
+    }
+  }
+}
+
+@mixin container-hr-separator {
+  > hr {
+    background-color: $border-rule-color; // $ui-light-gray;
+    border: 0;
+    height: 1px;
+    margin-top: 0;
+  }
+}
