@@ -47,6 +47,10 @@
   }
 }
 
+// @mixin container-vertial-spacing
+// 
+// Mixin to add vertical spaing to the elements in a container block
+//
 @mixin container-vertial-spacing {
   > * {
     margin-bottom: map-get($spacers, 'lg');
@@ -59,6 +63,10 @@
   }
 }
 
+// @mixin container-hr-separator
+//
+// Mixin to add style to the HR element used as separator
+//
 @mixin container-hr-separator {
   > hr {
     background-color: $border-rule-color; // $ui-light-gray;
