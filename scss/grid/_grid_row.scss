@@ -23,65 +23,28 @@
   @supports (display: grid){
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-row-gap: map-get($spacers, "sm");
     grid-column-gap: 0;
     grid-auto-flow: dense;
   }
 
-  margin-bottom: get-half-in-rems(map-get($spacers, "sm"));
-  margin-top: get-half-in-rems(map-get($spacers, "sm"));
   width: 100%;
-  body ~ &:last-of-type {
-    margin-bottom: map-get($spacers, "sm");
-  }
-  body ~ &:first-of-type {
-    margin-top: map-get($spacers, "sm");
-  }
 
   @each $name, $size in $grid-breakpoints {
     @media (min-width: $size) {
       @if $name == "md" {
-        margin-bottom: get-half-in-rems(map-get($spacers, "md"));
-        margin-top: get-half-in-rems(map-get($spacers, "md"));
         @supports (display: grid){
-          grid-row-gap: map-get($spacers, "md");
           grid-column-gap: map-get($spacers, "sm");
         }
-        body ~ &:last-of-type {
-          margin-bottom: map-get($spacers, "md");
-        }
-        body ~ &:first-of-type {
-          margin-top: map-get($spacers, "md");
-        }
       } @else if $name == "lg" {
-        margin-bottom: #{get-half-in-rems(map-get($spacers, "lg"))};
-        margin-top: #{get-half-in-rems(map-get($spacers, "lg"))};
 
         @supports (display: grid){
-          grid-row-gap: map-get($spacers, "lg");
           grid-column-gap: map-get($spacers, "lg");
         }
 
-        body ~ &:last-of-type {
-          margin-bottom: map-get($spacers, "lg");
-        }
-        body ~ &:first-of-type {
-          margin-top: map-get($spacers, "lg");
-        }
       } @else if $name == "xl" {
-        margin-bottom: get-half-in-rems(map-get($spacers, "xl"));
-        margin-top: get-half-in-rems(map-get($spacers, "xl"));
 
         @supports (display: grid){
-          grid-row-gap: map-get($spacers, "xl");
           grid-column-gap: map-get($spacers, "lg");
-        }
-
-        body ~ &:last-of-type {
-          margin-bottom: map-get($spacers, "xl");
-        }
-        body ~ &:first-of-type {
-          margin-top: map-get($spacers, "xl");
         }
       }
     }
