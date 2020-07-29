@@ -29,12 +29,6 @@
   },
   "files": [
     "js",
-    "css",
-    "scss",
-    "styleguide",
-    "styleguide.css",
-    "kss-config.json",
-    "index.html",
-    "readme.md"
+    "scss"
   ]
 }
