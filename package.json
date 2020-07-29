@@ -1,6 +1,6 @@
 {
   "name": "@wpmedia/news-theme-css",
-  "version": "2.1.12",
+  "version": "2.1.14",
   "description": "CSS Grid Framework with Bootstrap-like conventions",
   "author": "Brent Miller",
   "license": "ISC",
