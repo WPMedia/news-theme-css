@@ -1,24 +1,62 @@
-# News Theme CSS
-## Overview
-This is the CSS framework for the Fusion News Theme. 
+# [News Theme CSS](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css)
 
-### Commands:
-    "scss-watch": "node-sass --watch scss -o css",
-    "build": "node-sass scss -o css",
-    "build-guide": "kss --config ./kss-config.json"
-    
-### Usage as a dependency:
-1. Import as an NPM dependency in your blocks repo.
-2. Set the following in the feature pack's blocks.json:
-    `"cssImport": "~@wpmedia/news-theme-css/scss/index",` 
-    Fusion will then inject this import into all your block's scss
-    files...so you do not need to import it.
+This is the CSS framework for the Fusion News Theme. [Theme Blocks](https://github.com/WPMedia/fusion-news-theme-blocks) and the [Engine Theme SDK](https://github.com/WPMedia/engine-theme-sdk) import the SCSS files. Then they are [compiled](https://github.com/WPMedia/fusion/blob/e497a3117912ea3dc5ad2d0a6b83a45c2210513e/engine/webpack/_shared/rules/sass.js) later with node-sass and extracted by Webpack in Fusion.
 
-### View the styleguide
+## Usage as a block dependency:
 
-After running `npm run build` and then `npm run build-guide`, open styleguide/index.html.
+Include as an dependency in a custom block: 
 
-### Publish The Styleguide
+`blocks/card-list-block/package.json`
+
+```json
+{
+  "name": "@wpmedia/card-list-block",
+  "dependencies": {
+    "@wpmedia/engine-theme-sdk": "^2.2.0",
+    "@wpmedia/news-theme-css": "^2.1.8"
+  }
+}
+```
+
+## Usage as a theme dependency:
+
+- Fusion will then inject this import into all your block's scss. Set the following in the feature pack's blocks.json:
+
+`feature-pack/blocks.json`
+```json
+{
+  "cssFramework": "@wpmedia/news-theme-css",
+  "cssImport": "~@wpmedia/news-theme-css/scss/index",
+  "sassImport": [
+    "~@wpmedia/news-theme-css/scss/_variables.scss",
+    "~@wpmedia/news-theme-css/scss/_functions.scss",
+    "~@wpmedia/news-theme-css/scss/_colors.scss",
+    "~@wpmedia/news-theme-css/scss/_breakpoints.scss",
+    "~@wpmedia/news-theme-css/scss/_mixins.scss"
+  ],
+  "sassVariableOverrides": [
+    "$primary-font-family: $theme-primary-font-family;",
+    "$secondary-font-family: $theme-primary-font-family;",
+    "$primary-color: $theme-primary-color;"
+  ]
+}
+
+```
+
+## Linking and Debugging 
+
+- Specify the cssFramework on `blocks.json` of feature pack
+- and run `npx fusion start` with `useLocal` set to `true` in `blocks.json`
+
+## Contributing 
+
+### Local Development Commands:
+
+- `npm i` Install dependencies for library 
+- `npm run scss-watch` Watch changes in your scss
+- `npm run build-all` Create output and style guide 
+
+### Publish The Style Guide
 
 - `npm run build-all`
 - Rename output for uploading ... news-theme-css \$ `mv styleguide news-theme-css`
@@ -30,6 +68,8 @@ After running `npm run build` and then `npm run build-guide`, open styleguide/in
 - See the live output https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css/ after signing into admin in okta
 
 ### Update the style of the styleguide (meta)
+The [styleguide](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css) is generated using a modified version of [michelangelo](https://github.com/stamkracht/michelangelo) in the `/michelangelo` folder.
+
 - Go to michelangelo/kss_styleguide/custom-template/index.hbs
 - Change relevant issues 
 - Make sure to run `npm run build-all` to see effect
@@ -48,4 +88,6 @@ the following commands: `npx lerna clean` and then `npx lerna bootstrap`
 ### Deploy to Arc Learning Center
 News theme CSS automatically deploys to ALC. You can find the live version [here](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css)
 
+### View the styleguide
 
+After running `npm run build` and then `npm run build-guide`, open styleguide/index.html.
