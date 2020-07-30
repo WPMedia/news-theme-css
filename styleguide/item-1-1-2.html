@@ -13,9 +13,7 @@
   <link rel="stylesheet" href="kss-assets/css/kss.css">
   <link rel="stylesheet" href="https://nav-prod.home.static.arcpublishing.com/css/arcnav.css">
   <script src="https://nav-prod.home.static.arcpublishing.com/js/arcnav-standalone.js" async></script>
-  <link rel="stylesheet" href="../css/index.css">
-<link rel="stylesheet" href="../styleguide.css">
-
+  
 
   <style>
     .kss-documentation {
@@ -40,16 +38,68 @@
         padding-top: 110px !important;
       }
     }
-
-
-
-
     #alc-nav {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 1000000;
+    }
+
+    article[class^="col-"] {
+      border: 1px dotted blue;
+    }
+
+    .row {
+      border: 1px dotted red;
+    }
+
+    .container,
+    .container-fluid {
+      border: 1px dotted green;
+    }
+
+    .kss-title,
+    .kss-section__item,
+    .kss-nav__item a.kss-state-active,
+    .kss-modifiers__heading,
+    .kss-nav__item a:hover {
+      color: #1b6fa6;
+    }
+
+    @media only screen and (min-width: 90.0625em) {
+      .kss-documentation {
+        padding-left: calc(18% + 20px);
+      }
+    }
+
+    @media only screen and (min-width: 90.0625em) {
+      .kss-navigation {
+        width: 18%;
+      }
+    }
+
+    .kss-header__hamburger {
+      color: #1b6fa6;
+      background: #1b6fa6;
+    }
+
+    .kss-header__hamburger:before,
+    .kss-header__hamburger:after {
+      background: #1b6fa6;
+    }
+
+    .kss-markdown h1,
+    .kss-markdown h2,
+    .kss-markdown h3,
+    .kss-markdown h4,
+    .kss-markdown h5,
+    .kss-markdown h6 {
+      color: #1b6fa6;
+    }
+
+    div.spacer {
+      margin: 30px;
     }
   </style>
 </head>
@@ -189,7 +239,7 @@
       <header class="kss-section kss-section--depth-3" id="kssref-1-1-2">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>28</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>25</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-2">
@@ -202,10 +252,6 @@
             <div
               class="kss-section__description">
               <p>Sass variable that sets the default number of columns used in the CSS Grid system.</p>
-<ul>
-<li>The default value is <code>12</code></li>
-<li>This can be overriden.</li>
-</ul>
 </div>
 
           </article>

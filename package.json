@@ -1,6 +1,6 @@
 {
   "name": "@wpmedia/news-theme-css",
-  "version": "2.1.8",
+  "version": "3.0.2-beta.0",
   "description": "CSS Grid Framework with Bootstrap-like conventions",
   "author": "Brent Miller",
   "license": "ISC",
@@ -10,7 +10,7 @@
     "scss-watch": "node-sass --watch scss -o css",
     "process-templates": "node -r esm processTemplates.js",
     "build": "node-sass scss -o css",
-    "build-guide": "kss --config ./kss-config.json",
+    "build-guide": "kss --config ./kss-config.json && node-sass scss -o styleguide/css",
     "build-all": "npm run process-templates && npm run build && npm run build-guide"
   },
   "publishConfig": {

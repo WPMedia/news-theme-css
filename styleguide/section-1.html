@@ -13,9 +13,7 @@
   <link rel="stylesheet" href="kss-assets/css/kss.css">
   <link rel="stylesheet" href="https://nav-prod.home.static.arcpublishing.com/css/arcnav.css">
   <script src="https://nav-prod.home.static.arcpublishing.com/js/arcnav-standalone.js" async></script>
-  <link rel="stylesheet" href="../css/index.css">
-<link rel="stylesheet" href="../styleguide.css">
-
+  
 
   <style>
     .kss-documentation {
@@ -40,16 +38,68 @@
         padding-top: 110px !important;
       }
     }
-
-
-
-
     #alc-nav {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 1000000;
+    }
+
+    article[class^="col-"] {
+      border: 1px dotted blue;
+    }
+
+    .row {
+      border: 1px dotted red;
+    }
+
+    .container,
+    .container-fluid {
+      border: 1px dotted green;
+    }
+
+    .kss-title,
+    .kss-section__item,
+    .kss-nav__item a.kss-state-active,
+    .kss-modifiers__heading,
+    .kss-nav__item a:hover {
+      color: #1b6fa6;
+    }
+
+    @media only screen and (min-width: 90.0625em) {
+      .kss-documentation {
+        padding-left: calc(18% + 20px);
+      }
+    }
+
+    @media only screen and (min-width: 90.0625em) {
+      .kss-navigation {
+        width: 18%;
+      }
+    }
+
+    .kss-header__hamburger {
+      color: #1b6fa6;
+      background: #1b6fa6;
+    }
+
+    .kss-header__hamburger:before,
+    .kss-header__hamburger:after {
+      background: #1b6fa6;
+    }
+
+    .kss-markdown h1,
+    .kss-markdown h2,
+    .kss-markdown h3,
+    .kss-markdown h4,
+    .kss-markdown h5,
+    .kss-markdown h6 {
+      color: #1b6fa6;
+    }
+
+    div.spacer {
+      margin: 30px;
     }
   </style>
 </head>
@@ -128,7 +178,7 @@
             <li class="kss-nav__item ">
               <a href="section-1.html#kssref-1-1">
                 <span class="kss-nav__ref">1.1</span>
-                <span class="kss-nav__name">SCSS Variables</span>
+                <span class="kss-nav__name">Scss Variables</span>
               </a>
             </li>
             <li class="kss-nav__item kss-nav__item--grandchild">
@@ -188,7 +238,7 @@
             <li class="kss-nav__item kss-nav__item--grandchild">
               <a href="section-1.html#kssref-1-1-10">
                 <span class="kss-nav__ref">1.1.10</span>
-                <span class="kss-nav__name">$headings-line-height</span>
+                <span class="kss-nav__name">$$headings-line-height</span>
               </a>
             </li>
             <li class="kss-nav__item ">
@@ -207,12 +257,6 @@
               <a href="section-1.html#kssref-1-2-2">
                 <span class="kss-nav__ref">1.2.2</span>
                 <span class="kss-nav__name">$grid-breakpoints</span>
-              </a>
-            </li>
-            <li class="kss-nav__item kss-nav__item--grandchild">
-              <a href="section-1.html#kssref-1-2-3">
-                <span class="kss-nav__ref">1.2.3</span>
-                <span class="kss-nav__name">$grid-breakpoints-max</span>
               </a>
             </li>
             <li class="kss-nav__item ">
@@ -329,7 +373,7 @@
 
             <div
               class="kss-section__description">
-              <p>This section will cover the SCSS variables, mixens and functions that are used to build out the framework</p>
+              <p>This section will cover the Scss variables, mixens and functions that are used to build out the framework</p>
 </div>
 
           </article>
@@ -345,13 +389,13 @@
             <a class="kss-section__permalink" href="#kssref-1-1">
               <h2 class="kss-section__item kss-section__item--depth-2">
                 <span class="kss-section__ref">1.1</span>
-                <span class="kss-section__name">SCSS Variables</span>
+                <span class="kss-section__name">Scss Variables</span>
               </h2>
             </a>
 
             <div
               class="kss-section__description">
-              <p>SCSS variables are used so that adjustments can be made in a centralized location and to keep
+              <p>Scss variables are used so that adjustments can be made in a centralized location and to keep
 the code base DRY.</p>
 </div>
 
@@ -374,11 +418,7 @@ the code base DRY.</p>
 
             <div
               class="kss-section__description">
-              <p>Default font size. This is important as it will be used to convert pixel values to rems.</p>
-<ul>
-<li>The default value is <code>16</code></li>
-<li>This can be overriden.</li>
-</ul>
+              <p>Default font size. This is important as it will be used to convert pixel values to rems</p>
 </div>
 
           </article>
@@ -388,7 +428,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-2">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>28</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>25</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-2">
@@ -401,10 +441,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets the default number of columns used in the CSS Grid system.</p>
-<ul>
-<li>The default value is <code>12</code></li>
-<li>This can be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -414,7 +450,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-3">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>40</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>34</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-3">
@@ -427,10 +463,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets the primary font family.</p>
-<ul>
-<li>The default value is <code>Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif</code></li>
-<li>This can be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -440,7 +472,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-4">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>50</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>41</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-4">
@@ -453,10 +485,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets the secondary font family.</p>
-<ul>
-<li>The default value is <code>Georgia,Times,Times New Roman,serif</code></li>
-<li>This can be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -466,7 +494,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-5">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>60</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>48</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-5">
@@ -479,10 +507,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets light font weight.</p>
-<ul>
-<li>The default value is <code>300</code></li>
-<li>This can not be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -492,7 +516,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-6">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>70</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>55</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-6">
@@ -505,10 +529,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets the normal font weight.</p>
-<ul>
-<li>The value is <code>400</code></li>
-<li>This can not be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -518,7 +538,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-7">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>80</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>62</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-7">
@@ -531,10 +551,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets the semi-bold font weight.</p>
-<ul>
-<li>The value is <code>500</code></li>
-<li>This can not be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -544,7 +560,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-8">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>90</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>69</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-8">
@@ -557,10 +573,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets the bold font weight.</p>
-<ul>
-<li>The value is <code>700</code></li>
-<li>This can not be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -570,7 +582,7 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-9">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>100</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>76</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-9">
@@ -583,10 +595,6 @@ the code base DRY.</p>
             <div
               class="kss-section__description">
               <p>Sass variable that sets the default line height.</p>
-<ul>
-<li>The default value is <code>1.5</code></li>
-<li>This can be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -596,23 +604,19 @@ the code base DRY.</p>
         <section class="kss-section kss-section--depth-3" id="kssref-1-1-10">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>110</span>
+            <p class="kss-section__source">Source: <span>_variables.scss</span>, line <span>83</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-1-10">
               <h3 class="kss-section__item kss-section__item--depth-3">
                 <span class="kss-section__ref">1.1.10</span>
-                <span class="kss-section__name">$headings-line-height</span>
+                <span class="kss-section__name">$$headings-line-height</span>
               </h3>
             </a>
 
             <div
               class="kss-section__description">
               <p>Sass variable that sets the line height for headers.</p>
-<ul>
-<li>The default value is <code>1.2</code></li>
-<li>This can be overriden.</li>
-</ul>
 </div>
 
           </article>
@@ -632,11 +636,6 @@ the code base DRY.</p>
               </h2>
             </a>
 
-            <div
-              class="kss-section__description">
-              <p>Sass maps for breakpoints and spacing.
-These maps are leveraged with the Sass function <code>map-get</code> in component Sass code to set spacing and media queries.</p>
-</div>
 
           </article>
 
@@ -645,7 +644,7 @@ These maps are leveraged with the Sass function <code>map-get</code> in componen
         <section class="kss-section kss-section--depth-3" id="kssref-1-2-1">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_breakpoints.scss</span>, line <span>9</span>
+            <p class="kss-section__source">Source: <span>_breakpoints.scss</span>, line <span>6</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-2-1">
@@ -657,15 +656,7 @@ These maps are leveraged with the Sass function <code>map-get</code> in componen
 
             <div
               class="kss-section__description">
-              <p>Scss map of all the spacing sizes for all breakpoints.</p>
-<ul>
-<li>The default values for the map are as follows:
-<ul>
-<li><code>xxs: 0.25rem</code>, <code>xs: 0.5rem</code>, <code>sm: 1rem</code>, <code>md: 1.5rem</code>, <code>lg: 2rem</code>, <code>xl: 3rem</code>, <code>xxl: 4rem</code></li>
-</ul>
-</li>
-<li>These values can be overridden.</li>
-</ul>
+              <p>Scss map of all the spacing sizes for all breakpoints</p>
 </div>
 
           </article>
@@ -675,7 +666,7 @@ These maps are leveraged with the Sass function <code>map-get</code> in componen
         <section class="kss-section kss-section--depth-3" id="kssref-1-2-2">
 
           <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_breakpoints.scss</span>, line <span>28</span>
+            <p class="kss-section__source">Source: <span>_breakpoints.scss</span>, line <span>21</span>
             </p>
 
             <a class="kss-section__permalink" href="#kssref-1-2-2">
@@ -688,44 +679,6 @@ These maps are leveraged with the Sass function <code>map-get</code> in componen
             <div
               class="kss-section__description">
               <p>Scss map of all the breakpoints for the grid system</p>
-<ul>
-<li>The default values for the map are as follows:
-<ul>
-<li><code>sm: 0rem</code>, <code>md: 48rem</code>, <code>lg: 64rem</code>, <code>xl: 90rem</code></li>
-</ul>
-</li>
-<li>These values can be overridden.</li>
-</ul>
-</div>
-
-          </article>
-
-
-    </section>
-        <section class="kss-section kss-section--depth-3" id="kssref-1-2-3">
-
-          <article class="kss-section__content">
-            <p class="kss-section__source">Source: <span>_breakpoints.scss</span>, line <span>44</span>
-            </p>
-
-            <a class="kss-section__permalink" href="#kssref-1-2-3">
-              <h3 class="kss-section__item kss-section__item--depth-3">
-                <span class="kss-section__ref">1.2.3</span>
-                <span class="kss-section__name">$grid-breakpoints-max</span>
-              </h3>
-            </a>
-
-            <div
-              class="kss-section__description">
-              <p>Scss map of all the breakpoints for the grid system</p>
-<ul>
-<li>The default values for the map are as follows:
-<ul>
-<li><code>sm: 47.9375rem</code>, <code>md: 63.9375rem</code>, <code>lg: 89.9375rem</code></li>
-</ul>
-</li>
-<li>These values can be overridden.</li>
-</ul>
 </div>
 
           </article>

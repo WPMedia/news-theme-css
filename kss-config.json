@@ -4,11 +4,5 @@
     "scss/"
   ],
   "destination": "styleguide/",
-  "builder": "michelangelo/kss_styleguide/custom-template/",
-  "//": "The css and js paths are URLs relative to the generated style guide.",
-  "css": [
-    "../css/index.css",
-    "../styleguide.css"
-  ],
-  "js": []
+  "builder": "michelangelo/kss_styleguide/custom-template/"
 }

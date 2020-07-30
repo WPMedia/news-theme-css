@@ -1,13 +1,13 @@
 // SCSS
 //
-// This section will cover the SCSS variables, mixens and functions that are used to build out the framework
+// This section will cover the Scss variables, mixens and functions that are used to build out the framework
 //
 // Styleguide 1.0.0
 
 
-// SCSS Variables
+// Scss Variables
 //
-// SCSS variables are used so that adjustments can be made in a centralized location and to keep
+// Scss variables are used so that adjustments can be made in a centralized location and to keep
 // the code base DRY.
 //
 // Styleguide 1.1.0
@@ -16,10 +16,7 @@
 
 // $default-font-size
 //
-// Default font size. This is important as it will be used to convert pixel values to rems.
-//
-// - The default value is `16`
-// - This can be overriden.
+// Default font size. This is important as it will be used to convert pixel values to rems
 //
 // Styleguide 1.1.1
 $default-font-size: 16 !default;
@@ -28,9 +25,6 @@ $default-font-size: 16 !default;
 // $grid-columns
 //
 // Sass variable that sets the default number of columns used in the CSS Grid system.
-//
-// - The default value is `12`
-// - This can be overriden.
 //
 // Styleguide 1.1.2
 $grid-columns: 12 !default;
@@ -41,18 +35,12 @@ $base-col-percent: 100% / $grid-columns;
 //
 // Sass variable that sets the primary font family.
 //
-// - The default value is `Arial, "Helvetica Neue", Helvetica, sans-serif`
-// - This can be overriden.
-//
 // Styleguide 1.1.3
 $primary-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !default;
 
 // $secondary-font-family
 //
 // Sass variable that sets the secondary font family.
-//
-// - The default value is `Georgia,Times,Times New Roman,serif`
-// - This can be overriden.
 //
 // Styleguide 1.1.4
 $secondary-font-family: Georgia,Times,Times New Roman,serif !default;
@@ -61,18 +49,12 @@ $secondary-font-family: Georgia,Times,Times New Roman,serif !default;
 //
 // Sass variable that sets light font weight.
 //
-// - The default value is `300`
-// - This can not be overriden.
-//
 // Styleguide 1.1.5
 $font-weight-light: 300;
 
 // $font-weight-normal
 //
 // Sass variable that sets the normal font weight.
-//
-// - The value is `400`
-// - This can not be overriden.
 //
 // Styleguide 1.1.6
 $font-weight-normal: 400;
@@ -81,18 +63,12 @@ $font-weight-normal: 400;
 //
 // Sass variable that sets the semi-bold font weight.
 //
-// - The value is `500`
-// - This can not be overriden.
-//
 // Styleguide 1.1.7
 $font-weight-semibold: 500;
 
 // $font-weight-bold
 //
 // Sass variable that sets the bold font weight.
-//
-// - The value is `700`
-// - This can not be overriden.
 //
 // Styleguide 1.1.8
 $font-weight-bold: 700;
@@ -101,18 +77,12 @@ $font-weight-bold: 700;
 //
 // Sass variable that sets the default line height.
 //
-// - The default value is `1.5`
-// - This can be overriden.
-//
 // Styleguide 1.1.9
 $line-height-base: 1.5 !default;
 
-// $headings-line-height
+// $$headings-line-height
 //
 // Sass variable that sets the line height for headers.
-//
-// - The default value is `1.2`
-// - This can be overriden.
 //
 // Styleguide 1.1.10
 $headings-line-height: 1.2 !default;
