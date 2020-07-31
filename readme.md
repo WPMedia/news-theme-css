@@ -20,19 +20,19 @@ Include as an dependency in a custom block:
 
 ## Usage as a theme dependency:
 
-- Fusion will then inject this import into all your block's scss. Set the following in the feature pack's blocks.json:
+- Fusion will then inject these overrides and framework. Set the following in the feature pack's blocks.json:
 
 `feature-pack/blocks.json`
 ```json
 {
   "cssFramework": "@wpmedia/news-theme-css",
-  "cssImport": "~@wpmedia/news-theme-css/scss/index",
+  "cssImport": "@wpmedia/news-theme-css/scss/_index.scss",
   "sassImport": [
-    "~@wpmedia/news-theme-css/scss/_variables.scss",
-    "~@wpmedia/news-theme-css/scss/_functions.scss",
-    "~@wpmedia/news-theme-css/scss/_colors.scss",
-    "~@wpmedia/news-theme-css/scss/_breakpoints.scss",
-    "~@wpmedia/news-theme-css/scss/_mixins.scss"
+    "@wpmedia/news-theme-css/scss/_variables.scss",
+    "@wpmedia/news-theme-css/scss/_functions.scss",
+    "@wpmedia/news-theme-css/scss/_colors.scss",
+    "@wpmedia/news-theme-css/scss/_breakpoints.scss",
+    "@wpmedia/news-theme-css/scss/_mixins.scss"
   ],
   "sassVariableOverrides": [
     "$primary-font-family: $theme-primary-font-family;",
@@ -84,6 +84,45 @@ The [styleguide](https://staging.arcpublishing.com/alc/docs/styleguides/news-the
 6. In the root package.json file of the blocks repo, update 
 @wpmedia/news-theme-css to the new version then run in the block repo
 the following commands: `npx lerna clean` and then `npx lerna bootstrap`
+
+
+### To test a beta or canary version 
+
+- Fusion will then inject these overrides and framework. Set the following in the feature pack's blocks.json:
+
+`feature-pack/blocks.json`
+```json
+{
+  "cssFramework": "@wpmedia/news-theme-css@beta"
+}
+
+```
+
+or, using numbered versions
+
+`feature-pack/blocks.json`
+```json
+{
+  "cssFramework": "@wpmedia/news-theme-css@^3.0.0"
+}
+
+```
+
+- Please make sure that the version of the news theme css does not resolve to include the current `@latest` or `@stable` version designated in the block. If you're unsure about semantic versioning resolution, please consult [this reference](https://devhints.io/semver).
+
+Include as an dependency in a custom block: 
+
+`blocks/card-list-block/package.json`
+
+```json
+{
+  "name": "@wpmedia/card-list-block",
+  "dependencies": {
+    "@wpmedia/engine-theme-sdk": "^2.2.0",
+    "@wpmedia/news-theme-css": "^2.1.8"
+  }
+}
+```
 
 ### Deploy to Arc Learning Center
 News theme CSS automatically deploys to ALC. You can find the live version [here](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css)
