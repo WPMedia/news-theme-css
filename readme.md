@@ -108,7 +108,7 @@ or, using numbered versions
 
 ```
 
-- Please make sure that the version of the news theme css does not resolve to include the current @latest or @stable version designated in the block. If you're unsure about semantic versioning resolution, please consult [this reference](https://devhints.io/semver).
+- Please make sure that the version of the news theme css does not resolve to include the current `@latest` or `@stable` version designated in the block. If you're unsure about semantic versioning resolution, please consult [this reference](https://devhints.io/semver).
 
 Include as an dependency in a custom block: 
 
