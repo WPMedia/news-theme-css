@@ -9,9 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-watch": "node-sass --watch scss -o css",
     "process-templates": "node -r esm processTemplates.js",
-    "build": "node-sass scss -o css",
     "build-guide": "kss --config ./kss-config.json && node-sass scss -o styleguide/css",
-    "build-all": "npm run process-templates && npm run build && npm run build-guide"
+    "build-all": "npm run process-templates && npm run build-guide"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
@@ -29,12 +28,7 @@
   },
   "files": [
     "js",
-    "css",
     "scss",
-    "styleguide",
-    "styleguide.css",
-    "kss-config.json",
-    "index.html",
     "readme.md"
   ]
 }
