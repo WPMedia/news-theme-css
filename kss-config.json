@@ -4,5 +4,8 @@
     "scss/"
   ],
   "destination": "styleguide/",
-  "builder": "michelangelo/kss_styleguide/custom-template/"
+  "builder": "michelangelo/kss_styleguide/custom-template/",
+  "css": [
+    "css/index.css"
+  ]
 }
