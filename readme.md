@@ -75,16 +75,20 @@ The [styleguide](https://staging.arcpublishing.com/alc/docs/styleguides/news-the
 - Make sure to run `npm run build-all` to see effect
 - View locally in styleguide/index.html
 
-### To publish a new version
-1. Run build and then build-guide
-2. Commit changes and push to origin master
-3. Run `npm version 1.0.4` Replace 1.0.4 with your new version.
-4. Push to origin master
-5. Run `npm publish`
-6. In the root package.json file of the blocks repo, update 
-@wpmedia/news-theme-css to the new version then run in the block repo
-the following commands: `npx lerna clean` and then `npx lerna bootstrap`
+### To publish a new beta version
+1. Check `staging` version in `package.json` under version. As a sanity check, you can also look at published version to GitHub packages via `npm view @wpmedia/news-theme-css time`. This will show what versions have been published. 
+2. Look at how `news-theme-css` is used by themes blocks. Since we're using semantic versioning, we want to rely on version numbers rather than just tags. If you're publishing a beta version, you want to make sure the blocks in `stable` will not install this change. Therefore, you may need to iterate a major version (breaking change) in order to prevent issues. For instance, the example below would require the `news-theme-css` to be versioned `npm version 3.0.0` in order to not be included in the block. 
 
+block/package.json
+```json
+{
+  "dependencies": {
+    "@wpmedia/news-theme-css": "^2.0.2"
+  }
+}
+```
+3. Push the version update to `staging`.
+4. Publish the beta-tagged version `npm publish --tag beta`
 
 ### To test a beta or canary version 
 
