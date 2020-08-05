@@ -2,6 +2,14 @@
 
 This is the CSS framework for the Fusion News Theme. [Theme Blocks](https://github.com/WPMedia/fusion-news-theme-blocks) and the [Engine Theme SDK](https://github.com/WPMedia/engine-theme-sdk) import the SCSS files. Then they are [compiled](https://github.com/WPMedia/fusion/blob/e497a3117912ea3dc5ad2d0a6b83a45c2210513e/engine/webpack/_shared/rules/sass.js) later with node-sass and extracted by Webpack in Fusion.
 
+## `dist-tags`
+
+This package has been published with a number of dist-tags meant for different purposes:
+
+- `stable`: Production environment
+- `beta`: Sandbox environment
+- `canary`: For developers to test on core components 
+
 ## Usage as a block dependency:
 
 Include as an dependency in a custom block: 
@@ -13,7 +21,7 @@ Include as an dependency in a custom block:
   "name": "@wpmedia/card-list-block",
   "dependencies": {
     "@wpmedia/engine-theme-sdk": "^2.2.0",
-    "@wpmedia/news-theme-css": "^2.1.8"
+    "@wpmedia/news-theme-css": "stable"
   }
 }
 ```
@@ -25,7 +33,7 @@ Include as an dependency in a custom block:
 `feature-pack/blocks.json`
 ```json
 {
-  "cssFramework": "@wpmedia/news-theme-css",
+  "cssFramework": "@wpmedia/news-theme-css@stable",
   "cssImport": "@wpmedia/news-theme-css/scss/_index.scss",
   "sassImport": [
     "@wpmedia/news-theme-css/scss/_variables.scss",
@@ -53,8 +61,7 @@ Include as an dependency in a custom block:
 ### Local Development Commands:
 
 - `npm i` Install dependencies for library 
-- `npm run scss-watch` Watch changes in your scss
-- `npm run build-all` Create output and style guide 
+- `npm run build-all` Create output for style guide 
 
 ### Publish The Style Guide
 
@@ -64,8 +71,7 @@ Include as an dependency in a custom block:
 - Go to s3 bucket for hosting docs `arc-learning-center-static`
 - Go to directory `docs/styleguides`
 - Replace `news-theme-css` with your output
-- Since the styleguide is dependent on the css files `/css/index.css/` and `styleguide.css`, these files should also be moved to the same bucket if there have been any updates
-- See the live output https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css/ after signing into admin in okta
+- Since the styleguide is dependent on the css files `/css/index.css/` and `styleguide.css`, these files are built during the build docs command and locally linked via `kss-config.json`.
 
 ### Update the style of the styleguide (meta)
 The [styleguide](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css) is generated using a modified version of [michelangelo](https://github.com/stamkracht/michelangelo) in the `/michelangelo` folder.
@@ -77,7 +83,9 @@ The [styleguide](https://staging.arcpublishing.com/alc/docs/styleguides/news-the
 
 ### To publish a new beta version
 1. Check `staging` version in `package.json` under version. As a sanity check, you can also look at published version to GitHub packages via `npm view @wpmedia/news-theme-css time`. This will show what versions have been published. 
-2. Look at how `news-theme-css` is used by themes blocks. Since we're using semantic versioning, we want to rely on version numbers rather than just tags. If you're publishing a beta version, you want to make sure the blocks in `stable` will not install this change. Therefore, you may need to iterate a major version (breaking change) in order to prevent issues. For instance, the example below would require the `news-theme-css` to be versioned `npm version 3.0.0` in order to not be included in the block. 
+2. Look at how `news-theme-css` is used by themes blocks. Check for the latest `@beta` version via `npm view @wpmedia/news-theme-css@beta`. 
+3. Update the version `npm version prerelease --preid=beta`. 
+4. Publish to the beta dist-tag `npm publish --tag beta`
 
 block/package.json
 ```json
@@ -92,6 +100,7 @@ block/package.json
 
 ### To test a beta or canary version 
 
+- For canary, do the same steps as above but with canary instead of beta
 - Fusion will then inject these overrides and framework. Set the following in the feature pack's blocks.json:
 
 `feature-pack/blocks.json`
@@ -102,18 +111,6 @@ block/package.json
 
 ```
 
-or, using numbered versions
-
-`feature-pack/blocks.json`
-```json
-{
-  "cssFramework": "@wpmedia/news-theme-css@^3.0.0"
-}
-
-```
-
-- Please make sure that the version of the news theme css does not resolve to include the current `@latest` or `@stable` version designated in the block. If you're unsure about semantic versioning resolution, please consult [this reference](https://devhints.io/semver).
-
 Include as an dependency in a custom block: 
 
 `blocks/card-list-block/package.json`
@@ -122,8 +119,7 @@ Include as an dependency in a custom block:
 {
   "name": "@wpmedia/card-list-block",
   "dependencies": {
-    "@wpmedia/engine-theme-sdk": "^2.2.0",
-    "@wpmedia/news-theme-css": "^2.1.8"
+    "@wpmedia/news-theme-css": "beta"
   }
 }
 ```
