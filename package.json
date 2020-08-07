@@ -1,6 +1,6 @@
 {
   "name": "@wpmedia/news-theme-css",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "CSS Grid Framework with Bootstrap-like conventions",
   "author": "Brent Miller",
   "license": "ISC",
@@ -10,7 +10,8 @@
     "scss-watch": "node-sass --watch scss -o css",
     "process-templates": "node -r esm processTemplates.js",
     "build-guide": "kss --config ./kss-config.json && node-sass scss -o styleguide/css",
-    "build-all": "npm run process-templates && npm run build-guide"
+    "build-all": "npm run process-templates && npm run build-guide",
+    "lint:styles": "stylelint 'scss/**' --formatter verbose"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
@@ -24,7 +25,12 @@
     "kss": "^3.0.0-beta.25",
     "node-sass": "^4.13.0",
     "esm": "^3.2.25",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-no-unsupported-browser-features": "^4.0.0"
   },
   "files": [
     "js",
