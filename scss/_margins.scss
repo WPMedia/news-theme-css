@@ -29,19 +29,19 @@
 // Styleguide 7.1.0
 
 @each $name, $size in $spacers {
-  .margin-#{$name}-left{
+  .margin-#{$name}-left {
     margin-left: $size;
   }
-  .margin-#{$name}-right{
+  .margin-#{$name}-right {
     margin-right: $size;
   }
-  .margin-#{$name}-top{
+  .margin-#{$name}-top {
     margin-top: $size;
   }
-  .margin-#{$name}-bottom{
+  .margin-#{$name}-bottom {
     margin-bottom: $size;
   }
-  .margin-#{$name}-all{
+  .margin-#{$name}-all {
     margin: $size;
   }
 }
@@ -57,7 +57,7 @@
 .block-margin-bottom {
   margin-bottom: map-get($spacers, 'sm');
 
-  @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')) {
     margin-bottom: map-get($spacers, 'md');
   }
 }

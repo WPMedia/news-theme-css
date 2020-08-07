@@ -10,41 +10,41 @@
 //
 // Styleguide 2.3.0
 .row {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  @supports (display: grid){
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 0;
-    grid-auto-flow: dense;
-  }
-
   width: 100%;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-column-gap: 0;
+    grid-template-columns: repeat(12, 1fr);
+  }
 
   @each $name, $size in $grid-breakpoints {
     @media (min-width: $size) {
-      @if $name == "md" {
-        @supports (display: grid){
-          grid-column-gap: map-get($spacers, "sm");
+      @if $name == 'md' {
+        @supports (display: grid) {
+          grid-column-gap: map-get($spacers, 'sm');
         }
-      } @else if $name == "lg" {
+      } @else if $name == 'lg' {
 
-        @supports (display: grid){
-          grid-column-gap: map-get($spacers, "lg");
+        @supports (display: grid) {
+          grid-column-gap: map-get($spacers, 'lg');
         }
 
-      } @else if $name == "xl" {
+      } @else if $name == 'xl' {
 
-        @supports (display: grid){
-          grid-column-gap: map-get($spacers, "lg");
+        @supports (display: grid) {
+          grid-column-gap: map-get($spacers, 'lg');
         }
       }
     }

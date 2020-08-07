@@ -10,9 +10,9 @@
 //
 // Styleguide 2.1.0
 .container-fluid {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 // .container
@@ -32,17 +32,17 @@
 .container {
   margin-left: 5%;
   margin-right: 5%;
-  max-width: map-get($grid-breakpoints, "xl");
+  max-width: map-get($grid-breakpoints, 'xl');
 
 
 
   //Margins stay at 5% for `sm` and `md` grid breakpoints
   @each $name, $size in $grid-breakpoints {
     @media (min-width: $size) {
-      @if $name == "lg" {
+      @if $name == 'lg' {
         margin-left: 8%;
         margin-right: 8%;
-      } @else if $name == "xl" {
+      } @else if $name == 'xl' {
         margin-left: auto;
         margin-right: auto;
       }

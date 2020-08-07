@@ -26,8 +26,8 @@
   @media (min-width: #{$breakpoint}) {
     @for $i from 1 through $grid-columns {
       @for $y from 1 through $grid-columns {
-           //Differs from bootstrap from the point that it specifies the index of a column to start (vs offset)
-           //example: col-start-6 col-4 (start at col 6 columns and occupy 4 columns
+        //Differs from bootstrap from the point that it specifies the index of a column to start (vs offset)
+        //example: col-start-6 col-4 (start at col 6 columns and occupy 4 columns
         .col-start-#{$label}-#{$y}.col-#{$label}-#{$i} {
           grid-column: #{$y} / span #{$i};
         }

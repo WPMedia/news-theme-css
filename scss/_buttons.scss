@@ -21,50 +21,52 @@
 // Styleguide 6.0.0
 
 .btn {
-  display: inline-block;
-  &.btn-block{
-    display: block;
-  }
-  font-family: $secondary-font-family;
-  font-weight: $font-weight-bold;
-  font-size: calculateRem(16px);
-  line-height: $headings-line-height;
-  color: $ui-btn-white-color;
   background-color: $primary-color;
-  text-align: center;
-  vertical-align: middle;
-  // box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
-  user-select: none;
   border: 2px solid transparent;
   border-radius: 2px;
-  transition: all 0.3s ease 0s;
+  color: $ui-btn-white-color;
+  display: inline-block;
+  font-family: $secondary-font-family;
+  font-size: calculateRem(16px);
+  font-weight: $font-weight-bold;
+  line-height: $headings-line-height;
 
-  padding: map-get($spacers, "sm") map-get($spacers, "md");
+  padding: map-get($spacers, 'sm') map-get($spacers, 'md');
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  // box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  user-select: none;
+  vertical-align: middle;
+
+  &.btn-block {
+    display: block;
+  }
+
   &.btn-lg {
-    padding: map-get($spacers, "md") map-get($spacers, "md");
+    padding: map-get($spacers, 'md') map-get($spacers, 'md');
   }
 
   &.btn-sm {
-    padding: map-get($spacers, "xs") map-get($spacers, "md");
+    padding: map-get($spacers, 'xs') map-get($spacers, 'md');
   }
 
   &.disabled,
   &:disabled {
+    background-color: #b8c1cb;
     color: $ui-btn-white-color;
-    background-color: #B8C1CB;
   }
 
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled):hover {
     &:hover {
-      background-color: lighten( $primary-color, 20% );
+      background-color: lighten($primary-color, 20%);
       text-decoration: none;
     }
 
 
     &:active {
-      background-color: lighten( $primary-color, 20% );
-      border: 2px solid rgba(0,0,0,0.25);
+      background-color: lighten($primary-color, 20%);
+      border: 2px solid rgba(0, 0, 0, 0.25);
     }
   }
 
@@ -72,23 +74,23 @@
 }
 
 .btn-outline {
-  color: $primary-color;
   background-color: transparent;
   border: 1px solid $primary-color;
+  color: $primary-color;
 
   &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled):hover{
+  &:not(:disabled):not(.disabled):hover {
     &:hover {
+      background-color: lighten($primary-color, 20%);
       color: $ui-btn-white-color;
-      background-color: lighten( $primary-color, 20% );
       text-decoration: none;
     }
 
 
     &:active {
+      background-color: lighten($primary-color, 20%);
+      border: 2px solid rgba(0, 0, 0, 0.25);
       color: $ui-btn-white-color;
-      background-color: lighten( $primary-color, 20% );
-      border: 2px solid rgba(0,0,0,0.25);
     }
   }
 
@@ -97,20 +99,20 @@
 
 @each $color, $value in $button-state-colors {
   .btn-#{$color} {
-    color: $ui-btn-white-color;
     background-color: $value;
+    color: $ui-btn-white-color;
 
     &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):hover{
+    &:not(:disabled):not(.disabled):hover {
       &:hover {
-        background-color: lighten( $value, 20% );
+        background-color: lighten($value, 20%);
         text-decoration: none;
       }
 
 
       &:active {
-        background-color: lighten( $value, 20% );
-        border: 2px solid rgba(0,0,0,0.25);
+        background-color: lighten($value, 20%);
+        border: 2px solid rgba(0, 0, 0, 0.25);
       }
     }
 
@@ -119,24 +121,24 @@
 
 @each $color, $value in $button-state-colors {
   .btn-outline-#{$color} {
-    color: $value;
-    border: 1px solid $value;
     background-color: transparent;
+    border: 1px solid $value;
+    color: $value;
 
     &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled):hover{
+    &:not(:disabled):not(.disabled):hover {
       &:hover {
-        color: $ui-btn-white-color;
+        background-color: lighten($value, 20%);
         border: 1px solid transparent;
-        background-color: lighten( $value, 20% );
+        color: $ui-btn-white-color;
         text-decoration: none;
       }
 
 
       &:active {
+        background-color: lighten($value, 20%);
+        border: 2px solid rgba(0, 0, 0, 0.25);
         color: $ui-btn-white-color;
-        background-color: lighten( $value, 20% );
-        border: 2px solid rgba(0,0,0,0.25);
       }
     }
 

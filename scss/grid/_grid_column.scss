@@ -42,7 +42,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -55,7 +55,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -68,7 +68,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -81,7 +81,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -96,7 +96,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -109,7 +109,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -122,7 +122,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -137,7 +137,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -150,7 +150,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -165,7 +165,7 @@
       }@else {
         flex: 0 0 auto;
       }
-      @supports (display: grid){
+      @supports (display: grid) {
         grid-column-start: span #{$i};
       }
     }
@@ -184,9 +184,9 @@
 }
 
 //IE flex fix
-.ie-flex-100-percent-sm{
+.ie-flex-100-percent-sm {
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')){
+    @media (min-width: map-get($grid-breakpoints, 'sm')) and (max-width: map-get($grid-breakpoints-max, 'sm')) {
       flex: 1 0 100% !important;
     }
   }

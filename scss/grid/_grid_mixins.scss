@@ -4,7 +4,7 @@ $ms-row-gap: null;
 $ms-col-count: null;
 $ms-row-count: null;
 
-@function repeat($iterationCount, $val: 1fr){
+@function repeat($iterationCount, $val: 1fr) {
   $res: ();
   @for $i from 1 through $iterationCount {
     $res: append($res, $val, space);
@@ -12,61 +12,61 @@ $ms-row-count: null;
   @return $res;
 }
 
-@mixin grid-column-start($spanNum){
+@mixin grid-column-start($spanNum) {
   -ms-grid-column: span #{$spanNum};
   grid-column-start: span #{$spanNum};
   @content;
 }
 
-@mixin grid-column($start: auto, $span: 1){
+@mixin grid-column($start: auto, $span: 1) {
   //  apply fake grid gap via margin for browsers that don't support grid-column-gap
   @if $ms-col-gap and not $ms-col-count and $start != 1 {
     margin-left: $ms-col-gap;
-    @supports (grid-column-gap: 1px){ margin-left: 0; }
+    @supports (grid-column-gap: 1px) { margin-left: 0; }
   }
   -ms-grid-column: if($ms-col-count, $start + $start - 1, $start);
-  -ms-grid-column-span: if($ms-col-count, $span + $span - 1, $span);
   grid-column: span #{$span};
+  -ms-grid-column-span: if($ms-col-count, $span + $span - 1, $span);
   @content;
 }
 
-@mixin grid-row($start: auto, $span: 1){
+@mixin grid-row($start: auto, $span: 1) {
   //  grid-row-gap using top margin
   @if $ms-row-gap and not $ms-row-count and $start != 1 {
     margin-top: $ms-row-gap;
-    @supports (grid-row-gap: 1px){ margin-top: 0; }
+    @supports (grid-row-gap: 1px) { margin-top: 0; }
   }
   -ms-grid-row: if($ms-row-count, $start + $start - 1, $start);
-  -ms-grid-row-span: if($ms-row-count, $span + $span - 1, $span);
   grid-row: #{$start}/#{$start + $span};
+  -ms-grid-row-span: if($ms-row-count, $span + $span - 1, $span);
   @content;
 }
 
-@mixin grid-cell($col-start: auto, $col-span: 1, $row-start: auto, $row-span: 1){
+@mixin grid-cell($col-start: auto, $col-span: 1, $row-start: auto, $row-span: 1) {
   @include grid-column($col-start, $col-span);
   @include grid-row($row-start, $row-span);
   @content;
 }
 
-@mixin grid-area($area){
+@mixin grid-area($area) {
   $area: map-get($grid-areas, $area);
   @include grid-column(nth($area, 1), nth($area, 2));
   @include grid-row(nth($area, 3), nth($area, 4));
   @content;
 }
 
-@mixin grid($grid-map){
+@mixin grid($grid-map) {
   //'gap' is the global gap - if col-gap and row-gap are in the map
   //then it uses those, if it doesn't then it looks for 'gap';
 
   $cols: map-get($grid-map, cols);
   $rows: map-get($grid-map, rows);
-  $gap:  map-get($grid-map, gap);
+  $gap: map-get($grid-map, gap);
 
-  $col-gap:  map-get($grid-map, col-gap);
+  $col-gap: map-get($grid-map, col-gap);
   $col-gap: if($col-gap, $col-gap, $gap);
 
-  $row-gap:  map-get($grid-map, row-gap);
+  $row-gap: map-get($grid-map, row-gap);
   $row-gap: if($row-gap, $row-gap, $gap);
 
   //  if cols or rows have one paramter and unitless, convert them to FR units
@@ -89,10 +89,10 @@ $ms-row-count: null;
   @if $col-gap and $cols {
     $ms-cols: ();
     @each $col in $cols {
-      $ms-cols: if( type-of($col) == list, join($ms-cols, $col), append($ms-cols, $col));
+      $ms-cols: if(type-of($col) == list, join($ms-cols, $col), append($ms-cols, $col));
     }
-    @for $i from 1 through length($ms-cols) - 1{
-      $ms-cols: set-nth($ms-cols, $i, nth($ms-cols,$i) $col-gap);
+    @for $i from 1 through length($ms-cols) - 1 {
+      $ms-cols: set-nth($ms-cols, $i, nth($ms-cols, $i) $col-gap);
     }
     //  globalize ms col count (used by grid-column)
     $ms-col-count: length($ms-cols) !global;
@@ -101,10 +101,10 @@ $ms-row-count: null;
   @if $row-gap and $rows {
     $ms-rows: ();
     @each $row in $rows {
-      $ms-rows: if( type-of($row) == list, join($ms-rows, $row), append($ms-rows, $row));
+      $ms-rows: if(type-of($row) == list, join($ms-rows, $row), append($ms-rows, $row));
     }
     @for $i from 1 through length($ms-rows) - 1 {
-      $ms-rows: set-nth($ms-rows, $i, nth($ms-rows,$i) $row-gap);
+      $ms-rows: set-nth($ms-rows, $i, nth($ms-rows, $i) $row-gap);
     }
     //  globalize ms-row-count (used by grid-row)
     $ms-row-count: length($ms-rows) !global;
@@ -116,13 +116,13 @@ $ms-row-count: null;
   display: -ms-grid;
   display: grid;
 
+  grid-column-gap: $col-gap;
+
   -ms-grid-columns: $ms-cols or $cols;
+  grid-row-gap: $row-gap;
   -ms-grid-rows: $ms-rows or $rows;
 
   grid-template-columns: $cols;
   grid-template-rows: $rows;
-
-  grid-column-gap: $col-gap;
-  grid-row-gap: $row-gap;
   @content;
 }

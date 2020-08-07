@@ -9,7 +9,7 @@
 @mixin block-margin-bottom {
   margin-bottom: map-get($spacers, 'sm');
 
-  @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')) {
     margin-bottom: map-get($spacers, 'md');
   }
 }
@@ -26,7 +26,9 @@
 
 @mixin link-color-active-hover($color-prop:$ui-primary-font-color) {
   transition: color 0.3s ease;
-  &:active, &:hover{
+
+  &:active,
+  &:hover {
     color: lighten($color-prop, 40%);
   }
 }
@@ -42,7 +44,9 @@
 
 @mixin svg-color-active-hover($color-prop:$ui-primary-font-color) {
   transition: fill 0.3s ease;
-  &:active svg, &:hover svg{
+
+  &:active svg,
+  &:hover svg {
     fill: lighten($color-prop, 20%);
   }
 }
