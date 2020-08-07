@@ -19,31 +19,23 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 100%;
 
   @supports (display: grid){
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
     grid-auto-flow: dense;
-  }
 
-  width: 100%;
-
-  @each $name, $size in $grid-breakpoints {
-    @media (min-width: $size) {
-      @if $name == "md" {
-        @supports (display: grid){
+    @each $name, $size in $grid-breakpoints {
+      @media (min-width: $size) {
+        @if $name == "md" {
           grid-column-gap: map-get($spacers, "sm");
-        }
-      } @else if $name == "lg" {
 
-        @supports (display: grid){
+        } @else if $name == "lg" {
           grid-column-gap: map-get($spacers, "lg");
-        }
 
-      } @else if $name == "xl" {
-
-        @supports (display: grid){
+        } @else if $name == "xl" {
           grid-column-gap: map-get($spacers, "lg");
         }
       }
