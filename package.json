@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-watch": "node-sass --watch scss -o css",
     "process-templates": "node -r esm processTemplates.js",
+    "build": "node-sass scss -o css",
     "build-guide": "kss --config ./kss-config.json && node-sass scss -o styleguide/css",
     "build-all": "npm run process-templates && npm run build-guide"
   },
@@ -29,6 +30,7 @@
   "files": [
     "js",
     "scss",
-    "readme.md"
+    "readme.md",
+    "css"
   ]
 }
