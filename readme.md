@@ -127,6 +127,15 @@ Include as an dependency in a custom block:
 ### Deploy to Arc Learning Center
 News theme CSS automatically deploys to ALC. You can find the live version [here](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css)
 
-### View the styleguide
+## License
 
-After running `npm run build` and then `npm run build-guide`, open styleguide/index.html.
+Shield: [![CC BY-NC-ND 4.0][cc-by-shield]][cc-by-nc-nd]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License][cc-by-nc-nd].
+
+[![CC BY-NC-ND 4.0][cc-by-image]][cc-by-nc-nd]
+
+[cc-by-nc-nd]: https://creativecommons.org/licenses/by-nc-nd/4.0/
+[cc-by-image]: https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
