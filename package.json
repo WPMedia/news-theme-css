@@ -11,7 +11,7 @@
     "process-templates": "node -r esm processTemplates.js",
     "build-guide": "kss --config ./kss-config.json && node-sass scss -o styleguide/css",
     "build-all": "npm run process-templates && npm run build-guide",
-    "lint:styles": "stylelint 'scss/**' --formatter verbose"
+    "lint": "stylelint 'scss/**' --formatter verbose"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
