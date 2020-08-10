@@ -19,32 +19,22 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   width: 100%;
 
   @supports (display: grid) {
     display: grid;
     grid-auto-flow: dense;
-    grid-column-gap: 0;
-    grid-template-columns: repeat(12, 1fr);
-  }
 
-  @each $name, $size in $grid-breakpoints {
-    @media (min-width: $size) {
-      @if $name == 'md' {
-        @supports (display: grid) {
-          grid-column-gap: map-get($spacers, 'sm');
-        }
-      } @else if $name == 'lg' {
+    @each $name, $size in $grid-breakpoints {
+      @media (min-width: $size) {
+        @if $name == "md" {
+          grid-column-gap: map-get($spacers, "sm");
 
-        @supports (display: grid) {
-          grid-column-gap: map-get($spacers, 'lg');
-        }
+        } @else if $name == "lg" {
+          grid-column-gap: map-get($spacers, "lg");
 
-      } @else if $name == 'xl' {
-
-        @supports (display: grid) {
-          grid-column-gap: map-get($spacers, 'lg');
+        } @else if $name == "xl" {
+          grid-column-gap: map-get($spacers, "lg");
         }
       }
     }
