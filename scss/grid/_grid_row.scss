@@ -27,14 +27,14 @@
 
     @each $name, $size in $grid-breakpoints {
       @media (min-width: $size) {
-        @if $name == "md" {
-          grid-column-gap: map-get($spacers, "sm");
+        @if $name == 'md' {
+          grid-column-gap: map-get($spacers, 'sm');
 
-        } @else if $name == "lg" {
-          grid-column-gap: map-get($spacers, "lg");
+        } @else if $name == 'lg' {
+          grid-column-gap: map-get($spacers, 'lg');
 
-        } @else if $name == "xl" {
-          grid-column-gap: map-get($spacers, "lg");
+        } @else if $name == 'xl' {
+          grid-column-gap: map-get($spacers, 'lg');
         }
       }
     }
