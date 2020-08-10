@@ -24,6 +24,8 @@
   @supports (display: grid) {
     display: grid;
     grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0;
 
     @each $name, $size in $grid-breakpoints {
       @media (min-width: $size) {
