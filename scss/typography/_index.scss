@@ -13,14 +13,14 @@
 //
 // Styleguide 5.1.0
 
-body{
-  font-family: $primary-font-family;
+body {
   color: $ui-primary-font-color;
-  line-height: $line-height-base;
-  font-weight: $font-weight-normal;
+  font-family: $primary-font-family;
   font-size: calculateRem(16px);
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
 
-  @media (min-width: map-get($grid-breakpoints, "md")) {
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
     font-size: calculateRem(18px);
   }
 }
@@ -54,68 +54,68 @@ body{
 //
 // Styleguide 5.2.0
 
-.defcon{
+.defcon {
   font-size: calculateRem(36px);
   line-height: $headings-line-height;
 
-  @media (min-width: map-get($grid-breakpoints, "md")) {
+  @media (min-width: map-get($grid-breakpoints, 'md')) {
     font-size: calculateRem(52px);
   }
 }
 
 @for $index from 1 through 6 {
-  h#{$index}, .h#{$index}-primary, .h#{$index}-secondary{
+  h#{$index}, .h#{$index}-primary, .h#{$index}-secondary {
     font-weight: $font-weight-bold;
 
-    @if $index == 1{
+    @if $index == 1 {
       font-size: calculateRem(28px);
       line-height: calculateRem(32px);
 
-      @media (min-width: map-get($grid-breakpoints, "md")) {
+      @media (min-width: map-get($grid-breakpoints, 'md')) {
         font-size: calculateRem(41px);
         line-height: calculateRem(48px);
       }
     }
-    @else if $index == 2{
+    @else if $index == 2 {
       font-size: calculateRem(24px);
       line-height: calculateRem(32px);
 
-      @media (min-width: map-get($grid-breakpoints, "md")) {
+      @media (min-width: map-get($grid-breakpoints, 'md')) {
         font-size: calculateRem(36px);
         line-height: calculateRem(40px);
       }
     }
-    @else if $index == 3{
+    @else if $index == 3 {
       font-size: calculateRem(22px);
       line-height: calculateRem(24px);
 
-      @media (min-width: map-get($grid-breakpoints, "md")) {
+      @media (min-width: map-get($grid-breakpoints, 'md')) {
         font-size: calculateRem(30px);
         line-height: calculateRem(30px);
       }
     }
-    @else if $index == 4{
+    @else if $index == 4 {
       font-size: calculateRem(19px);
       line-height: $headings-line-height;
 
-      @media (min-width: map-get($grid-breakpoints, "md")) {
+      @media (min-width: map-get($grid-breakpoints, 'md')) {
         font-size: calculateRem(26px);
         line-height: calculateRem(32px);
       }
     }
-    @else if $index == 5{
+    @else if $index == 5 {
       font-size: calculateRem(16px);
       line-height: $headings-line-height;
 
-      @media (min-width: map-get($grid-breakpoints, "md")) {
+      @media (min-width: map-get($grid-breakpoints, 'md')) {
         font-size: calculateRem(20px);
       }
     }
-    @else if $index == 6{
+    @else if $index == 6 {
       font-size: calculateRem(13px);
       line-height: calculateRem(24px);
 
-      @media (min-width: map-get($grid-breakpoints, "md")) {
+      @media (min-width: map-get($grid-breakpoints, 'md')) {
         font-size: calculateRem(17px);
         line-height: calculateRem(24px);
       }
@@ -124,13 +124,13 @@ body{
 }
 
 @for $index from 1 through 6 {
-  h#{$index}, .h#{$index}-primary{
+  h#{$index}, .h#{$index}-primary {
     font-family: $primary-font-family;
   }
 }
 
 @for $index from 1 through 6 {
-  .h#{$index}-secondary{
+  .h#{$index}-secondary {
     font-family: $secondary-font-family;
   }
 }
