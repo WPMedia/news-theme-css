@@ -105,6 +105,12 @@ If you are developing your custom components in a separate repository, then as l
 up your blocks.json to use the css framework in the feature pack that will leverage your component repository, 
 you still do not need to directly import the framework's sass files 
 into your component's sass file.  However, you will need to add the CSS Framework as a dependency to your external 
-component's package.json file. If you require any of the functionality from the framework's JavaScript assets, then you will need to 
-import that into your component's JavaScript.  For example, if you needed the `framework` object, you would
+component's package.json file. 
+
+Note: When adding the dependency to package.json, ensure that it is the same version 
+that you specify for `cssFramework` in blocks.json. 
+
+If you require any of the functionality from the framework's 
+JavaScript assets, then you will need to import that into your component's JavaScript.  
+For example, if you needed the `framework` object, you would
 import that in your JS or JSX file like this: `import { framework } from '@wpmedia/news-theme-css/js/framework';`
