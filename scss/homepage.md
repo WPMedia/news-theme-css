@@ -87,12 +87,12 @@ Here is an example of what a the CSS setup in the `block.json` might look like.
 ### Custom Block Developers
 If you are creating custom blocks for your site and plan on using news-theme-css as a dependency, 
 then in addition to configuring blocks.json as per the section above, you will need to follow some additional
-steps to ensure this framework is available in your code.  There are two different senarios in custom development
-that pertain to using this framework:  Developing custom components in a theme pack and developing custom
+steps to ensure this framework is available in your code.  There are two different scenarios in custom development
+that pertain to using this framework:  Developing custom components in a feature pack and developing custom
 components in a separate repository. 
 
-#### Developing custom components in a theme pack
-If you are developing your custom components directly in your theme pack, then as long as you have set 
+#### Developing custom components in a feature pack
+If you are developing your custom components directly in your feature pack, then as long as you have set 
 up your blocks.json to use the CSS Framework, you do not explicitly add the framework to any
 package.json file or directly import the framework's sass files into your component's sass file.  Fusion takes 
 care of properly importing the CSS Framework into component's sass file as well as setting theme values.  However.
@@ -102,7 +102,7 @@ import that in your JS or JSX file like this: `import { framework } from '@wpmed
 
 #### Developing custom components in a separate repository
 If you are developing your custom components in a separate repository, then as long as you have set 
-up your blocks.json to use the css framework in the themepack that will leverage your component repository, 
+up your blocks.json to use the css framework in the feature pack that will leverage your component repository, 
 you still do not need to directly import the framework's sass files 
 into your component's sass file.  However, you will need to add the CSS Framework as a dependency to your external 
 component's package.json file. If you require any of the functionality from the framework's JavaScript assets, then you will need to 
