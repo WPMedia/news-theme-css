@@ -241,6 +241,10 @@
 <li>Typography</li>
 <li>Breakpoints and spacing</li>
 <li>Utility Sass functions (i.e. convert px to rems, etc.)</li>
+<li>A JavaScript package that has versions of some of the Sass functions (i.e. <code>calculateRem</code>, <code>lightenDarkenColor</code> ) as well as an object
+(<code>framework</code>) that holds properties for spacing, breakpoints, etc. The <code>js/framework.js</code> file is useful when you need to tap
+into some of the functionality and properties of the framework when working in JavaScript.
+The JavaScript package also has a set of styled components (<code>js/styled/linkHovers.js</code>) that are used to set hover styles.</li>
 </ul>
 <h3>Getting Started:</h3>
 <p>To use Theme CSS within a feature pack repository, it must be configured through a file in the root of the repo called <code>blocks.json</code>. This is a file that Fusion (Hydrate versions) knows to
@@ -332,6 +336,32 @@ purpose:</p>
   }
 }
 </code></pre>
+<h3>Custom Block Developers</h3>
+<p>If you are creating custom blocks for your site and plan on using news-theme-css as a dependency,
+then in addition to configuring blocks.json as per the section above, you will need to follow some additional
+steps to ensure this framework is available in your code.  There are two different scenarios in custom development
+that pertain to using this framework:  Developing custom components in a feature pack and developing custom
+components in a separate repository.</p>
+<h4>Developing custom components in a feature pack</h4>
+<p>If you are developing your custom components directly in your feature pack, then as long as you have set
+up your blocks.json to use the CSS Framework, you do not explicitly add the framework to any
+package.json file or directly import the framework's sass files into your component's sass file.  Fusion takes
+care of properly importing the CSS Framework into component's sass file as well as setting theme values.  However.
+if you require any of the functionality from the framework's JavaScript assets, then you will need to
+import that into your component's JavaScript.  For example, if you needed the <code>framework</code> object, you would
+import that in your JS or JSX file like this: <code>import { framework } from '@wpmedia/news-theme-css/js/framework';</code></p>
+<h4>Developing custom components in a separate repository</h4>
+<p>If you are developing your custom components in a separate repository, then as long as you have set
+up your blocks.json to use the css framework in the feature pack that will leverage your component repository,
+you still do not need to directly import the framework's sass files
+into your component's sass file.  However, you will need to add the CSS Framework as a dependency to your external
+component's package.json file.</p>
+<p>Note: When adding the dependency to package.json, ensure that it is the same version
+that you specify for <code>cssFramework</code> in blocks.json.</p>
+<p>If you require any of the functionality from the framework's
+JavaScript assets, then you will need to import that into your component's JavaScript.<br>
+For example, if you needed the <code>framework</code> object, you would
+import that in your JS or JSX file like this: <code>import { framework } from '@wpmedia/news-theme-css/js/framework';</code></p>
 
       </article>
     </section>
