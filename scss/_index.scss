@@ -40,6 +40,10 @@ img {
   max-width: 100%;
 }
 
+.test-class {
+  background-color: #000000;
+}
+
 @import './variables';
 @import './functions';
 @import './breakpoints';
