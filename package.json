@@ -22,9 +22,9 @@
     "url": "ssh://git@github.com/WPMedia/news-theme-css.git"
   },
   "devDependencies": {
-    "kss": "^3.0.0-beta.25",
-    "node-sass": "^4.13.0",
     "esm": "^3.2.25",
+    "kss": "^3.0.1",
+    "node-sass": "^4.14.1",
     "styled-components": "^5.0.1",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended": "^3.0.0",
