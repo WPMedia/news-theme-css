@@ -1,3 +1,6 @@
+// this is for documentation purposes of importing. please reflect any functional changes to _index.scss here for styleguide
+// alas, fusion needs _index.scss https://github.com/WPMedia/news-theme-css/pull/38
+// yet node sass needs index.scss for building https://github.com/sass/node-sass/issues/1505#issuecomment-651139437
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -38,6 +41,10 @@ ul {
 img {
   height: auto;
   max-width: 100%;
+}
+
+.test-class {
+  background-color: #000000;
 }
 
 @import './variables';
