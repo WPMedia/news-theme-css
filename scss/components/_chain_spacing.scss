@@ -1,12 +1,12 @@
 .chain-container {
   .chain-col {
-    @include container-vertial-spacing;
+    @include container-vertical-spacing;
     @include container-hr-separator;
   }
 }
 
 .layout-section {
-  @include container-vertial-spacing;
+  @include container-vertical-spacing;
   @include container-hr-separator;
 }
 

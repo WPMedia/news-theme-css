@@ -51,7 +51,7 @@
 // 
 // Mixin to add vertical spaing to the elements in a container block
 //
-@mixin container-vertial-spacing {
+@mixin container-vertical-spacing {
   > * {
     margin-bottom: map-get($spacers, 'lg');
   }
