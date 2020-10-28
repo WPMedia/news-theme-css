@@ -14,6 +14,22 @@
   }
 }
 
+// this needs to be documented if added
+// @mixin block-internal-spacing
+//
+// this mixin controls the internal spacing of items in a block
+
+@mixin block-internal-spacing {
+  margin-bottom: map-get($spacers, 'sm');
+
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+    margin-bottom: map-get($spacers, 'sm');
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 // @mixin link-color-active-hover
 //
@@ -67,11 +83,9 @@
 //
 // Mixin to add style to the HR element used as separator
 //
-@mixin container-hr-separator {
-  > hr {
-    background-color: $border-rule-color; // $ui-light-gray;
-    border: 0;
-    height: 1px;
-    margin-top: 0;
-  }
+hr {
+  background-color: $border-rule-color; // $ui-light-gray;
+  border: 0;
+  height: 1px;
+  margin-top: 0;
 }
