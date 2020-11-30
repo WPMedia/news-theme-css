@@ -10,33 +10,33 @@
 //
 // Styleguide 2.3.0
 .row {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
 
-  @supports (display: grid){
+  @supports (display: grid) {
     display: grid;
+    grid-auto-flow: dense;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0;
-    grid-auto-flow: dense;
 
     @each $name, $size in $grid-breakpoints {
       @media (min-width: $size) {
-        @if $name == "md" {
-          grid-column-gap: map-get($spacers, "sm");
+        @if $name == 'md' {
+          grid-column-gap: map-get($spacers, 'sm');
 
-        } @else if $name == "lg" {
-          grid-column-gap: map-get($spacers, "lg");
+        } @else if $name == 'lg' {
+          grid-column-gap: map-get($spacers, 'lg');
 
-        } @else if $name == "xl" {
-          grid-column-gap: map-get($spacers, "lg");
+        } @else if $name == 'xl' {
+          grid-column-gap: map-get($spacers, 'lg');
         }
       }
     }

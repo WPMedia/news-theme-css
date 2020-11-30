@@ -1,43 +1,63 @@
+// this is for documentation purposes of importing. please reflect any functional changes to _index.scss here for styleguide
+// alas, fusion needs _index.scss https://github.com/WPMedia/news-theme-css/pull/38
+// yet node sass needs index.scss for building https://github.com/sass/node-sass/issues/1505#issuecomment-651139437
 html {
   box-sizing: border-box;
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  font-weight: normal;
   margin: 0;
   padding: 0;
-  font-weight: normal;
 }
 
-html, body {
-  width: 100%;
+html,
+body {
   height: 100%;
+  width: 100%;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
-@import "./variables";
-@import "./functions";
-@import "./breakpoints";
-@import "./margins";
-@import "./mixins";
-@import "./padding";
-@import "./colors";
-@import "./typography/index";
-@import "grid/index";
-@import "utils/utils";
-@import "./buttons";
-@import "./links";
-@import "components/figure_caption";
-@import "components/chain_spacing";
+.test-class {
+  background-color: #000000;
+}
+
+@import './variables';
+@import './functions';
+@import './breakpoints';
+@import './margins';
+@import './mixins';
+@import './padding';
+@import './colors';
+@import './typography/index';
+@import 'grid/index';
+@import 'utils/utils';
+@import './buttons';
+@import './links';
+@import 'components/figure_caption';
+@import 'components/chain_spacing';

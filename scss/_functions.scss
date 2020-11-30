@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 // Scss Functions
 //
 // Styleguide 1.3.0
@@ -27,8 +27,7 @@
     $character: str-slice($value, $i, $i);
 
     @if not (index(map-keys($numbers), $character) or $character == '.') {
-      @return to-length(if($minus, -$result, $result), str-slice($value, $i))
-    }
+      @return to-length(if($minus, -$result, $result), str-slice($value, $i)); }
 
     @if $character == '.' {
       $digits: 1;
@@ -96,7 +95,7 @@
 // $size:   Can be either a number or string with the 'px' added
 //
 // Styleguide 1.3.5
-@function calculateRem($size){
+@function calculateRem($size) {
   $size: strip-unit($size);
   $remSize: $size / $default-font-size;
   @return #{$remSize}rem;

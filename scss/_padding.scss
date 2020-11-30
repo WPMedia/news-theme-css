@@ -25,19 +25,19 @@
 
 
 @each $name, $size in $spacers {
-  .padding-#{$name}-left{
+  .padding-#{$name}-left {
     padding-left: $size;
   }
-  .padding-#{$name}-right{
+  .padding-#{$name}-right {
     padding-right: $size;
   }
-  .padding-#{$name}-top{
+  .padding-#{$name}-top {
     padding-top: $size;
   }
-  .padding-#{$name}-bottom{
+  .padding-#{$name}-bottom {
     padding-bottom: $size;
   }
-  .padding-#{$name}-all{
+  .padding-#{$name}-all {
     padding: $size;
   }
 
