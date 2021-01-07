@@ -1,13 +1,11 @@
 .chain-container {
   .chain-col {
-    @include container-vertial-spacing;
-    @include container-hr-separator;
+    @include container-vertical-spacing;
   }
 }
 
 .layout-section {
-  @include container-vertial-spacing;
-  @include container-hr-separator;
+  @include container-vertical-spacing;
 }
 
 // Used to remove the extra margin on layouts when the class
