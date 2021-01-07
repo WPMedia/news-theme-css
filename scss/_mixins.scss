@@ -1,7 +1,9 @@
+@import "colors";
+
 // @mixin block-margin-bottom
 //
 // For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
-// However, @mixin block-margin-bottom is a convenience mix-in to add to parent element styles for block components that
+// However, @mixin block-margin-bottom is a convenience mixin to add to parent element styles for block components that
 // require a unified margin bottom,
 //
 // Styleguide 7.3.0
@@ -18,7 +20,7 @@
 // @mixin link-color-active-hover
 //
 // Mixin to add hover and active styles to text color
-// 
+//
 // - Params:
 //   - `$color-prop`: Color to lighten (defaults to $ui-primary-font-color)
 //
@@ -51,10 +53,35 @@
   }
 }
 
-// @mixin container-vertial-spacing
-// 
-// Mixin to add vertical spaing to the elements in a container block
+// @mixin block-internal-spacing
 //
+// For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
+// However, @mixin block-internal-spacing is a convenience mixin that controls the internal spacing of items in a block
+//
+// Styleguide 7.4.0
+
+@mixin block-internal-spacing {
+  margin-bottom: map-get($spacers, 'sm');
+
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')){
+    margin-bottom: map-get($spacers, 'sm');
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// @mixin container-vertial-spacing
+//
+// **Deprecated**<br/><br/>
+//
+// For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
+// However, @mixin container-vertial-spacing is a convenience mixin that controls the internal spacing of items in a block.<br/><br/>
+// **Deprecated due to misspelling - Please use container-vertical-spacing (see next entry)**
+//
+// Styleguide 7.5.0
+
 @mixin container-vertial-spacing {
   > * {
     margin-bottom: map-get($spacers, 'lg');
@@ -67,10 +94,36 @@
   }
 }
 
+// @mixin container-vertical-spacing
+//
+// For most purposes, margins should be retrieved from $spacers (using map-get) in _breakpoints.scss
+// However, @mixin container-vertical-spacing is a convenience mixin that controls the internal spacing of items in a block.<br/><br/>
+// **Replaces the deprecated mixin container-vertial-spacing above**
+//
+// Styleguide 7.6.0
+
+@mixin container-vertical-spacing {
+  > * {
+    margin-bottom: map-get($spacers, 'lg');
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')) {
+    > * {
+      margin-bottom: map-get($spacers, 'md');
+    }
+  }
+}
+
+// Misc
+//
+// Styleguide 10.0.0
+
 // @mixin container-hr-separator
 //
 // Mixin to add style to the HR element used as separator
 //
+// Styleguide 10.1.0
+
 @mixin container-hr-separator {
   > hr {
     background-color: $border-rule-color; // $ui-light-gray;
@@ -79,3 +132,17 @@
     margin-top: 0;
   }
 }
+
+// hr
+//
+// Styling for HR element <br /><br />
+// Same styling as @mixin container-hr-separator
+//
+// Styleguide 10.2.0
+hr {
+  background-color: $border-rule-color; // $ui-light-gray;
+  border: 0;
+  height: 1px;
+  margin-top: 0;
+}
+
