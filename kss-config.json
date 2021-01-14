@@ -3,6 +3,7 @@
   "source": [
     "scss/"
   ],
+  "homepage": "./scss/homepage.md",
   "destination": "styleguide/",
   "builder": "michelangelo/kss_styleguide/custom-template/",
   "css": [
