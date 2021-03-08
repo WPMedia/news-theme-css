@@ -129,13 +129,13 @@
     background-color: $border-rule-color; // $ui-light-gray;
     border: 0;
     height: 1px;
-    margin-top: 0;
+    margin: 0;
   }
 }
 
 // hr
 //
-// Styling for HR element <br /><br />
+// Styling for HR element <hr /><br /><hr />
 // Same styling as @mixin container-hr-separator
 //
 // Styleguide 10.2.0
@@ -143,6 +143,5 @@ hr {
   background-color: $border-rule-color; // $ui-light-gray;
   border: 0;
   height: 1px;
-  margin-top: 0;
+  margin: 0;
 }
-
