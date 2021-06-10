@@ -274,8 +274,8 @@ load-json-file@^1.0.0:
     strip-bom "^2.0.0"
 
 locutus@^2.0.5:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.9.tgz#e265af1e85fd19173e74386373888560783a02fc"
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.15.tgz#d75b9100713aaaf30be8b38ed6543910498c0db0"
 
 longest@^1.0.1:
   version "1.0.1"
