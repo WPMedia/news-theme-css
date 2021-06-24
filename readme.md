@@ -8,11 +8,11 @@ This package has been published with a number of dist-tags meant for different p
 
 - `stable`: Production environment
 - `beta`: Sandbox environment
-- `canary`: For developers to test on core components 
+- `canary`: For developers to test on core components
 
 ## Usage as a block dependency:
 
-Include as an dependency in a custom block: 
+Include as an dependency in a custom block:
 
 `blocks/card-list-block/package.json`
 
@@ -51,17 +51,17 @@ Include as an dependency in a custom block:
 
 ```
 
-## Linking and Debugging 
+## Linking and Debugging
 
 - Specify the cssFramework on `blocks.json` of feature pack
 - and run `npx fusion start` with `useLocal` set to `true` in `blocks.json`
 
-## Contributing 
+## Contributing
 
 ### Local Development Commands:
 
-- `npm i` Install dependencies for library 
-- `npm run build-all` Create output for style guide 
+- `npm i` Install dependencies for library
+- `npm run build-all` Create output for style guide
 
 ### Publish The Style Guide
 
@@ -77,14 +77,14 @@ Include as an dependency in a custom block:
 The [styleguide](https://staging.arcpublishing.com/alc/docs/styleguides/news-theme-css) is generated using a modified version of [michelangelo](https://github.com/stamkracht/michelangelo) in the `/michelangelo` folder.
 
 - Go to michelangelo/kss_styleguide/custom-template/index.hbs
-- Change relevant issues 
+- Change relevant issues
 - Make sure to run `npm run build-all` to see effect
 - View locally in styleguide/index.html
 
 ### To publish a new beta version
-1. Check `staging` version in `package.json` under version. As a sanity check, you can also look at published version to GitHub packages via `npm view @wpmedia/news-theme-css time`. This will show what versions have been published. 
-2. Look at how `news-theme-css` is used by themes blocks. Check for the latest `@beta` version via `npm view @wpmedia/news-theme-css@beta`. 
-3. Update the version `npm version prerelease --preid=beta`. 
+1. Check `staging` version in `package.json` under version. As a sanity check, you can also look at published version to GitHub packages via `npm view @wpmedia/news-theme-css time`. This will show what versions have been published.
+2. Look at how `news-theme-css` is used by themes blocks. Check for the latest `@beta` version via `npm view @wpmedia/news-theme-css@beta`.
+3. Update the version `npm version prerelease --preid=beta`.
 4. Publish to the beta dist-tag `npm publish --tag beta`
 
 block/package.json
@@ -98,7 +98,7 @@ block/package.json
 3. Push the version update to `staging`.
 4. Publish the beta-tagged version `npm publish --tag beta`
 
-### To test a beta or canary version 
+### To test a beta or canary version
 
 - For canary, do the same steps as above but with canary instead of beta
 - Fusion will then inject these overrides and framework. Set the following in the feature pack's blocks.json:
@@ -111,7 +111,7 @@ block/package.json
 
 ```
 
-Include as an dependency in a custom block: 
+Include as an dependency in a custom block:
 
 `blocks/card-list-block/package.json`
 

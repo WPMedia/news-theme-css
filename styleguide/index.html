@@ -252,6 +252,12 @@
 into some of the functionality and properties of the framework when working in JavaScript.
 The JavaScript package also has a set of styled components (<code>js/styled/linkHovers.js</code>) that are used to set hover styles.</li>
 </ul>
+<hr>
+<blockquote>
+<p><em><strong>Note of Caution</strong></em></p>
+<p>While it is possible to override the styling provided by this CSS framework or the individual Themes components by applying more specific selectors, this is not recommended. Because the CSS framework and Themes components are subject to change, it is possible that CSS selector overrides will break as elements, class names, IDs and other references change within these components. If you require custom styling of a component, we recommend writing a custom component to handle your needs. If you are currently overriding any styling on the Themes website, we invite you to submit your use case to the <a href="https://ideas.arcpublishing.com/">Themes Ideas Board</a> so it can be considered as a future roadmap item.</p>
+</blockquote>
+<hr>
 <h3>Getting Started:</h3>
 <p>To use Theme CSS within a feature pack repository, it must be configured through a file in the root of the repo called <code>blocks.json</code>. This is a file that Fusion (Hydrate versions) knows to
 look for and run specific internal build commands to bring everything
@@ -365,7 +371,7 @@ component's package.json file.</p>
 <p>Note: When adding the dependency to package.json, ensure that it is the same version
 that you specify for <code>cssFramework</code> in blocks.json.</p>
 <p>If you require any of the functionality from the framework's
-JavaScript assets, then you will need to import that into your component's JavaScript.<br>
+JavaScript assets, then you will need to import that into your component's JavaScript.
 For example, if you needed the <code>framework</code> object, you would
 import that in your JS or JSX file like this: <code>import { framework } from '@wpmedia/news-theme-css/js/framework';</code></p>
 
