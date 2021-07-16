@@ -30,6 +30,8 @@ Include as an dependency in a custom block:
 
 - Fusion will then inject these overrides and framework. Set the following in the feature pack's blocks.json:
 
+NOTE: sassVariableOverrides is deprecated in favor of using site-specific js values using styled-components
+
 `feature-pack/blocks.json`
 ```json
 {

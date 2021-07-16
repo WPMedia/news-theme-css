@@ -37,6 +37,8 @@ purpose:
 
 Here is an example of what a the CSS setup in the `block.json` might look like.
 
+NOTE: sassVariableOverrides is deprecated in favor of using site-specific js values using styled-components
+
 ```
 {
   "cssFramework": "@wpmedia/news-theme-css",
