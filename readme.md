@@ -2,12 +2,71 @@
 
 This is the CSS framework for the Fusion News Theme. [Theme Blocks](https://github.com/WPMedia/fusion-news-theme-blocks) and the [Engine Theme SDK](https://github.com/WPMedia/engine-theme-sdk) import the SCSS files. Then they are [compiled](https://github.com/WPMedia/fusion/blob/e497a3117912ea3dc5ad2d0a6b83a45c2210513e/engine/webpack/_shared/rules/sass.js) later with node-sass and extracted by Webpack in Fusion.
 
+## Files Summary 
+
+As far as I can gather, the following files are included in the News Theme CSS:
+
+### processTemplates.js
+
+This file is used by `"build-all": "npm run process-templates && npm run build-guide",` to generate files in the scss folder. The file uses `tmpl` files within the templates folder to generate the files.
+
+### templates/
+
+This folder includes scss.tmpl files that are used to generate the files in the scss folder. In order to generate changes to the `scss/_breakpoints.scss` and `scss/_variables.scss` files, you will need to modify their corresponding `scss.tmpl` files. 
+
+### scss/
+
+This folder contains the `.scss` files that are compiled by Webpack. You will notice two index files. There is an _index.scss file that is used to import all the other files when used by themes. This is the source of truth for the News Theme CSS. There is also the index.scss file. On the other hand, the `index.scss` file is used by the styleguide. Any changes to the _index.scss file should also be made to the index.scss file in order to showcase the changes to potential client users of the news theme css. Changes in this output shown to client developers is available in the `/styleguide` folder.
+
+### styleguide/
+
+This includes the `styleguide/css` that will be used by the styleguide to show the changes in the News Theme CSS. If, for example, the styleguide does not show colors, then the file is not being generated and included in the styleguide. As far as I can gather, the kss-assets folder is not being used by the styleguide to give dynamic behavior for readers of the styleguide.
+
+The html files within the folder should be familiar. They are the output of `npm run build-guide`. You can view the styleguide by viewing the entrypoint `index.html` within the styleguide folder.
+
+The styleguide has been customized based on changes to the `michelangelo/` folder. 
+
+### `michelangelo/`
+
+This folder was a forked package and styleguide generator. This package is configured by the `kss-config.json file`.
+
+### `kss-config.json`
+
+You will notice within the configuration that the source css is needed to be targeted: 
+
+```
+  "css": [
+    "css/index.css"
+  ]
+```
+
+In order to publish this folder as a whole, all of the assets need to be within one folder. This is intended to be published programmatically within the `codebuilder` folder. 
+
+### `codebuild/`
+
+The `buildspec.yml` file is used to generate the styleguide. The `buildspec.yml` generates the styleguide and moves that file into the s3 bucket read by ALC to distribute the styleguide. This infrastructure was provisioned via the `cfn` folder.
+
+### `cfn/`
+
+This is where the aws-pagebuilder-group targets the pipeline to create the infrastructure that hosts the styleguide. You can see the infrastructure setup: https://github.com/WPMedia/aws-group-pagebuilder/blob/master/cfn/configs/news-theme-css-inf/config.yml
+
+The `aws-group-pagebuilder` is the parent pipeline that generates other pipelines (shoutout Anna for this lingo). 
+
+### `.github`
+
+The template for pull requests is here. This folder is used by GitHub to customize the repo experience. 
+
+### `js`
+
+You may notice that this folder is not all `scss` files. There are also `.js` files that configure global styles. Ideally, in the future, this would be factored out. 
+
 ## `dist-tags`
 
 This package has been published with a number of dist-tags meant for different purposes:
 
 - `stable`: Production environment
 - `beta`: Sandbox environment
+- `rc`: Release candidate environment
 - `canary`: For developers to test on core components
 
 ## Usage as a block dependency:
@@ -19,9 +78,9 @@ Include as an dependency in a custom block:
 ```json
 {
   "name": "@wpmedia/card-list-block",
-  "dependencies": {
+  "peerDependencies": {
     "@wpmedia/engine-theme-sdk": "^2.2.0",
-    "@wpmedia/news-theme-css": "stable"
+    "@wpmedia/news-theme-css": "*"
   }
 }
 ```
@@ -92,8 +151,8 @@ The [styleguide](https://staging.arcpublishing.com/alc/docs/styleguides/news-the
 block/package.json
 ```json
 {
-  "dependencies": {
-    "@wpmedia/news-theme-css": "^2.0.2"
+  "devDependencies": {
+    "@wpmedia/news-theme-css": "*"
   }
 }
 ```
@@ -120,8 +179,8 @@ Include as an dependency in a custom block:
 ```json
 {
   "name": "@wpmedia/card-list-block",
-  "dependencies": {
-    "@wpmedia/news-theme-css": "beta"
+  "peerDependencies": {
+    "@wpmedia/news-theme-css": "*"
   }
 }
 ```
