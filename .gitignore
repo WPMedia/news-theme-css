@@ -17,9 +17,3 @@ news-theme-css
 .AppleDouble
 .LSOverride
 styleguide/*
-
-# output of sass watcher
-css
-css.map
-scss/index.css
-scss/index.css.map

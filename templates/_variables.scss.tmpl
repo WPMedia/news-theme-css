@@ -19,9 +19,6 @@
 // Default font size. This is important as it will be used to convert pixel values to rems
 //
 // Styleguide 1.1.1
-
-@use "sass:math";
-
 $default-font-size: #(defaultFontSize) !default;
 
 
@@ -32,7 +29,7 @@ $default-font-size: #(defaultFontSize) !default;
 // Styleguide 1.1.2
 $grid-columns: 12 !default;
 
-$base-col-percent: math.div(100%, $grid-columns);
+$base-col-percent: 100% / $grid-columns;
 
 // $primary-font-family
 //

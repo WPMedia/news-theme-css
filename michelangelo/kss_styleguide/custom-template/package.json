@@ -5,9 +5,9 @@
   "main": "builder.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --output-style compressed kss-assets/kss.scss kss-assets/kss.css"
+    "sass": "./node_modules/.bin/node-sass --output-style compressed kss-assets/kss.scss kss-assets/kss.css"
   },
   "devDependencies": {
-    "sass": "^1.36.0"
+    "node-sass": "^3.4.2"
   }
 }
