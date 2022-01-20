@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SYNCED_RELEASE_TAG: ${{ github.ref_name }} # targets branch name ref_name
-      NODE_AUTH_TOKEN: ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
 
     steps:
       - name: Checkout repo
@@ -35,19 +34,24 @@ jobs:
       
       # Git config
       - run: git config --global user.email "jack.howard@washpost.com" && git config --global user.name "jackhowa"
+        env:
+          NODE_AUTH_TOKEN:  ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
 
       - name: Version with formatted preid
         run: npm version prerelease --preid=${{ steps.format_branch_step.outputs.formatted_branch_name }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Publish to target tag
         run: npm publish --tag ${{ env.SYNCED_RELEASE_TAG }}
-        env: 
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Push tag
       - run: git push origin ${{ env.SYNCED_RELEASE_TAG }} -f
-        env: 
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   tag_canary_if_1x:
     runs-on: ubuntu-latest
@@ -56,7 +60,6 @@ jobs:
     if: contains(github.ref_name, '-1.')
     env:
       SYNCED_RELEASE_TAG: ${{ github.ref_name }} # targets branch name ref_name
-      NODE_AUTH_TOKEN: ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -69,6 +72,6 @@ jobs:
 
       - name: Tag 1.x release with canary 
         run: npm dist-tag add @wpmedia/news-theme-css@$(npm view @wpmedia/news-theme-css@${{ env.SYNCED_RELEASE_TAG }} version) canary
-        env: 
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
-          
+        env:
+          NODE_AUTH_TOKEN:  ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
+
