@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SYNCED_RELEASE_TAG: ${{ github.ref_name }} # targets branch name ref_name
-      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
 
     steps:
       - name: Checkout repo
@@ -52,7 +52,7 @@ jobs:
     if: contains(github.ref_name, '-1.')
     env:
       SYNCED_RELEASE_TAG: ${{ github.ref_name }} # targets branch name ref_name
-      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
