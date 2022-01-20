@@ -32,6 +32,9 @@ jobs:
           echo $new_branch_name
 
           echo "::set-output name=formatted_branch_name::$new_branch_name"
+      
+      # Git config
+      - run: git config --global user.email "jack.howard@washpost.com" && git config --global user.name "jackhowa"
 
       - name: Version with formatted preid
         run: npm version prerelease --preid=${{ steps.format_branch_step.outputs.formatted_branch_name }}
