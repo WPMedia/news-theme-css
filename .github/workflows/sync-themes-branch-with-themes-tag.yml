@@ -1,0 +1,64 @@
+name: Publish to themes target tag based off of themes branch name
+on:
+  push:
+    branches:
+      # only run on branch names that match:
+      # arc-themes-release-version-{numbers}.{numbers} per product
+      - arc-themes-release-version-[0-9]+\.[0-9]+
+
+jobs:
+  publish:
+    name: Branch publish
+    runs-on: ubuntu-latest
+    env:
+      SYNCED_RELEASE_TAG: ${{ github.ref_name }} # targets branch name ref_name
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+          registry-url: "https://npm.pkg.github.com"
+
+      - name: Format branch name . to - for preid version compatibility
+        id: format_branch_step
+        run: |
+          new_branch_name="${SYNCED_RELEASE_TAG//./-}"
+
+          echo $new_branch_name
+
+          echo "::set-output name=formatted_branch_name::$new_branch_name"
+
+      - name: Version with formatted preid
+        run: npm version prerelease --preid=${{ steps.format_branch_step.outputs.formatted_branch_name }}
+
+      - name: Publish to target tag
+        run: npm publish --tag ${{ env.SYNCED_RELEASE_TAG }}
+
+      # Push tag
+      - run: git push origin ${{ env.SYNCED_RELEASE_TAG }} -f
+
+  tag_canary_if_1x:
+    runs-on: ubuntu-latest
+    # has to run publish job first successfully
+    needs: publish
+    if: contains(github.ref_name, '-1.')
+    env:
+      SYNCED_RELEASE_TAG: ${{ github.ref_name }} # targets branch name ref_name
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node and NPM
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: Tag 1.x release with canary 
+        run: npm dist-tag add @wpmedia/news-theme-css@$(npm view @wpmedia/news-theme-css@${{ env.SYNCED_RELEASE_TAG }} version) canary
