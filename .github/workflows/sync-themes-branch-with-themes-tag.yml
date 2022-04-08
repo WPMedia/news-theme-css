@@ -31,17 +31,14 @@ jobs:
           echo $new_branch_name
 
           echo "::set-output name=formatted_branch_name::$new_branch_name"
-      
-      # Git config
-      - run: git config --global user.email "jack.howard@washpost.com" && git config --global user.name "jackhowa"
-        env:
-          NODE_AUTH_TOKEN:  ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
 
       - name: Version with formatted preid
-        run: npm version prerelease --preid=${{ steps.format_branch_step.outputs.formatted_branch_name }}
+        run: |
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git config --local user.name "$GITHUB_ACTOR"
+          npm version prerelease --preid=${{ steps.format_branch_step.outputs.formatted_branch_name }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 
       - name: Publish to target tag
         run: npm publish --tag ${{ env.SYNCED_RELEASE_TAG }}
@@ -71,7 +68,11 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
 
       - name: Tag 1.x release with canary 
-        run: npm dist-tag add @wpmedia/news-theme-css@$(npm view @wpmedia/news-theme-css@${{ env.SYNCED_RELEASE_TAG }} version) canary
+        run: |
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git config --local user.name "$GITHUB_ACTOR"
+          npm dist-tag add @wpmedia/news-theme-css@$(npm view @wpmedia/news-theme-css@${{ env.SYNCED_RELEASE_TAG }} version) canary
         env:
-          NODE_AUTH_TOKEN:  ${{ secrets.PERSONAL_AUTH_TOKEN_READ_WRITE }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
