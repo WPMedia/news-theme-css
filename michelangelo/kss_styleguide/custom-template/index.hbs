@@ -11,41 +11,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
   <link rel="stylesheet" href="kss-assets/vendor/prism.css">
   <link rel="stylesheet" href="kss-assets/css/kss.css">
-  <link rel="stylesheet" href="https://nav-prod.home.static.arcpublishing.com/css/arcnav.css">
-  <script src="https://nav-prod.home.static.arcpublishing.com/js/arcnav-standalone.js" async></script>
   {{{styles}}}
 
   <style>
-    .kss-documentation {
-      /* height from alc nav to doc container plus 20px */
-      padding-top: 80px !important;
-    }
-
-    .kss-navigation {
-      /* height of alc nav */
-      top: 60px !important;
-    }
-
-    @media only screen and (max-width: 800px) {
-
-      .kss-header {
-        /* needed for mobile */
-        top: 60px !important;
-      }
-
-      .kss-documentation {
-        /* height from alc nav to doc container plus kss header */
-        padding-top: 110px !important;
-      }
-    }
-    #alc-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000000;
-    }
-
     article[class^="col-"] {
       border: 1px dotted blue;
     }
@@ -105,46 +73,6 @@
 </head>
 
 <body class="kss-body">
-  <div id="alc-nav">
-    <script id="navbar" type="application/json">
-  {
-    "appname": "Arc Learning Center",
-    "homeLink": {
-      "href": "/alc"
-    },
-    "links": [
-      {
-        "name": "Arc Answers",
-        "href": "/alc/answers/",
-        "text": {
-          "en": "Arc Answers"
-        }
-      },
-      {
-        "name": "Release Notes",
-        "href": "/alc/release-notes",
-        "text": {
-          "en": "Release Notes"
-        }
-      },
-      {
-        "name": "Support",
-        "href": "https://arcpublishing.atlassian.net/servicedesk",
-        "text": {
-          "en": "Support"
-        }
-      },
-      {
-        "name": "Ideas",
-        "href": "https://ideas.arcpublishing.com/",
-        "text": {
-          "en": "Ideas"
-        }
-      }
-    ]
-  }
-</script>
-  </div>
   <div id="kss-body__app-container">
 
     <!-- header. -->
