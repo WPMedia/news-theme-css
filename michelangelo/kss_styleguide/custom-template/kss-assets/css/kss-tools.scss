@@ -1,13 +1,13 @@
 @function em($target, $context: 16px) {
-  @return ($target / $context) * 1em;
+  @return math.div($target, $context) * 1em;
 }
 
 @function rem($target, $context: 16px) {
-  @return ($target / $context) * 1rem;
+  @return math.div($target, $context) * 1rem;
 }
 
 @function mq-unit($target) {
-  @return ($target / 16px) * 1em;
+  @return math.div($target, 16px) * 1em;
 }
 
 
