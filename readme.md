@@ -115,7 +115,7 @@ NOTE: sassVariableOverrides is deprecated in favor of using site-specific js val
 ## Linking and Debugging
 
 - Specify the cssFramework on `blocks.json` of feature pack
-- and run `npx fusion start` with `useLocal` set to `true` in `blocks.json`
+- and run `npx fusion start` with `useLocal` set to `true` in `blocks.json`.
 
 ## Contributing
 
